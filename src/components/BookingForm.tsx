@@ -16,16 +16,12 @@ type BookingFormData = {
 };
 
 const packagesList = [
-  "Basic Cruise",
-  "Deluxe Cruise",
-  "Premium Cruise",
-  "Luxury Cruise",
-  "Traditional Shikara Ride",
-  "Scenic Day Cruise",
-  "Golden Sunset Cruise",
-  "Honeymoon Special Cruise",
-  "Premium Family Cruise",
-  "Corporate Backwater Events",
+  "Luxury Houseboat Cruise",
+  "Day Cruise",
+  "Sunset Cruise",
+  "Honeymoon Cruise",
+  "Family Cruise",
+  "Shikara Ride",
 ];
 
 export default function BookingForm() {
@@ -62,7 +58,7 @@ ${data.phone}
 Email:
 ${data.email}
 
-Package:
+Selected Cruise:
 ${data.packageType}
 
 Preferred Date:
@@ -71,10 +67,10 @@ ${data.date}
 Guests:
 ${data.guests}
 
-Message:
+Special Requests:
 ${data.specialRequest || "None"}
 
-Please contact me regarding my booking.
+Please contact me to confirm my booking.
 
 Thank you.`;
 
@@ -95,7 +91,7 @@ Thank you.`;
   };
 
   return (
-    <section id="booking" className="py-24 md:py-32 bg-slate-50 relative overflow-hidden">
+    <section id="booking" className="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
       {/* Wave shape divider top */}
       <div className="absolute top-0 left-0 w-full overflow-hidden rotate-180 leading-none">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block h-8 fill-white">

@@ -103,11 +103,11 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-slate-50 relative overflow-hidden">
+    <section id="gallery" className="py-12 md:py-20 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
             Moments Captured
           </span>

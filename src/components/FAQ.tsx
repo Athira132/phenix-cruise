@@ -65,13 +65,13 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 md:py-32 bg-white relative overflow-hidden">
+    <section id="faq" className="py-12 md:py-20 bg-white relative overflow-hidden">
       <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-sand/20 rounded-full blur-[100px] pointer-events-none -z-1" />
 
       <div className="max-w-3xl mx-auto px-6 md:px-12">
         
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-20">
+        <div className="text-center mb-12 md:mb-16">
           <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
             Got Questions?
           </span>

@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 import { FaClock, FaUtensils, FaWind, FaBed, FaEye } from "react-icons/fa";
 
-const packages = [
+const experiences = [
   {
-    name: "Basic Cruise",
-    price: "₹7,500",
+    name: "Day Experience",
     period: "Day Trip (5 Hours)",
     features: {
       duration: "5 Hours (Day Trip)",
@@ -16,8 +15,7 @@ const packages = [
     popular: false,
   },
   {
-    name: "Deluxe Cruise",
-    price: "₹12,500",
+    name: "Deluxe Stay",
     period: "Overnight Stay (21 Hours)",
     features: {
       duration: "1 Night / 21 Hours",
@@ -29,8 +27,7 @@ const packages = [
     popular: false,
   },
   {
-    name: "Premium Cruise",
-    price: "₹17,000",
+    name: "Premium Stay",
     period: "Overnight Stay (21 Hours)",
     features: {
       duration: "1 Night / 21 Hours",
@@ -42,8 +39,7 @@ const packages = [
     popular: true,
   },
   {
-    name: "Luxury Cruise",
-    price: "₹24,000",
+    name: "Luxury Stay",
     period: "Overnight Stay (21 Hours)",
     features: {
       duration: "1 Night / 21 Hours",
@@ -66,17 +62,17 @@ export default function Packages() {
   };
 
   return (
-    <section id="packages" className="py-24 md:py-32 bg-sand/30 relative overflow-hidden">
+    <section id="packages" className="py-16 md:py-20 bg-sand/30 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
-            Pricing Plans
+            Cruise Experiences
           </span>
           <h2 className="text-4xl md:text-5xl font-serif text-dark tracking-wide mb-4">
-            Curated Packages
+            Curated Stays & Trips
           </h2>
           <div className="w-16 h-[2px] bg-accent mx-auto mb-6" />
           <p className="text-dark/70 font-sans font-light leading-relaxed text-sm md:text-base">
@@ -84,9 +80,9 @@ export default function Packages() {
           </p>
         </div>
 
-        {/* Packages Grid */}
+        {/* Experiences Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
-          {packages.map((pkg, idx) => (
+          {experiences.map((pkg, idx) => (
             <motion.div
               key={pkg.name}
               initial={{ opacity: 0, y: 30 }}
@@ -105,18 +101,14 @@ export default function Packages() {
                 </div>
               )}
 
-              {/* Title and Price */}
+              {/* Title and Period */}
               <div className="p-8 border-b border-current/10">
                 <span className={`text-[10px] uppercase tracking-[0.2em] font-bold block mb-2 ${
                   pkg.popular ? "text-accent" : "text-primary"
                 }`}>
                   {pkg.period}
                 </span>
-                <h3 className="font-serif text-2xl font-bold mb-4">{pkg.name}</h3>
-                <div className="flex items-baseline">
-                  <span className="text-4xl font-serif font-bold">{pkg.price}</span>
-                  <span className="text-xs font-sans font-light opacity-80 ml-2">/ package</span>
-                </div>
+                <h3 className="font-serif text-2xl font-bold">{pkg.name}</h3>
               </div>
 
               {/* Features List */}

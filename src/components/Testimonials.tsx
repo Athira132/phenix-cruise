@@ -54,7 +54,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-24 md:py-32 bg-secondary relative overflow-hidden">
+    <section id="testimonials" className="py-12 md:py-20 bg-secondary relative overflow-hidden">
       {/* Background Image Overlay with low opacity */}
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
         <Image

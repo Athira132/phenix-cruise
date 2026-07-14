@@ -14,14 +14,14 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-white relative overflow-hidden">
       {/* Decorative vector points */}
       <div className="absolute top-10 left-10 opacity-5 pointer-events-none bg-[radial-gradient(#0F766E_1.5px,transparent_1.5px)] [background-size:20px_20px] w-64 h-64" />
       <div className="absolute bottom-10 right-10 opacity-5 pointer-events-none bg-[radial-gradient(#0F766E_1.5px,transparent_1.5px)] [background-size:20px_20px] w-64 h-64" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
             Our Quality
           </span>

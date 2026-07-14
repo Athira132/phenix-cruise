@@ -8,18 +8,18 @@ const features = [
   { icon: FaUtensils, title: "Authentic Kerala Food", desc: "Traditional Kerala dishes prepared fresh on board by private chefs, including Karimeen and Toddy shop specials." },
   { icon: FaMap, title: "Scenic Backwaters", desc: "Curated cruise paths displaying the lush palms, beautiful lagoons, and narrow canals of Alleppey." },
   { icon: FaLock, title: "Private Cruises", desc: "100% private boat bookings for intimate honeymoons, family outings, and corporate retreats." },
-  { icon: FaTags, title: "Affordable Packages", desc: "Transparent, value-driven pricing structures for day trips, night stays, and customized journeys." },
+  { icon: FaTags, title: "Curated Itineraries", desc: "Tailored cruise schedules and sightseeing paths for day trips, night stays, and customized journeys." },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-24 md:py-32 bg-slate-50 relative overflow-hidden">
+    <section id="about" className="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
       {/* Decorative background shapes */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-accent/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           
           {/* Image Column */}
           <motion.div
@@ -31,7 +31,7 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] rounded-luxury overflow-hidden shadow-premium group">
               <Image
-                src="https://i.ibb.co/Y7x5FZFL/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg"
+                src="https://i.ibb.co/81ym7yK/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
                 alt="Scenic Kerala Backwaters Houseboat Cruise"
                 fill
                 sizes="(max-w-768px) 100vw, 40vw"

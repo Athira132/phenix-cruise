@@ -83,28 +83,28 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Heading - Large (60-72px desktop), elegant, white, max 2 lines */}
+          {/* Heading - Large (60-72px desktop), bold, elegant, white, max 2 lines with accent highlight */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-4xl sm:text-5xl lg:text-[64px] font-serif font-bold text-white tracking-wide mb-6 leading-[1.15] drop-shadow-md text-left max-w-xl lg:max-w-2xl"
+            className="text-4xl sm:text-5xl lg:text-[72px] font-serif font-bold text-white tracking-wide mb-6 leading-[1.1] drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] text-left max-w-xl lg:max-w-3xl"
           >
-            Experience the Magic of <br className="hidden sm:inline" />
-            <span className="text-[#C9A227] italic font-normal">Kerala Backwaters</span>
+            Experience Kerala&apos;s <br className="hidden sm:inline" />
+            <span className="text-[#C9A227]">Luxury Backwater</span> Cruise
           </motion.h1>
 
-          {/* Subheading - Light gray (#F8FAFC), max 3 lines */}
+          {/* Subheading - Light gray (#F8FAFC), max 3 lines, medium weight */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-[#F8FAFC]/90 text-sm sm:text-base md:text-lg max-w-xl font-sans font-light leading-relaxed mb-8 text-left"
+            className="text-[#F8FAFC] text-sm sm:text-base md:text-lg max-w-xl font-sans font-medium tracking-wide leading-relaxed mb-8 text-left drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
           >
             Cruise through breathtaking backwaters aboard our luxury houseboats and create unforgettable memories with Phenix Cruise.
           </motion.p>
 
-          {/* Call to Actions - Left-aligned, rounded-luxury, hover effects */}
+          {/* Call to Actions - Left-aligned, rounded-luxury, prominent hover effects */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -113,13 +113,13 @@ export default function Hero() {
           >
             <a
               href="#booking"
-              className="px-6 sm:px-8 py-3.5 sm:py-4 bg-primary text-white hover:bg-primary-hover rounded-luxury font-sans font-semibold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 hover:shadow-premium active:scale-95 border border-white/10"
+              className="px-6 sm:px-8 py-3.5 sm:py-4 bg-primary hover:bg-primary-hover text-white rounded-luxury font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-0.5 active:scale-95 border border-white/10"
             >
               Book Now
             </a>
             <a
               href="#packages"
-              className="px-6 sm:px-8 py-3.5 sm:py-4 bg-white/15 hover:bg-white/25 text-white rounded-luxury border border-white/25 font-sans font-semibold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 backdrop-blur-md active:scale-95 shadow-sm"
+              className="px-6 sm:px-8 py-3.5 sm:py-4 bg-white/20 hover:bg-white/30 text-white rounded-luxury border border-white/30 font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 backdrop-blur-md hover:-translate-y-0.5 active:scale-95 shadow-md"
             >
               Explore Packages
             </a>

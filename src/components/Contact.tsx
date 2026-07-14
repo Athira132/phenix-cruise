@@ -3,13 +3,13 @@ import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebook
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 md:py-32 bg-white relative overflow-hidden">
+    <section id="contact" className="py-12 md:py-20 bg-white relative overflow-hidden">
       {/* Decorative details */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
             Get In Touch
           </span>

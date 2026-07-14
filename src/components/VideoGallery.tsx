@@ -71,12 +71,12 @@ export default function VideoGallery() {
   const parsedVideo = selectedVideo ? getEmbedUrl(selectedVideo.url) : null;
 
   return (
-    <section id="video-gallery" className="py-24 md:py-32 bg-white relative overflow-hidden">
+    <section id="video-gallery" className="py-12 md:py-20 bg-white relative overflow-hidden">
       <div className="absolute top-1/3 left-1/3 w-[700px] h-[700px] bg-sand/20 rounded-full blur-[100px] pointer-events-none -z-1" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
             Cinematic Highlights
           </span>
