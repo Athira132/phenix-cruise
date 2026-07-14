@@ -110,7 +110,7 @@ export default function Gallery() {
                 viewport={{ once: true }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className="relative overflow-hidden rounded-luxury shadow-premium group cursor-pointer aspect-[4/3] bg-white border border-primary/5"
+                className="relative overflow-hidden rounded-luxury shadow-premium group cursor-pointer aspect-[4/3] bg-slate-900 border border-primary/5"
                 onClick={() => setLightboxIndex(idx)}
               >
                 <Image
@@ -118,8 +118,8 @@ export default function Gallery() {
                   alt={item.title}
                   fill
                   sizes="(max-w-768px) 100vw, 33vw"
-                  style={{ objectFit: "cover" }}
-                  className="transition-transform duration-700 group-hover:scale-110"
+                  style={{ objectFit: "contain" }}
+                  className="transition-transform duration-700 group-hover:scale-105"
                 />
                 
                 {/* Dark Hover Reveal Overlay */}

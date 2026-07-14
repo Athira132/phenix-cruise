@@ -102,13 +102,13 @@ export default function VideoGallery() {
               onClick={() => setSelectedVideo(video)}
             >
               {/* Thumbnail Container */}
-              <div className="relative aspect-[16/9] overflow-hidden bg-slate-200">
+              <div className="relative aspect-[16/9] overflow-hidden bg-slate-900 flex items-center justify-center">
                 <Image
                   src={video.thumbnail}
                   alt={video.title}
                   fill
                   sizes="(max-w-768px) 100vw, 33vw"
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "contain" }}
                   className="transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-secondary/30 transition-opacity duration-300 group-hover:bg-secondary/40" />

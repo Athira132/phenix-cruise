@@ -61,8 +61,8 @@ export default function Hero() {
         />
       </div>
 
-      {/* Light dark overlay (18%) to ensure readability while highlighting the image details */}
-      <div className="absolute inset-0 bg-black/18 z-1" />
+      {/* Light-to-dark gradient overlay to maximize readability on the left side where the text is */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/10 z-1" />
 
       {/* ===================================================
           LEFT-ALIGNED HERO CONTENT OVERLAY
@@ -83,23 +83,23 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Heading - Large (60-72px desktop), bold, elegant, white, max 2 lines with accent highlight */}
+          {/* Heading - Large (76px desktop), extrabold, elegant, white, with accent highlight and stronger shadow */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-4xl sm:text-5xl lg:text-[72px] font-serif font-bold text-white tracking-wide mb-6 leading-[1.1] drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] text-left max-w-xl lg:max-w-3xl"
+            className="text-4xl sm:text-5xl lg:text-[76px] font-serif font-extrabold text-white tracking-wide mb-6 leading-[1.1] drop-shadow-[0_4px_16px_rgba(0,0,0,0.55)] text-left max-w-xl lg:max-w-3xl"
           >
             Experience Kerala&apos;s <br className="hidden sm:inline" />
             <span className="text-[#C9A227]">Luxury Backwater</span> Cruise
           </motion.h1>
 
-          {/* Subheading - Light gray (#F8FAFC), max 3 lines, medium weight */}
+          {/* Subheading - Light gray (#F8FAFC), max 3 lines, semibold weight with stronger shadow */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-[#F8FAFC] text-sm sm:text-base md:text-lg max-w-xl font-sans font-medium tracking-wide leading-relaxed mb-8 text-left drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
+            className="text-[#F8FAFC] text-sm sm:text-base md:text-lg max-w-xl font-sans font-semibold tracking-wide leading-relaxed mb-8 text-left drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
           >
             Cruise through breathtaking backwaters aboard our luxury houseboats and create unforgettable memories with Phenix Cruise.
           </motion.p>
