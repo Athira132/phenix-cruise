@@ -98,20 +98,20 @@ export default function VideoGallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-sand/10 border border-primary/5 rounded-luxury overflow-hidden hover:shadow-premium transition-all duration-300 flex flex-col group cursor-pointer"
+              className="border border-primary/5 rounded-luxury overflow-hidden hover:shadow-premium transition-all duration-300 relative aspect-[16/9] group cursor-pointer"
               onClick={() => setSelectedVideo(video)}
             >
               {/* Thumbnail Container */}
-              <div className="relative aspect-[16/9] overflow-hidden bg-slate-900 flex items-center justify-center">
+              <div className="relative w-full h-full bg-slate-900 flex items-center justify-center">
                 <Image
                   src={video.thumbnail}
-                  alt={video.title}
+                  alt="Video Thumbnail"
                   fill
                   sizes="(max-w-768px) 100vw, 33vw"
                   style={{ objectFit: "contain" }}
                   className="transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-secondary/30 transition-opacity duration-300 group-hover:bg-secondary/40" />
+                <div className="absolute inset-0 bg-secondary/35 transition-opacity duration-300 group-hover:bg-secondary/45" />
                 
                 {/* Play Button Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -119,16 +119,6 @@ export default function VideoGallery() {
                     <FaPlay className="ml-1 text-lg" />
                   </div>
                 </div>
-              </div>
-
-              {/* Title & Description */}
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="font-serif text-lg font-bold text-dark mb-2 group-hover:text-primary transition-colors duration-300">
-                  {video.title}
-                </h3>
-                <p className="font-sans text-xs text-dark/60 leading-relaxed font-light flex-grow">
-                  {video.description}
-                </p>
               </div>
             </motion.div>
           ))}

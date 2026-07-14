@@ -11,12 +11,6 @@ const galleryItems = [
     image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
   },
   {
-    id: 2,
-    title: "Luxury Triple Bedroom Suite",
-    category: "Interiors",
-    image: "https://i.ibb.co/Y7x5FZFL/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
-  },
-  {
     id: 3,
     title: "Sunset Lake Crossing",
     category: "Sunset",
@@ -122,15 +116,8 @@ export default function Gallery() {
                   className="transition-transform duration-700 group-hover:scale-105"
                 />
                 
-                {/* Dark Hover Reveal Overlay */}
-                <div className="absolute inset-0 bg-secondary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 z-10">
-                  <span className="text-accent text-[10px] font-sans tracking-widest uppercase font-semibold mb-1 block">
-                    {item.category}
-                  </span>
-                  <h3 className="text-white font-serif text-lg font-bold leading-tight">
-                    {item.title}
-                  </h3>
-                </div>
+                {/* Subtle Interactive Dark Overlay (No Text) */}
+                <div className="absolute inset-0 bg-black/35 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
               </motion.div>
             ))}
           </AnimatePresence>
@@ -178,7 +165,7 @@ export default function Gallery() {
                 className="relative max-w-5xl max-h-[80vh] w-full h-full flex flex-col items-center justify-center"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="relative w-full h-[60vh]">
+                <div className="relative w-full h-[70vh]">
                   <Image
                     src={galleryItems[lightboxIndex].image}
                     alt={galleryItems[lightboxIndex].title}
@@ -186,16 +173,6 @@ export default function Gallery() {
                     style={{ objectFit: "contain" }}
                     className="rounded-lg shadow-2xl"
                   />
-                </div>
-                
-                {/* Title Overlay */}
-                <div className="text-center mt-6 text-white max-w-xl">
-                  <span className="text-accent text-xs font-sans tracking-widest uppercase font-semibold block mb-1">
-                    {galleryItems[lightboxIndex].category}
-                  </span>
-                  <h3 className="font-serif text-xl font-bold">
-                    {galleryItems[lightboxIndex].title}
-                  </h3>
                 </div>
               </div>
             </motion.div>
