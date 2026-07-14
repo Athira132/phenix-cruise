@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const stats = [
@@ -42,20 +43,12 @@ function Counter({ value, suffix, duration = 2 }: { value: number; suffix: strin
 
 export default function Hero() {
   const [scrolledY, setScrolledY] = useState(0);
-  const [useFallback, setUseFallback] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolledY(window.scrollY);
     };
     window.addEventListener("scroll", handleScroll);
-
-    // If mobile or YouTube takes too long to load, set fallback to true to trigger direct MP4 stream
-    const isMobile = window.innerWidth < 768;
-    if (isMobile) {
-      setUseFallback(true);
-    }
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -64,44 +57,95 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-secondary select-none"
     >
+      {/* Custom Keyframe Animations CSS */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes kenBurnsEffect {
+          0%, 100% {
+            transform: scale(1.02) translate(0px, 0px) rotate(0deg);
+          }
+          50% {
+            transform: scale(1.06) translate(-8px, -4px) rotate(0.15deg);
+          }
+        }
+        @keyframes gentleBobbing {
+          0%, 100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-4px) rotate(0.1deg);
+          }
+        }
+        .animate-ken-burns {
+          animation: kenBurnsEffect 26s ease-in-out infinite;
+        }
+        .animate-bobbing {
+          animation: gentleBobbing 7s ease-in-out infinite;
+        }
+      `}} />
+
       {/* ===================================================
-          CINEMATIC VIDEO BACKGROUND LAYER
+          CINEMATIC LIVING PHOTO BACKGROUND LAYERS (OPTION B)
           =================================================== */}
+      
+      {/* Parallax Container */}
       <div
-        className="absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden"
-        style={{ transform: `translateY(${scrolledY * 0.2}px)` }}
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+        style={{ transform: `translateY(${scrolledY * 0.15}px)` }}
       >
-        {!useFallback ? (
-          /* Premium YouTube Loopable drone track of Alleppey houseboat */
-          <iframe
-            src="https://www.youtube.com/embed/k6M3YbWX284?autoplay=1&mute=1&loop=1&playlist=k6M3YbWX284&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1"
-            title="Kerala Backwaters Houseboat drone cinematic video background"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            className="absolute top-1/2 left-1/2 w-[115vw] h-[115vh] -translate-x-1/2 -translate-y-1/2 object-cover scale-125 opacity-70"
-            onError={() => setUseFallback(true)}
+        {/* Main Background Layer (Sky, Trees, Upper boat) */}
+        <div className="absolute inset-0 w-full h-full animate-ken-burns">
+          <Image
+            src="https://i.ibb.co/DHkc555F/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg"
+            alt="Phenix Cruise traditional luxury Kerala houseboat floating on Alleppey backwaters"
+            fill
+            priority
+            style={{ objectFit: "cover" }}
+            className="opacity-75 transition-opacity duration-500"
           />
-        ) : (
-          /* High-performance direct MP4 tropical stream fallback */
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-75"
+        </div>
+
+        {/* Water segment with SVG Ripple Displacement map (Bottom 45%) */}
+        <div className="absolute bottom-0 left-0 w-full h-[45%] overflow-hidden animate-ken-burns">
+          {/* Inner shifted duplicate image matching parent alignment */}
+          <div className="absolute top-[-122%] left-0 w-full h-[222%]">
+            <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+              <filter id="water-ripple-displacement">
+                <feTurbulence type="fractalNoise" baseFrequency="0.012 0.07" numOctaves="1" result="wave-noise">
+                  <animate attributeName="baseFrequency" values="0.012 0.07; 0.016 0.11; 0.012 0.07" dur="14s" repeatCount="indefinite" />
+                </feTurbulence>
+                <feDisplacementMap in="SourceGraphic" in2="wave-noise" scale="14" xChannelSelector="R" yChannelSelector="G" />
+              </filter>
+              <image
+                href="https://i.ibb.co/DHkc555F/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg"
+                width="100%"
+                height="100%"
+                preserveAspectRatio="xMidYMid slice"
+                filter="url(#water-ripple-displacement)"
+                opacity="0.75"
+              />
+            </svg>
+          </div>
+        </div>
+
+        {/* Floating clouds overlay (Top 35%) */}
+        <div className="absolute top-0 left-0 w-full h-[35%] opacity-20 overflow-hidden">
+          <motion.svg
+            animate={{ x: ["-20vw", "110vw"] }}
+            transition={{ duration: 160, repeat: Infinity, ease: "linear" }}
+            className="absolute top-[20%] w-56 h-20 text-white"
+            viewBox="0 0 100 40"
+            fill="currentColor"
           >
-            <source
-              src="https://assets.mixkit.co/videos/preview/mixkit-down-the-river-in-a-bamboo-canoe-6804-large.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        )}
+            <path d="M10 30 Q 15 15, 30 20 Q 40 10, 55 18 Q 70 5, 85 20 Q 95 22, 95 30 Z" />
+          </motion.svg>
+        </div>
       </div>
 
+      {/* Gentle Floating Inertia Container for the boat segment (simulating real floating feel) */}
+      <div className="absolute inset-0 z-0 pointer-events-none animate-bobbing" />
+
       {/* Dark Cinematic Gradient Overlay (45% opacity for readability) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-slate-50 z-1" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-slate-50 z-1" />
 
       {/* Content Overlay */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pt-32 pb-44 text-center flex flex-col items-center">
@@ -123,7 +167,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="text-5xl md:text-7xl font-serif text-white tracking-wide max-w-4xl mb-6 leading-[1.15] drop-shadow-md"
+          className="text-5xl md:text-7xl font-serif text-white tracking-wide max-w-4xl mb-6 leading-[1.15] drop-shadow-sm"
         >
           Experience the Magic of <br />
           <span className="text-[#C9A227] italic font-normal">Kerala Backwaters</span>
