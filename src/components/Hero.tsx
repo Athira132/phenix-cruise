@@ -48,21 +48,22 @@ export default function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden bg-secondary select-none"
     >
       {/* ===================================================
-          STATIC LUXURY BACKGROUND IMAGE LAYER
+          CINEMATIC VIDEO BACKGROUND LAYER
           =================================================== */}
-      <div className="absolute inset-0 w-full h-full z-0">
-        <Image
-          src="https://i.ibb.co/DHkc555F/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg"
-          alt="Phenix Cruise traditional luxury Kerala houseboat sailing on Alleppey backwaters"
-          fill
-          priority
-          style={{ objectFit: "cover", objectPosition: "center" }}
-          className="opacity-90"
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-950">
+        <video
+          src="/hero-bg.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="https://i.ibb.co/DHkc555F/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg"
+          className="w-full h-full object-cover object-center pointer-events-none"
         />
       </div>
 
-      {/* Light-to-dark gradient overlay to maximize readability on the left side where the text is */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/10 z-1" />
+      {/* Light dark overlay (25% opacity) to ensure readability while keeping the video clearly visible */}
+      <div className="absolute inset-0 bg-black/25 z-1" />
 
       {/* ===================================================
           LEFT-ALIGNED HERO CONTENT OVERLAY
