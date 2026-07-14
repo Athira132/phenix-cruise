@@ -130,14 +130,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
-            className="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full glass-panel shadow-premium p-6 rounded-luxury border border-white/20"
+            className="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full bg-white/85 backdrop-blur-md shadow-premium p-6 rounded-luxury border border-white/60"
           >
             {stats.map((stat, idx) => (
-              <div key={idx} className="flex flex-col items-start justify-center border-r last:border-r-0 border-white/10 pr-2">
-                <span className="text-2xl sm:text-3xl font-serif font-bold text-white mb-1">
+              <div key={idx} className="flex flex-col items-start justify-center border-r last:border-r-0 border-slate-300 pr-2">
+                <span className="text-2xl sm:text-3xl font-serif font-extrabold text-[#C9A227] mb-1">
                   <Counter value={stat.value} suffix={stat.suffix} />
                 </span>
-                <span className="text-[10px] sm:text-xs font-sans tracking-wide uppercase text-white/70 font-medium">
+                <span className="text-[10px] sm:text-xs font-sans tracking-wide uppercase text-[#1E293B] font-bold">
                   {stat.label}
                 </span>
               </div>

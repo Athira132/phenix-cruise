@@ -61,13 +61,10 @@ export default function About() {
               </h2>
               <div className="text-dark/80 font-sans font-light leading-relaxed text-base md:text-lg flex flex-col gap-5">
                 <p>
-                  Welcome to Phenix Cruise, where luxury meets the untouched serenity of Kerala’s backwaters. Based in Alleppey, we curate premium houseboat journeys that invite you to slow down and immerse yourself in one of India&apos;s most enchanting destinations. As you glide along peaceful canals and wide lagoons, you will discover a landscape lined with swaying coconut groves, emerald paddy fields, and timeless village life. Every evening brings the magic of a golden sunset reflecting off calm waters, creating a tranquil sanctuary far removed from the bustle of everyday life.
+                  Welcome to Phenix Cruise, where luxury meets the untouched serenity of Kerala’s backwaters. Based in Alleppey, we curate premium houseboat journeys that invite you to slow down and glide through palm-fringed canals, emerald paddy fields, and wide lakes. Every evening brings the magic of a golden sunset reflecting off calm waters, creating a tranquil sanctuary far removed from the bustle of everyday life.
                 </p>
                 <p>
-                  We believe that true luxury lies in comfort and peace of mind. Whether you are planning a romantic honeymoon getaway, a peaceful family vacation, a reunion with close friends, or a corporate retreat, our cruises are tailored to make your celebrations truly special. On board, our experienced crew ensures the highest standards of safety, cleanliness, and attentive hospitality. We also take pride in serving authentic, freshly prepared Kerala cuisine, showcasing local delicacies like Karimeen and traditional spices cooked by your private onboard chef.
-                </p>
-                <p>
-                  Every cruise is designed to connect you deeply with nature while providing the modern comforts of a premium boutique stay. We invite you to step on board, leave the world behind, and experience the warm, authentic hospitality of Kerala with Phenix Cruise.
+                  Whether you are planning a romantic honeymoon, a family vacation, or a private group celebration, our cruises are tailored to your needs. On board, our experienced crew ensures the highest standards of safety, cleanliness, and attentive hospitality. We also take pride in serving authentic, freshly prepared Kerala cuisine cooked on board by your private chef, ensuring every moment of your cruise is comfortable, memorable, and deeply relaxing.
                 </p>
               </div>
             </motion.div>
