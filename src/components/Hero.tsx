@@ -42,6 +42,20 @@ function Counter({ value, suffix, duration = 2 }: { value: number; suffix: strin
 }
 
 export default function Hero() {
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setPrefersReducedMotion(mediaQuery.matches);
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      setPrefersReducedMotion(e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
   return (
     <section
       id="home"
@@ -53,10 +67,12 @@ export default function Hero() {
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-950">
         <video
           src="/hero-bg.mp4"
-          autoPlay
+          autoPlay={!prefersReducedMotion}
           muted
           loop
           playsInline
+          preload="metadata"
+          aria-hidden="true"
           poster="https://i.ibb.co/DHkc555F/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg"
           className="w-full h-full object-cover object-center pointer-events-none"
         />
