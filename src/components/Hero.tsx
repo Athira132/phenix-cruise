@@ -66,7 +66,7 @@ export default function Hero() {
           =================================================== */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-slate-950">
         <video
-          src="/hero-bg.mp4"
+          src="/hero-bg-v2.mp4"
           autoPlay={!prefersReducedMotion}
           muted
           loop
