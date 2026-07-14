@@ -56,10 +56,14 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           {/* Logo */}
           <a href="#home" className="flex flex-col select-none group">
-            <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-primary transition-colors duration-300">
+            <span className={`font-serif text-2xl md:text-3xl font-bold tracking-wide transition-colors duration-300 ${
+              scrolled ? "text-primary" : "text-white"
+            }`}>
               Phenix Cruise
             </span>
-            <span className="font-sans text-[9px] uppercase tracking-[0.3em] text-accent font-semibold transition-colors duration-300">
+            <span className={`font-sans text-[9px] uppercase tracking-[0.3em] font-semibold transition-colors duration-300 ${
+              scrolled ? "text-accent" : "text-white/80"
+            }`}>
               Luxury Backwaters
             </span>
           </a>
@@ -74,7 +78,9 @@ export default function Navbar() {
                     <a
                       href={link.href}
                       className={`font-sans text-sm tracking-wide font-medium transition-colors duration-300 hover:text-primary relative py-1 ${
-                        isActive ? "text-primary" : "text-dark/80"
+                        isActive
+                          ? (scrolled ? "text-primary" : "text-[#C9A227]")
+                          : (scrolled ? "text-dark/80" : "text-white/90")
                       }`}
                     >
                       {link.name}
@@ -106,7 +112,9 @@ export default function Navbar() {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-primary hover:text-accent transition-colors duration-300"
+              className={`transition-colors duration-300 ${
+                scrolled ? "text-primary hover:text-accent" : "text-white hover:text-[#C9A227]"
+              }`}
               aria-label="Toggle Menu"
             >
               {isOpen ? <HiX className="text-3xl" /> : <HiMenuAlt3 className="text-3xl" />}
