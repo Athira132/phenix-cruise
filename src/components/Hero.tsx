@@ -57,19 +57,25 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-secondary"
     >
-      {/* Background Image with Parallax */}
+      {/* Background Video with Parallax */}
       <div
         className="absolute inset-0 z-0 pointer-events-none"
         style={{ transform: `translateY(${scrolledY * 0.3}px)` }}
       >
-        <Image
-          src="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg"
-          alt="Luxury Houseboat floating on Kerala backwaters at sunset"
-          fill
-          priority
-          style={{ objectFit: "cover" }}
-          className="opacity-75 transition-transform duration-100"
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover opacity-75"
+        >
+          <source
+            src="https://assets.mixkit.co/videos/preview/mixkit-down-the-river-in-a-bamboo-canoe-6804-large.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       {/* Dark overlay with elegant gradient */}

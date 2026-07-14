@@ -164,7 +164,7 @@ export default function Navbar() {
             
             <div className="absolute bottom-10 left-12 md:left-24 text-dark/50 text-xs">
               <p>Phenix Cruise • Luxury Backwaters</p>
-              <p className="mt-1">info@phenixcruise.com • +91 98765 43210</p>
+              <p className="mt-1">info@phenixcruise.com • +91 81388 66919</p>
             </div>
           </motion.div>
         )}

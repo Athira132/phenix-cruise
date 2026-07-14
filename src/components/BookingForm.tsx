@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { FaShip, FaPhoneAlt, FaEnvelope, FaCalendarAlt, FaUsers, FaClipboardList, FaUser } from "react-icons/fa";
 import confetti from "canvas-confetti";
+import { FiX } from "react-icons/fi";
 
 type BookingFormData = {
   name: string;
@@ -27,6 +29,8 @@ const packagesList = [
 ];
 
 export default function BookingForm() {
+  const [showFallback, setShowFallback] = useState(false);
+  const [whatsappUrl, setWhatsappUrl] = useState("");
   const {
     register,
     handleSubmit,
@@ -44,26 +48,49 @@ export default function BookingForm() {
     });
 
     // Structure WhatsApp message template
-    const whatsappNumber = "919876543210"; // International standard format for WhatsApp
-    const message = `*NEW BOOKING ENQUIRY - PHENIX CRUISE*
-----------------------------------------
-*Name:* ${data.name}
-*Phone:* ${data.phone}
-*Email:* ${data.email}
-*Travel Date:* ${data.date}
-*Package/Cruise Type:* ${data.packageType}
-*Guests:* ${data.guests}
-*Special Requests:* ${data.specialRequest || "None"}
-----------------------------------------
-Please confirm the availability for the requested dates.`;
+    const whatsappNumber = "918138866919";
+    const message = `Hello Phenix Cruise,
+
+I would like to book a cruise.
+
+Name:
+${data.name}
+
+Phone:
+${data.phone}
+
+Email:
+${data.email}
+
+Package:
+${data.packageType}
+
+Preferred Date:
+${data.date}
+
+Guests:
+${data.guests}
+
+Message:
+${data.specialRequest || "None"}
+
+Please contact me regarding my booking.
+
+Thank you.`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    setWhatsappUrl(url);
 
     // Redirect to WhatsApp in a new tab
     setTimeout(() => {
-      window.open(whatsappUrl, "_blank");
-      reset();
+      try {
+        window.open(url, "_blank");
+        setShowFallback(true);
+        reset();
+      } catch (e) {
+        setShowFallback(true);
+      }
     }, 800);
   };
 
@@ -142,7 +169,7 @@ Please confirm the availability for the requested dates.`;
                   </span>
                   <input
                     type="tel"
-                    placeholder="e.g. +91 98765 43210"
+                    placeholder="e.g. +91 81388 66919"
                     {...register("phone", {
                       required: "Phone is required",
                       pattern: {
@@ -306,6 +333,60 @@ Please confirm the availability for the requested dates.`;
         </motion.div>
 
       </div>
+
+      {/* Fallback & Success Modal */}
+      <AnimatePresence>
+        {showFallback && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[9999] bg-secondary/80 flex items-center justify-center p-4"
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-white max-w-md w-full p-8 rounded-luxury border border-primary/10 shadow-premium relative text-center"
+            >
+              <button
+                onClick={() => setShowFallback(false)}
+                className="absolute top-4 right-4 text-dark/50 hover:text-dark transition-colors"
+              >
+                <FiX className="text-xl" />
+              </button>
+
+              <div className="w-16 h-16 rounded-full bg-sand flex items-center justify-center text-primary mx-auto mb-6 text-2xl">
+                ⛵
+              </div>
+
+              <h3 className="font-serif text-2xl font-bold text-dark mb-4">
+                Booking Request Sent!
+              </h3>
+              <p className="font-sans text-xs md:text-sm text-dark/70 font-light leading-relaxed mb-6">
+                We've prepared your booking details. If you weren't automatically redirected, please click the button below to open WhatsApp, or contact us manually at our main reservation desk.
+              </p>
+
+              <div className="space-y-3">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center inline-block py-3 bg-[#25D366] hover:bg-[#20ba59] text-white rounded-luxury font-sans font-bold text-xs uppercase tracking-widest transition-colors shadow-sm"
+                >
+                  Open WhatsApp Chat
+                </a>
+                <a
+                  href="tel:+918138866919"
+                  className="w-full text-center inline-block py-3 bg-primary hover:bg-primary-hover text-white rounded-luxury font-sans font-bold text-xs uppercase tracking-widest transition-colors shadow-sm"
+                >
+                  Call Main Desk: +91 81388 66919
+                </a>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

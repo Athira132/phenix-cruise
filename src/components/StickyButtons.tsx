@@ -32,7 +32,7 @@ export default function StickyButtons() {
         {/* Call Now Button */}
         <motion.a
           key="call"
-          href="tel:+919876543210"
+          href="tel:+918138866919"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
@@ -45,7 +45,7 @@ export default function StickyButtons() {
         {/* WhatsApp Button */}
         <motion.a
           key="whatsapp"
-          href="https://wa.me/919876543210?text=Hi%2C%20I%20am%20interested%20in%20booking%20a%20luxury%20cruise%20with%20Phenix%20Cruise."
+          href="https://wa.me/918138866919?text=Hello%20Phenix%20Cruise%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20cruise%20packages.%0A%0APlease%20share%20the%20available%20options.%0A%0AThank%20you."
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, scale: 0.8 }}

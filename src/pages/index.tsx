@@ -9,6 +9,7 @@ import Cruises from "@/components/Cruises";
 import Packages from "@/components/Packages";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Gallery from "@/components/Gallery";
+import VideoGallery from "@/components/VideoGallery";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import BookingForm from "@/components/BookingForm";
@@ -40,7 +41,7 @@ export default function Home() {
     "image": "https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg",
     "@id": "https://phenixcruise.com/#organization",
     "url": "https://phenixcruise.com",
-    "telephone": "+919876543210",
+    "telephone": "+918138866919",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
@@ -191,6 +192,7 @@ export default function Home() {
         <Packages />
         <WhyChooseUs />
         <Gallery />
+        <VideoGallery />
         <Testimonials />
         <FAQ />
         <BookingForm />
