@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const stats = [
@@ -96,18 +97,18 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.8 }}
             className="flex flex-row space-x-4 sm:space-x-6 w-full justify-start items-center pt-2"
           >
-            <a
-              href="#booking"
+            <Link
+              href="/booking"
               className="px-8 sm:px-10 py-4 bg-primary hover:bg-primary-hover text-white rounded-[16px] font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 border border-white/10"
             >
               Book Now
-            </a>
-            <a
-              href="#packages"
+            </Link>
+            <Link
+              href="/services"
               className="px-8 sm:px-10 py-4 bg-white/5 hover:bg-white/10 text-white rounded-[16px] border border-white/10 font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 backdrop-blur-md hover:-translate-y-1 active:scale-95 shadow-md hover:shadow-premium"
             >
               Explore Packages
-            </a>
+            </Link>
           </motion.div>
 
           {/* Floated stats inside content column */}
@@ -139,16 +140,16 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
           className="absolute inset-0 w-full h-full"
         >
           <Image
-            src="https://i.ibb.co/TBW6K1zt/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg"
-            alt="Phenix Cruise traditional luxury Kerala houseboat sailing on Alleppey backwaters at sunset"
+            src="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg"
+            alt="Phenix Cruise traditional luxury Kerala houseboat sailing on Alleppey backwaters"
             fill
             priority
-            style={{ objectFit: "cover", objectPosition: "center 40%" }}
-            className="opacity-90"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+            className="opacity-95"
           />
         </motion.div>
 

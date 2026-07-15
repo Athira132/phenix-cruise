@@ -32,11 +32,11 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] rounded-luxury overflow-hidden shadow-premium group">
               <Image
-                src="https://i.ibb.co/h14vRRT4/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg"
+                src="https://i.ibb.co/B51fLF7w/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg"
                 alt="Scenic Kerala Backwaters Houseboat Cruise"
                 fill
                 sizes="(max-w-768px) 100vw, 40vw"
-                style={{ objectFit: "cover", objectPosition: "center 30%" }}
+                style={{ objectFit: "cover", objectPosition: "center" }}
                 className="transition-transform duration-700 group-hover:scale-105"
               />
             </div>
