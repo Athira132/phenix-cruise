@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const cruises = [
@@ -100,13 +101,12 @@ export default function Cruises() {
                 <p className="font-sans text-xs md:text-sm text-dark/70 leading-relaxed font-light mb-6 flex-grow">
                   {cruise.description}
                 </p>
-                <a
-                  href="#booking"
-                  onClick={() => selectCruiseType(cruise.title)}
+                <Link
+                  href="/booking"
                   className="w-full text-center py-3 bg-white hover:bg-primary text-primary hover:text-white border border-primary/20 hover:border-primary rounded-luxury font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md"
                 >
                   Book This Cruise
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}

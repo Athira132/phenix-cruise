@@ -1,18 +1,12 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Cruises from "@/components/Cruises";
-import Packages from "@/components/Packages";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Gallery from "@/components/Gallery";
-import VideoGallery from "@/components/VideoGallery";
+import Cruises from "@/components/Cruises";
 import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
-import BookingForm from "@/components/BookingForm";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import StickyButtons from "@/components/StickyButtons";
 
@@ -75,57 +69,6 @@ export default function Home() {
     ]
   };
 
-  const jsonLdService = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Luxury Houseboat Booking Alleppey",
-    "image": "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
-    "description": "Book luxury houseboats, Shikara rides, honeymoon cruises and corporate events in the Kerala backwaters with Phenix Cruise. Award-winning hospitality and fresh dining.",
-    "brand": {
-      "@type": "Brand",
-      "name": "Phenix Cruise"
-    },
-    "offers": {
-      "@type": "AggregateOffer",
-      "url": "https://phenixcruise.com/#packages",
-      "priceCurrency": "INR",
-      "lowPrice": "3000",
-      "highPrice": "24000",
-      "offerCount": "10"
-    }
-  };
-
-  const jsonLdBreadcrumbs = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://phenixcruise.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "About Us",
-        "item": "https://phenixcruise.com/#about"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Luxury Cruises",
-        "item": "https://phenixcruise.com/#cruises"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "Packages",
-        "item": "https://phenixcruise.com/#packages"
-      }
-    ]
-  };
-
   return (
     <>
       <Head>
@@ -147,32 +90,12 @@ export default function Home() {
         />
         <meta property="og:image" content="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
 
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://phenixcruise.com" />
-        <meta property="twitter:title" content="Phenix Cruise | Luxury Kerala Backwater Houseboat Bookings" />
-        <meta
-          property="twitter:description"
-          content="Experience the serene beauty of Kerala backwaters with Phenix Cruise. Book luxury AC houseboats, romantic honeymoon cruises, and premium packages."
-        />
-        <meta property="twitter:image" content="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
-
         {/* Structured Data Script Embeds */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrg) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdService) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumbs) }}
-        />
       </Head>
-
-
 
       {/* Floating Custom Cursor */}
       <CustomCursor />
@@ -180,21 +103,51 @@ export default function Home() {
       {/* Page Scroll Progress Indicator */}
       <div className="scroll-progress-bar" style={{ width: `${scrollProgress}%` }} />
 
-      {/* Core Website Flow */}
       <Navbar />
       
       <main>
+        {/* Hero Section */}
         <Hero />
-        <About />
-        <Cruises />
-        <Packages />
+
+        {/* Why Choose Us */}
         <WhyChooseUs />
-        <Gallery />
-        <VideoGallery />
+
+        {/* Featured Services (Cruises list) */}
+        <div className="bg-white pb-16 md:pb-20">
+          <Cruises />
+          <div className="flex justify-center mt-8">
+            <Link
+              href="/services"
+              className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-premium hover:-translate-y-1 active:scale-95 border border-white/10"
+            >
+              Explore All Services & Repairs
+            </Link>
+          </div>
+        </div>
+
+        {/* Customer Reviews Preview (Testimonials slider) */}
         <Testimonials />
-        <FAQ />
-        <BookingForm />
-        <Contact />
+
+        {/* Booking CTA Section */}
+        <section className="py-20 bg-slate-900 text-white text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1.5px,transparent_1.5px)] opacity-5 pointer-events-none [background-size:24px_24px]" />
+          <div className="relative z-10 max-w-3xl mx-auto px-6 space-y-6">
+            <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-wide">
+              Ready to Board Phenix Cruise?
+            </h2>
+            <p className="text-white/70 font-sans font-light max-w-md mx-auto text-xs sm:text-sm leading-relaxed">
+              Plan your private cruise trip or schedule a support appointment with us. Get immediate confirmation on WhatsApp.
+            </p>
+            <div className="pt-4">
+              <Link
+                href="/booking"
+                className="px-10 py-4.5 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95"
+              >
+                Book Your Service
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />

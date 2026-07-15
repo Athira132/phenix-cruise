@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Cruises", href: "#cruises" },
-  { name: "Packages", href: "#packages" },
-  { name: "Gallery", href: "#gallery" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "FAQ", href: "#faq" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Testimonials", href: "/testimonials" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,19 +24,6 @@ export default function Navbar() {
         setScrolled(true);
       } else {
         setScrolled(false);
-      }
-
-      // Track active section for indicator
-      const scrollPosition = window.scrollY + 150;
-      for (const link of navLinks) {
-        const el = document.getElementById(link.href.replace("#", ""));
-        if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(link.href.replace("#", ""));
-          }
-        }
       }
     };
 
@@ -55,7 +42,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           {/* Logo */}
-          <a href="#home" className="flex flex-col select-none group">
+          <Link href="/" className="flex flex-col select-none group">
             <span className={`font-serif text-2xl md:text-3xl font-bold tracking-wide transition-colors duration-300 ${
               scrolled ? "text-primary" : "text-white"
             }`}>
@@ -66,16 +53,16 @@ export default function Navbar() {
             }`}>
               Luxury Backwaters
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Nav Links */}
           <div className="hidden lg:flex items-center space-x-8">
             <ul className="flex items-center space-x-8">
               {navLinks.map((link) => {
-                const isActive = activeSection === link.href.replace("#", "");
+                const isActive = router.pathname === link.href;
                 return (
                   <li key={link.name} className="relative">
-                    <a
+                    <Link
                       href={link.href}
                       className={`font-sans text-sm tracking-wide font-medium transition-colors duration-300 hover:text-primary relative py-1 ${
                         isActive
@@ -91,21 +78,21 @@ export default function Navbar() {
                           transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         />
                       )}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
             </ul>
 
             {/* Book Now Button */}
-            <a
-              href="#booking"
+            <Link
+              href="/booking"
               className="relative inline-flex items-center justify-center px-6 py-2.5 overflow-hidden font-medium text-white transition-all duration-300 bg-primary rounded-luxury hover:bg-primary-hover shadow-md group hover:shadow-premium"
             >
               <span className="relative text-sm tracking-widest uppercase font-semibold">
                 Book Now
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -144,13 +131,13 @@ export default function Navbar() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: idx * 0.05 + 0.2 }}
                 >
-                  <a
+                  <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className="font-serif text-3xl md:text-4xl text-primary hover:text-accent font-bold transition-colors duration-300 inline-block"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </motion.div>
               ))}
 
@@ -160,13 +147,13 @@ export default function Navbar() {
                 transition={{ delay: navLinks.length * 0.05 + 0.2 }}
                 className="pt-6"
               >
-                <a
-                  href="#booking"
+                <Link
+                  href="/booking"
                   onClick={() => setIsOpen(false)}
                   className="w-full text-center inline-block px-8 py-4 font-sans font-bold text-white bg-primary hover:bg-primary-hover rounded-luxury tracking-widest uppercase transition-colors shadow-lg"
                 >
                   Book Now
-                </a>
+                </Link>
               </motion.div>
             </div>
             

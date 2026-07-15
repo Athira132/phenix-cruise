@@ -1,4 +1,5 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaYoutube, FaTripadvisor } from "react-icons/fa";
+import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaYoutube, FaTripadvisor } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,14 +26,14 @@ export default function Footer() {
           
           {/* Column 1: Brand Info */}
           <div className="lg:col-span-4 space-y-6">
-            <a href="#home" className="flex flex-col select-none">
+            <Link href="/" className="flex flex-col select-none">
               <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-white">
                 Phenix Cruise
               </span>
               <span className="font-sans text-[9px] uppercase tracking-[0.3em] text-accent font-semibold">
                 Luxury Backwaters
               </span>
-            </a>
+            </Link>
             <p className="font-sans text-xs md:text-sm text-white/60 font-light leading-relaxed max-w-sm">
               Phenix Cruise offers award-winning luxury houseboat stays and day cruises through the pristine backwater lakes of Alleppey, Kerala.
             </p>
@@ -57,12 +58,12 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <h4 className="font-serif text-sm font-bold text-white uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-2.5 font-sans text-xs md:text-sm font-light text-white/60">
-              <li><a href="#home" className="hover:text-accent transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-accent transition-colors">About Us</a></li>
-              <li><a href="#cruises" className="hover:text-accent transition-colors">Our Cruises</a></li>
-              <li><a href="#gallery" className="hover:text-accent transition-colors">Photo Gallery</a></li>
-              <li><a href="#testimonials" className="hover:text-accent transition-colors">Testimonials</a></li>
-              <li><a href="#faq" className="hover:text-accent transition-colors">FAQ</a></li>
+              <li><Link href="/" className="hover:text-accent transition-colors">Home</Link></li>
+              <li><Link href="/about" className="hover:text-accent transition-colors">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-accent transition-colors">Our Services</Link></li>
+              <li><Link href="/gallery" className="hover:text-accent transition-colors">Photo Gallery</Link></li>
+              <li><Link href="/testimonials" className="hover:text-accent transition-colors">Testimonials</Link></li>
+              <li><Link href="/contact" className="hover:text-accent transition-colors">Contact & FAQ</Link></li>
             </ul>
           </div>
 
@@ -70,10 +71,10 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <h4 className="font-serif text-sm font-bold text-white uppercase tracking-wider">Packages</h4>
             <ul className="space-y-2.5 font-sans text-xs md:text-sm font-light text-white/60">
-              <li><a href="#packages" className="hover:text-accent transition-colors">Basic Cruise</a></li>
-              <li><a href="#packages" className="hover:text-accent transition-colors">Deluxe Cruise</a></li>
-              <li><a href="#packages" className="hover:text-accent transition-colors">Premium Cruise</a></li>
-              <li><a href="#packages" className="hover:text-accent transition-colors">Luxury Cruise</a></li>
+              <li><Link href="/services" className="hover:text-accent transition-colors">Basic Cruise</Link></li>
+              <li><Link href="/services" className="hover:text-accent transition-colors">Deluxe Cruise</Link></li>
+              <li><Link href="/services" className="hover:text-accent transition-colors">Premium Cruise</Link></li>
+              <li><Link href="/services" className="hover:text-accent transition-colors">Luxury Cruise</Link></li>
             </ul>
           </div>
 
@@ -107,9 +108,9 @@ export default function Footer() {
             &copy; {currentYear} Phenix Cruise. All Rights Reserved.
           </div>
           <div className="flex items-center space-x-6">
-            <a href="#contact" className="hover:text-accent transition-colors">Privacy Policy</a>
-            <a href="#contact" className="hover:text-accent transition-colors">Terms of Service</a>
-            <a href="#contact" className="hover:text-accent transition-colors">Security</a>
+            <Link href="/contact" className="hover:text-accent transition-colors">Privacy Policy</Link>
+            <Link href="/contact" className="hover:text-accent transition-colors">Terms of Service</Link>
+            <Link href="/contact" className="hover:text-accent transition-colors">Security</Link>
           </div>
         </div>
 
