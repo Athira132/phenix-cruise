@@ -43,31 +43,23 @@ function getEmbedUrl(url: string) {
 }
 
 export default function GalleryPage() {
-  const [galleryTab, setGalleryTab] = useState("Photos");
-  const [activeCategory, setActiveCategory] = useState("All");
   const [visiblePhotosCount, setVisiblePhotosCount] = useState(6);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [selectedVideo, setSelectedVideo] = useState<typeof videoItems[0] | null>(null);
 
-  const categories = ["All", "Houseboats", "Sunset", "Dining", "Backwaters", "Cruises"];
-
-  const filteredPhotos = activeCategory === "All"
-    ? galleryItems
-    : galleryItems.filter(p => p.category === activeCategory);
-
-  const displayedPhotos = filteredPhotos.slice(0, visiblePhotosCount);
+  const displayedPhotos = galleryItems.slice(0, visiblePhotosCount);
 
   const handleNext = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (lightboxIndex !== null) {
-      setLightboxIndex((lightboxIndex + 1) % filteredPhotos.length);
+      setLightboxIndex((lightboxIndex + 1) % galleryItems.length);
     }
   };
 
   const handlePrev = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (lightboxIndex !== null) {
-      setLightboxIndex((lightboxIndex - 1 + filteredPhotos.length) % filteredPhotos.length);
+      setLightboxIndex((lightboxIndex - 1 + galleryItems.length) % galleryItems.length);
     }
   };
 
@@ -97,144 +89,96 @@ export default function GalleryPage() {
       />
 
       <main className="bg-slate-50 font-sans py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-24">
           
-          {/* Main Media Tab Selector */}
-          <div className="flex justify-center border-b border-slate-200 max-w-xs mx-auto mb-4">
-            <button
-              onClick={() => setGalleryTab("Photos")}
-              className={`flex-1 pb-3.5 text-xs font-sans font-bold tracking-widest uppercase transition-all duration-300 border-b-2 ${
-                galleryTab === "Photos"
-                  ? "border-primary text-primary"
-                  : "border-transparent text-dark/40 hover:text-dark/70"
-              }`}
-            >
-              Photos
-            </button>
-            <button
-              onClick={() => setGalleryTab("Videos")}
-              className={`flex-1 pb-3.5 text-xs font-sans font-bold tracking-widest uppercase transition-all duration-300 border-b-2 ${
-                galleryTab === "Videos"
-                  ? "border-primary text-primary"
-                  : "border-transparent text-dark/40 hover:text-dark/70"
-              }`}
-            >
-              Videos
-            </button>
+          {/* Photo Gallery segment */}
+          <div className="space-y-12">
+            <div className="text-center max-w-2xl mx-auto space-y-3">
+              <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
+                PHOTO JOURNEYS
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-dark tracking-wide">Captured Moments</h2>
+            </div>
+
+            {/* Photos Grid */}
+            <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              <AnimatePresence mode="popLayout">
+                {displayedPhotos.map((item, idx) => (
+                  <motion.div
+                    layout
+                    key={item.id}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.4 }}
+                    onClick={() => setLightboxIndex(idx)}
+                    className="relative overflow-hidden rounded-[18px] aspect-[4/3] bg-slate-900 border border-slate-100 shadow-sm cursor-pointer group"
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="(max-w-768px) 100vw, 33vw"
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/35 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </motion.div>
+
+            {/* Load More Button */}
+            {galleryItems.length > visiblePhotosCount && (
+              <div className="flex justify-center pt-4">
+                <button
+                  onClick={() => setVisiblePhotosCount(prev => prev + 6)}
+                  className="px-8 py-3 bg-white hover:bg-sand/30 border border-slate-300 rounded-[12px] font-sans font-bold text-xs uppercase tracking-widest transition-colors duration-300 shadow-sm active:scale-95"
+                >
+                  Load More Photos
+                </button>
+              </div>
+            )}
           </div>
 
-          {/* Photo Gallery segment */}
-          {galleryTab === "Photos" && (
-            <div className="space-y-12">
-              <div className="text-center max-w-2xl mx-auto space-y-3">
-                <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
-                  PHOTO JOURNEYS
-                </span>
-                <h2 className="text-3xl font-serif font-bold text-dark">Captured Moments</h2>
-              </div>
-
-              {/* Filter Tabs */}
-              <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
-                {categories.map((cat) => (
-                  <button
-                    key={cat}
-                    onClick={() => {
-                      setActiveCategory(cat);
-                      setVisiblePhotosCount(6);
-                    }}
-                    className={`px-5 py-2 rounded-full text-xs font-sans font-semibold tracking-wider transition-all duration-300 ${
-                      activeCategory === cat
-                        ? "bg-primary text-white shadow-sm"
-                        : "bg-white text-dark/70 hover:bg-sand/40 border border-slate-200"
-                    }`}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-
-              {/* Photos Grid */}
-              <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                <AnimatePresence mode="popLayout">
-                  {displayedPhotos.map((item, idx) => (
-                    <motion.div
-                      layout
-                      key={item.id}
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.95 }}
-                      transition={{ duration: 0.4 }}
-                      onClick={() => setLightboxIndex(idx)}
-                      className="relative overflow-hidden rounded-[18px] aspect-[4/3] bg-slate-900 border border-slate-100 shadow-sm cursor-pointer group"
-                    >
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        fill
-                        sizes="(max-w-768px) 100vw, 33vw"
-                        style={{ objectFit: "cover" }}
-                        className="transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-black/35 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-                    </motion.div>
-                  ))}
-                </AnimatePresence>
-              </motion.div>
-
-              {/* Load More Button */}
-              {filteredPhotos.length > visiblePhotosCount && (
-                <div className="flex justify-center pt-4">
-                  <button
-                    onClick={() => setVisiblePhotosCount(prev => prev + 6)}
-                    className="px-8 py-3 bg-white hover:bg-sand/30 border border-slate-300 rounded-[12px] font-sans font-bold text-xs uppercase tracking-widest transition-colors duration-300 shadow-sm active:scale-95"
-                  >
-                    Load More Photos
-                  </button>
-                </div>
-              )}
-            </div>
-          )}
-
           {/* Video Highlights segment */}
-          {galleryTab === "Videos" && (
-            <div className="space-y-12">
-              <div className="text-center max-w-2xl mx-auto space-y-3">
-                <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
-                  CINEMATIC HIGHLIGHTS
-                </span>
-                <h2 className="text-3xl font-serif font-bold text-dark">Watch the Experience</h2>
-              </div>
+          <div className="space-y-12 pt-12 border-t border-slate-200">
+            <div className="text-center max-w-2xl mx-auto space-y-3">
+              <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
+                CINEMATIC HIGHLIGHTS
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-dark tracking-wide">Video Gallery</h2>
+            </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {videoItems.map((video) => (
-                  <div
-                    key={video.id}
-                    onClick={() => setSelectedVideo(video)}
-                    className="border border-slate-100 bg-white rounded-2xl overflow-hidden hover:shadow-premium transition-all duration-300 relative aspect-[16/9] group cursor-pointer"
-                  >
-                    <div className="relative w-full h-full bg-slate-900 flex items-center justify-center">
-                      <Image
-                        src={video.thumbnail}
-                        alt={video.title}
-                        fill
-                        sizes="(max-w-768px) 100vw, 33vw"
-                        style={{ objectFit: "cover" }}
-                        className="transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-secondary/30 transition-opacity duration-300 group-hover:bg-secondary/40" />
-                      
-                      {/* Play Button Overlay */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-14 h-14 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md transform transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
-                          <FaPlay className="ml-1 text-lg" />
-                        </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {videoItems.map((video) => (
+                <div
+                  key={video.id}
+                  onClick={() => setSelectedVideo(video)}
+                  className="border border-slate-100 bg-white rounded-2xl overflow-hidden hover:shadow-premium transition-all duration-300 relative aspect-[16/9] group cursor-pointer"
+                >
+                  <div className="relative w-full h-full bg-slate-900 flex items-center justify-center">
+                    <Image
+                      src={video.thumbnail}
+                      alt={video.title}
+                      fill
+                      sizes="(max-w-768px) 100vw, 33vw"
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-secondary/30 transition-opacity duration-300 group-hover:bg-secondary/40" />
+                    
+                    {/* Play Button Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-14 h-14 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md transform transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
+                        <FaPlay className="ml-1 text-lg" />
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-          )}
+          </div>
 
         </div>
       </main>
@@ -275,8 +219,8 @@ export default function GalleryPage() {
 
             <div className="relative max-w-5xl max-h-[80vh] w-full h-[70vh]" onClick={e => e.stopPropagation()}>
               <Image
-                src={filteredPhotos[lightboxIndex].image}
-                alt={filteredPhotos[lightboxIndex].title}
+                src={galleryItems[lightboxIndex].image}
+                alt={galleryItems[lightboxIndex].title}
                 fill
                 style={{ objectFit: "contain" }}
                 className="rounded-lg shadow-2xl"
