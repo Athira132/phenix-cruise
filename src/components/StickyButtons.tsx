@@ -37,7 +37,7 @@ export default function StickyButtons() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
           className="pointer-events-auto w-12 h-12 bg-primary hover:bg-primary-hover text-white flex items-center justify-center rounded-full shadow-premium transition-all duration-300 hover:-translate-y-1 hover:shadow-premium-hover active:scale-95"
-          title="Call Phenix Cruise"
+          title="Call Phoenix Cruise"
         >
           <FaPhoneAlt className="text-lg" />
         </motion.a>
@@ -45,7 +45,7 @@ export default function StickyButtons() {
         {/* WhatsApp Button */}
         <motion.a
           key="whatsapp"
-          href="https://wa.me/918138866919?text=Hello%20Phenix%20Cruise%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20cruise%20packages.%0A%0APlease%20share%20the%20available%20options.%0A%0AThank%20you."
+          href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20cruise%20packages.%0A%0APlease%20share%20the%20available%20options.%0A%0AThank%20you."
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, scale: 0.8 }}

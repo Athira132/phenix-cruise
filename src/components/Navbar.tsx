@@ -46,7 +46,7 @@ export default function Navbar() {
             <span className={`font-serif text-2xl md:text-3xl font-bold tracking-wide transition-colors duration-300 ${
               scrolled ? "text-primary" : "text-white"
             }`}>
-              Phenix Cruise
+              Phoenix Cruise
             </span>
             <span className={`font-sans text-[9px] uppercase tracking-[0.3em] font-semibold transition-colors duration-300 ${
               scrolled ? "text-accent" : "text-white/80"
@@ -158,8 +158,8 @@ export default function Navbar() {
             </div>
             
             <div className="absolute bottom-10 left-12 md:left-24 text-dark/50 text-xs">
-              <p>Phenix Cruise • Luxury Backwaters</p>
-              <p className="mt-1">info@phenixcruise.com • +91 81388 66919</p>
+              <p>Phoenix Cruise • Luxury Backwaters</p>
+              <p className="mt-1">info@phoenixcruise.com • +91 81388 66919</p>
             </div>
           </motion.div>
         )}

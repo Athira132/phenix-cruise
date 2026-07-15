@@ -45,7 +45,7 @@ export default function BookingForm() {
 
     // Structure WhatsApp message template
     const whatsappNumber = "918138866919";
-    const message = `Hello Phenix Cruise,
+    const message = `Hello Phoenix Cruise,
 
 I would like to book a cruise.
 

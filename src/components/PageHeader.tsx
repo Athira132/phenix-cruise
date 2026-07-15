@@ -13,7 +13,7 @@ export default function PageHeader({ title, breadcrumbs }: PageHeaderProps) {
       <div className="absolute inset-0 w-full h-full z-0 opacity-40">
         <img
           src="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg"
-          alt="Phenix Cruise Backwaters Background"
+          alt="Phoenix Cruise Backwaters Background"
           className="w-full h-full object-cover object-center"
         />
       </div>

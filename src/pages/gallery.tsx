@@ -11,7 +11,7 @@ import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 
 const galleryItems = [
-  { id: 1, title: "Phenix Gold Class Houseboat", category: "Houseboats", image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg" },
+  { id: 1, title: "Phoenix Gold Class Houseboat", category: "Houseboats", image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg" },
   { id: 2, title: "Sunset Lake Crossing", category: "Sunset", image: "https://i.ibb.co/GQkYjgvb/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg" },
   { id: 3, title: "Traditional Karimeen Fry Served Hot", category: "Dining", image: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" },
   { id: 4, title: "Serene Golden Canals", category: "Sunset", image: "https://i.ibb.co/m5bDKmp4/Whats-App-Image-2026-07-14-at-1-19-42-PM.jpg" },
@@ -70,13 +70,13 @@ export default function GalleryPage() {
   return (
     <>
       <Head>
-        <title>Photo & Video Gallery | Phenix Cruise Kerala Tourism</title>
+        <title>Photo & Video Gallery | Phoenix Cruise Kerala Tourism</title>
         <meta
           name="description"
-          content="Browse high-resolution photographs and cinematic videos of Phenix Cruise luxury houseboats, sunsets, and traditional dining arrangements in Alleppey."
+          content="Browse high-resolution photographs and cinematic videos of Phoenix Cruise luxury houseboats, sunsets, and traditional dining arrangements in Alleppey."
         />
         <meta name="keywords" content="houseboat photos, alleppey backwaters video, tourism kerala gallery" />
-        <link rel="canonical" href="https://phenixcruise.com/gallery" />
+        <link rel="canonical" href="https://phoenixcruise.com/gallery" />
       </Head>
 
       <CustomCursor />

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://phenixcruise.com/sitemap.xml
+Sitemap: https://phoenixcruise.com/sitemap.xml

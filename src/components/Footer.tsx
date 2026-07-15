@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-6">
             <Link href="/" className="flex flex-col select-none">
               <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-white">
-                Phenix Cruise
+                Phoenix Cruise
               </span>
               <span className="font-sans text-[9px] uppercase tracking-[0.3em] text-accent font-semibold">
                 Luxury Backwaters
@@ -99,7 +99,7 @@ export default function Footer() {
         {/* Bottom copyright segment */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-[11px] font-sans text-white/40 font-light space-y-4 md:space-y-0">
           <div>
-            &copy; {currentYear} Phenix Cruise. All Rights Reserved.
+            &copy; {currentYear} Phoenix Cruise. All Rights Reserved.
           </div>
           <div className="flex items-center space-x-6">
             <Link href="/contact" className="hover:text-accent transition-colors">Privacy Policy</Link>

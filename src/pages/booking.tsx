@@ -70,7 +70,7 @@ export default function BookingPage() {
     });
 
     const whatsappNumber = "918138866919";
-    let message = `Hello Phenix Cruise & Support,
+    let message = `Hello Phoenix Cruise & Support,
 
 I would like to book a service.
 
@@ -116,7 +116,7 @@ Preferred Time: ${data.timeSlot}
           content="Book your private Akalapuzha Boating Service package online. Fast reservation setup for family boat rides, sunset cruises, or hardware support."
         />
         <meta name="keywords" content="book akalapuzha boat ride, schedule family boating, booking calicut houseboat" />
-        <link rel="canonical" href="https://phenixcruise.com/booking" />
+        <link rel="canonical" href="https://phoenixcruise.com/booking" />
       </Head>
 
       <CustomCursor />

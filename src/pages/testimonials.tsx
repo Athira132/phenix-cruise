@@ -62,13 +62,13 @@ export default function TestimonialsPage() {
   return (
     <>
       <Head>
-        <title>Guest Testimonials & Reviews | Phenix Cruise Kerala</title>
+        <title>Guest Testimonials & Reviews | Phoenix Cruise Kerala</title>
         <meta
           name="description"
-          content="Read what our national and international guests say about Phenix Cruise luxury houseboats, culinary tours, honeymoon decor packages, and backwater safaris."
+          content="Read what our national and international guests say about Phoenix Cruise luxury houseboats, culinary tours, honeymoon decor packages, and backwater safaris."
         />
-        <meta name="keywords" content="phenix cruise reviews, guest testimonials kerala, alleppey boat reviews" />
-        <link rel="canonical" href="https://phenixcruise.com/testimonials" />
+        <meta name="keywords" content="phoenix cruise reviews, guest testimonials kerala, alleppey boat reviews" />
+        <link rel="canonical" href="https://phoenixcruise.com/testimonials" />
       </Head>
 
       <CustomCursor />

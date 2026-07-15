@@ -39,7 +39,7 @@ export default function Loader() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="text-4xl md:text-5xl font-serif text-primary tracking-wide mb-2"
             >
-              Phenix Cruise
+              Phoenix Cruise
             </motion.h1>
             
             <motion.p

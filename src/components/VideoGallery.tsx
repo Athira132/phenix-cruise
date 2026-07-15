@@ -81,7 +81,7 @@ export default function VideoGallery() {
             Cinematic Highlights
           </span>
           <h2 className="text-4xl md:text-5xl font-serif text-dark tracking-wide mb-4">
-            Experience Phenix Cruise
+            Experience Phoenix Cruise
           </h2>
           <div className="w-16 h-[2px] bg-accent mx-auto mb-6" />
           <p className="text-dark/70 font-sans font-light leading-relaxed text-sm md:text-base">

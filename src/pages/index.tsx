@@ -30,15 +30,15 @@ export default function Home() {
   const jsonLdOrg = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    "name": "Phenix Cruise",
+    "name": "Phoenix Cruise",
     "image": "https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg",
-    "@id": "https://phenixcruise.com/#organization",
-    "url": "https://phenixcruise.com",
+    "@id": "https://phoenixcruise.com/#organization",
+    "url": "https://phoenixcruise.com",
     "telephone": "+918138866919",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Phenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road",
+      "streetAddress": "Phoenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road",
       "addressLocality": "Kozhikode",
       "addressRegion": "Kerala",
       "postalCode": "673522",
@@ -64,26 +64,26 @@ export default function Home() {
       "closes": "22:00"
     },
     "sameAs": [
-      "https://www.facebook.com/phenixcruise",
-      "https://www.instagram.com/phenixcruise"
+      "https://www.facebook.com/phoenixcruise",
+      "https://www.instagram.com/phoenixcruise"
     ]
   };
 
   return (
     <>
       <Head>
-        <title>Akalapuzha Boating Service | Phenix Cruise Houseboat Booking</title>
+        <title>Akalapuzha Boating Service | Phoenix Cruise Houseboat Booking</title>
         <meta
           name="description"
           content="Experience the serene beauty of Kozhikode backwaters with our Akalapuzha Boating Service. Book luxury houseboats, romantic sunset boat rides, and village family cruises."
         />
         <meta name="keywords" content="akalapuzha boating service, akalapuzha boat ride, houseboat in akalapuzha, kerala backwater boating, calicut boating" />
-        <link rel="canonical" href="https://phenixcruise.com" />
+        <link rel="canonical" href="https://phoenixcruise.com" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://phenixcruise.com" />
-        <meta property="og:title" content="Akalapuzha Boating Service | Phenix Cruise Houseboat Booking" />
+        <meta property="og:url" content="https://phoenixcruise.com" />
+        <meta property="og:title" content="Akalapuzha Boating Service | Phoenix Cruise Houseboat Booking" />
         <meta
           property="og:description"
           content="Experience the serene beauty of Kozhikode backwaters with our Akalapuzha Boating Service. Book luxury houseboats, romantic sunset boat rides, and village family cruises."

@@ -31,7 +31,7 @@ export default function ContactPage() {
 
   const handleInquirySubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you for contacting Phenix Cruise! Our team will reach out to you within 2 hours.");
+    alert("Thank you for contacting Phoenix Cruise! Our team will reach out to you within 2 hours.");
     (e.target as HTMLFormElement).reset();
   };
 
@@ -44,7 +44,7 @@ export default function ContactPage() {
           content="Serving Akalapuzha and nearby backwater destinations in Kerala. Contact Akalapuzha Boating Service directly for houseboat bookings and custom lake rides."
         />
         <meta name="keywords" content="akalapuzha boating service, akalapuzha boat ride, contact akalapuzha boat booking, backwater tours akalapuzha" />
-        <link rel="canonical" href="https://phenixcruise.com/contact" />
+        <link rel="canonical" href="https://phoenixcruise.com/contact" />
       </Head>
 
       <CustomCursor />
@@ -86,7 +86,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Our Jetty Address</h4>
                       <p className="text-xs text-dark/70 font-light leading-relaxed">
-                        Phenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road,<br />
+                        Phoenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road,<br />
                         Kozhikode (Calicut) District, Kerala - 673522, India
                       </p>
                     </div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Email Reservations</h4>
                       <p className="text-xs text-dark/70 font-light">
-                        <a href="mailto:info@phenixcruise.com" className="hover:text-primary transition-colors font-semibold">info@phenixcruise.com</a>
+                        <a href="mailto:info@phoenixcruise.com" className="hover:text-primary transition-colors font-semibold">info@phoenixcruise.com</a>
                       </p>
                     </div>
                   </div>
@@ -169,7 +169,7 @@ export default function ContactPage() {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Phenix Akalapuzha Boating Service Jetty Map"
+                title="Phoenix Akalapuzha Boating Service Jetty Map"
                 className="absolute inset-0 w-full h-full"
               />
             </div>

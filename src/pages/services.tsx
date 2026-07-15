@@ -135,13 +135,13 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Akalapuzha Boating Service & Custom Packages | Phenix Cruise</title>
+        <title>Akalapuzha Boating Service & Custom Packages | Phoenix Cruise</title>
         <meta
           name="description"
           content="Choose from our premium Akalapuzha Boating Service packages: private houseboat cruises, scenic village Shikara rides, sunset boat trips, and Calicut backwater family excursions."
         />
         <meta name="keywords" content="akalapuzha boating service, kerala boating, backwater cruise, village boating, sunset boating, family boating, tourist boat rides, private boat ride, group boating, scenic backwater cruise" />
-        <link rel="canonical" href="https://phenixcruise.com/services" />
+        <link rel="canonical" href="https://phoenixcruise.com/services" />
       </Head>
 
       <CustomCursor />

@@ -6,7 +6,7 @@ import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const galleryItems = [
   {
     id: 1,
-    title: "Phenix Gold Class Houseboat",
+    title: "Phoenix Gold Class Houseboat",
     category: "Houseboats",
     image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
   },
@@ -81,7 +81,7 @@ export default function Gallery() {
             Moments Captured
           </span>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-dark tracking-wide mb-4">
-            Phenix Photo Gallery
+            Phoenix Photo Gallery
           </h2>
           <div className="w-16 h-[2px] bg-accent mx-auto mb-6" />
           <p className="text-dark/70 font-sans font-light leading-relaxed text-sm md:text-base">

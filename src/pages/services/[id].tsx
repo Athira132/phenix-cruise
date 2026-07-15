@@ -35,9 +35,9 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
   return (
     <>
       <Head>
-        <title>{service.category === "cruises" ? `${service.title} | Akalapuzha Boating Service` : `${service.title} | Phenix Custom Services`}</title>
+        <title>{service.category === "cruises" ? `${service.title} | Akalapuzha Boating Service` : `${service.title} | Phoenix Custom Services`}</title>
         <meta name="description" content={service.category === "cruises" ? `${service.shortDesc} Book your private boat ride with our trusted Akalapuzha Boating Service in Kerala.` : service.shortDesc} />
-        <link rel="canonical" href={`https://phenixcruise.com/services/${service.id}`} />
+        <link rel="canonical" href={`https://phoenixcruise.com/services/${service.id}`} />
       </Head>
 
       <CustomCursor />
@@ -166,7 +166,7 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
             {/* Why Choose Us */}
             <div className="bg-sand/30 border border-primary/5 rounded-2xl p-6 space-y-4">
               <h4 className="font-serif font-bold text-lg text-primary flex items-center">
-                <FaShieldAlt className="mr-2" /> Why Choose Phenix?
+                <FaShieldAlt className="mr-2" /> Why Choose Phoenix?
               </h4>
               <p className="text-xs text-dark/70 font-light leading-relaxed">
                 We implement certified standards, live private chef services, and full lifetime warranties for client assurance.

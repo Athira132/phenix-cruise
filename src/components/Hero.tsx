@@ -59,7 +59,7 @@ export default function Hero() {
       >
         <Image
           src="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg"
-          alt="Phenix Cruise traditional luxury Kerala houseboat sailing on Alleppey backwaters"
+          alt="Phoenix Cruise traditional luxury Kerala houseboat sailing on Alleppey backwaters"
           fill
           priority
           style={{ objectFit: "cover", objectPosition: "center" }}

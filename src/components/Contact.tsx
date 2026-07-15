@@ -14,7 +14,7 @@ export default function Contact() {
             Get In Touch
           </span>
           <h2 className="text-4xl md:text-5xl font-serif text-dark tracking-wide mb-4">
-            Contact Phenix Cruise
+            Contact Phoenix Cruise
           </h2>
           <div className="w-16 h-[2px] bg-accent mx-auto" />
         </div>
@@ -43,7 +43,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Our Jetty Address</h4>
                   <p className="font-sans text-xs md:text-sm text-dark/70 font-light leading-relaxed">
-                    Phenix Cruise Jetty, Punnamada Lake, Near Finishing Point,<br />
+                    Phoenix Cruise Jetty, Punnamada Lake, Near Finishing Point,<br />
                     Alappuzha (Alleppey), Kerala - 688011, India
                   </p>
                 </div>
@@ -63,7 +63,7 @@ export default function Contact() {
                     Alternate Phone: <a href="tel:+919567043039" className="hover:text-primary transition-colors">+91 95670 43039</a>
                   </p>
                   <p className="font-sans text-xs md:text-sm text-dark/70 font-light mt-2 flex items-center">
-                    WhatsApp: <a href="https://wa.me/918138866919?text=Hello%20Phenix%20Cruise%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20cruise%20packages.%0A%0APlease%20share%20the%20available%20options.%0A%0AThank%20you." target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:underline ml-1 font-semibold flex items-center"><FaWhatsapp className="mr-1" />+91 81388 66919</a>
+                    WhatsApp: <a href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20cruise%20packages.%0A%0APlease%20share%20the%20available%20options.%0A%0AThank%20you." target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:underline ml-1 font-semibold flex items-center"><FaWhatsapp className="mr-1" />+91 81388 66919</a>
                   </p>
                 </div>
               </div>
@@ -76,10 +76,10 @@ export default function Contact() {
                 <div>
                   <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Email Reservations</h4>
                   <p className="font-sans text-xs md:text-sm text-dark/70 font-light">
-                    <a href="mailto:info@phenixcruise.com" className="hover:text-primary transition-colors">info@phenixcruise.com</a>
+                    <a href="mailto:info@phoenixcruise.com" className="hover:text-primary transition-colors">info@phoenixcruise.com</a>
                   </p>
                   <p className="font-sans text-xs md:text-sm text-dark/70 font-light">
-                    <a href="mailto:bookings@phenixcruise.com" className="hover:text-primary transition-colors">bookings@phenixcruise.com</a>
+                    <a href="mailto:bookings@phoenixcruise.com" className="hover:text-primary transition-colors">bookings@phoenixcruise.com</a>
                   </p>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function Contact() {
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Phenix Cruise Jetty Location Map"
+              title="Phoenix Cruise Jetty Location Map"
               className="absolute inset-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700"
             />
           </motion.div>
