@@ -46,7 +46,7 @@ export default function About() {
           </motion.div>
 
           {/* Content Column (approximately 55-60% width on desktop) */}
-          <div className="lg:col-span-7 flex flex-col justify-center pt-2">
+          <div className="lg:col-span-7 flex flex-col justify-start pt-0">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

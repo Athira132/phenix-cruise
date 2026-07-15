@@ -43,7 +43,7 @@ export default function AboutPage() {
 
       <main className="bg-slate-50 font-sans">
         {/* Intro Section */}
-        <section className="py-16 md:py-24 max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <section className="py-16 md:py-24 max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[4/5] md:aspect-[1.2] lg:aspect-[4/5] rounded-[20px] overflow-hidden shadow-premium group">
               <Image
