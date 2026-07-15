@@ -47,11 +47,32 @@ const videoItems = [
     url: "https://www.youtube.com/watch?v=9cigrWJrAJw",
     thumbnail: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
   },
+  {
+    id: 7,
+    title: "Sunset Boat Cruise",
+    description: "A magical backwater boating sunset experience in Akalapuzha.",
+    url: "https://youtube.com/shorts/oV-SA52KqSE",
+    thumbnail: "https://img.youtube.com/vi/oV-SA52KqSE/hqdefault.jpg",
+  },
+  {
+    id: 8,
+    title: "Backwater Shikara Cruise",
+    description: "Serene village canal sailing on our premium wooden Shikara boat.",
+    url: "https://youtube.com/shorts/jVpx2FbaIN0",
+    thumbnail: "https://img.youtube.com/vi/jVpx2FbaIN0/hqdefault.jpg",
+  },
+  {
+    id: 9,
+    title: "Village Life Experience",
+    description: "Glide past palm shores and local settlements in traditional styles.",
+    url: "https://youtube.com/shorts/v5TzrFSgAng",
+    thumbnail: "https://img.youtube.com/vi/v5TzrFSgAng/hqdefault.jpg",
+  },
 ];
 
 function getEmbedUrl(url: string) {
   if (url.includes("youtube.com") || url.includes("youtu.be")) {
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=|shorts\/)([^#\&\?]*).*/;
     const match = url.match(regExp);
     const id = match && match[2].length === 11 ? match[2] : null;
     return id ? { type: "youtube", embed: `https://www.youtube.com/embed/${id}?autoplay=1&rel=0` } : null;

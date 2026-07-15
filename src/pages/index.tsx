@@ -120,7 +120,7 @@ export default function Home() {
               href="/services"
               className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-premium hover:-translate-y-1 active:scale-95 border border-white/10"
             >
-              Explore All Services & Repairs
+              Explore All Our Services
             </Link>
           </div>
         </div>
