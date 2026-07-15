@@ -36,7 +36,7 @@ export default function About() {
                 alt="Scenic Kerala Backwaters Houseboat Cruise"
                 fill
                 sizes="(max-w-768px) 100vw, 40vw"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", objectPosition: "center 30%" }}
                 className="transition-transform duration-700 group-hover:scale-105"
               />
             </div>

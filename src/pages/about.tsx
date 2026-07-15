@@ -17,12 +17,6 @@ const features = [
   { icon: FaShieldAlt, title: "Safety Infrastructure", desc: "Full safety gears, life rafts, fire suppression, and strict sanitization rules." },
 ];
 
-const team = [
-  { name: "Captain Rajesh Kumar", role: "Chief Navigation Officer", desc: "Over 20 years navigating Alleppey's complex waterways.", img: "https://i.ibb.co/h14vRRT4/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" },
-  { name: "Chef Saji Philip", role: "Executive Culinary Artist", desc: "Specialist in traditional Kerala cuisine and seafood delicacies.", img: "https://i.ibb.co/Z625HSyx/Whats-App-Image-2026-07-14-at-1-19-40-PM-1.jpg" },
-  { name: "Anil Joseph", role: "Hospitality Lead", desc: "Ensures every passenger receives 5-star service on board.", img: "https://i.ibb.co/1fkCt6tm/Whats-App-Image-2026-07-14-at-1-19-38-PM.jpg" },
-];
-
 export default function AboutPage() {
   return (
     <>
@@ -57,7 +51,7 @@ export default function AboutPage() {
                 alt="Kerala backwater luxury boat view"
                 fill
                 sizes="(max-w-768px) 100vw, 50vw"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", objectPosition: "center 30%" }}
                 className="transition-transform duration-700 group-hover:scale-105"
               />
             </div>
@@ -146,43 +140,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="py-16 md:py-24 bg-sand/30">
-          <div className="max-w-7xl mx-auto px-6 md:px-12">
-            <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-              <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
-                THE EXPERTS ON BOARD
-              </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-dark">
-                Meet Our Certified Officers
-              </h2>
-              <p className="text-dark/60 font-light text-sm">
-                Our hospitality crew and pilots carry verified licensing and training under the Kerala Port department.
-              </p>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {team.map((t, idx) => (
-                <div key={idx} className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <div className="relative aspect-[4/3] w-full bg-slate-100">
-                    <Image
-                      src={t.img}
-                      alt={t.name}
-                      fill
-                      sizes="(max-w-768px) 100vw, 30vw"
-                      style={{ objectFit: "cover" }}
-                    />
-                  </div>
-                  <div className="p-6 space-y-2">
-                    <h3 className="font-serif text-lg font-bold text-dark">{t.name}</h3>
-                    <span className="text-accent text-[11px] uppercase tracking-wider font-semibold block">{t.role}</span>
-                    <p className="text-xs text-dark/60 font-light leading-relaxed pt-2">{t.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Pre-Footer Booking CTA */}
         <section className="py-16 md:py-20 bg-slate-900 text-white relative overflow-hidden text-center">
