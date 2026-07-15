@@ -21,12 +21,12 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <title>About Us | Phenix Cruise Kerala Houseboat Booking</title>
+        <title>About Us | Akalapuzha Boating Service Story & Pillars</title>
         <meta
           name="description"
-          content="Learn about Phenix Cruise, Kerala's leading luxury backwater travel planner. Discover our mission, crew profiles, safety certifications, and authentic culinary services."
+          content="Learn about Phenix Cruise, a trusted Akalapuzha Boating Service in Kerala. We provide premium backwater boating experiences with a focus on safety, comfort, and customer satisfaction."
         />
-        <meta name="keywords" content="phenix cruise crew, about alleppey houseboats, luxury kerala backwaters travel" />
+        <meta name="keywords" content="about akalapuzha boating service, premium backwater boating kerala, safety first boat service calicut" />
         <link rel="canonical" href="https://phenixcruise.com/about" />
       </Head>
 
@@ -63,14 +63,14 @@ export default function AboutPage() {
               OUR JOURNEY & STORY
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-dark leading-tight">
-              Gliding Through the Golden Backwaters of Alleppey
+              Gliding Through the Golden Backwaters of Akalapuzha
             </h2>
             <div className="text-dark/80 font-light leading-relaxed space-y-4">
               <p>
-                Founded in the heart of Alleppey, Phenix Cruise was born from a desire to share the raw beauty of Kerala’s legendary backwaters through a lens of absolute luxury and local heritage. We realized that cruising is not just a tour; it is a spiritual slowdown, a chance to hear the rustle of palms, view paddy landscapes, and experience magnificent sun sets.
+                As a trusted <strong>Akalapuzha Boating Service</strong>, Phenix Cruise was born from a desire to share the raw beauty of Kerala’s legendary backwater lakes and canals through a lens of absolute luxury and local heritage. We provide premium backwater boating experiences, serving tourists, families, couples, and corporate groups with a spiritual slowdown and a chance to hear the rustle of palms, view green paddy fields, and witness magnificent sunsets.
               </p>
               <p>
-                Today, Phenix Cruise manages a premium fleet of traditional Kerala houseboats, combining native teak architecture with ultra-modern amenities. We pride ourselves on personalized itineraries, zero carbon print initiatives on selected courses, and absolute privacy for couples, family tours, and corporate packages.
+                Today, our Akalapuzha boat service manages a premium fleet of traditional Kerala houseboats and custom boats. We focus on safety, comfort, and customer satisfaction, combining native wood architecture with modern comforts, personalized itineraries, and absolute privacy for all passengers.
               </p>
             </div>
           </div>

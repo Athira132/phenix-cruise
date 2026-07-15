@@ -29,7 +29,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="font-sans text-xs md:text-sm text-white/60 font-light leading-relaxed max-w-sm">
-              Phenix Cruise offers award-winning luxury houseboat stays and day cruises through the pristine backwater lakes of Alleppey, Kerala.
+              Providing trusted Akalapuzha Boating Service with safe, comfortable, and memorable backwater experiences for tourists, families, and groups across Kerala.
             </p>
           </div>
 

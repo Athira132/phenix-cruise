@@ -26,11 +26,11 @@ export default function WhyChooseUs() {
             Our Quality
           </span>
           <h2 className="text-4xl md:text-5xl font-serif text-dark tracking-wide mb-4">
-            Why Choose Phenix Cruise
+            Why Choose Our Boating Service
           </h2>
           <div className="w-16 h-[2px] bg-accent mx-auto mb-6" />
           <p className="text-dark/70 font-sans font-light leading-relaxed text-sm md:text-base">
-            We are dedicated to providing the ultimate, premium, and safe backwater experience in Alleppey.
+            We are dedicated to providing the ultimate, premium, and safe backwater experiences with our Akalapuzha Boating Service.
           </p>
         </div>
 

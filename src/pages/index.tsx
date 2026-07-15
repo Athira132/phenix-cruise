@@ -38,16 +38,16 @@ export default function Home() {
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Phenix Cruise Jetty, Punnamada Lake, Near Finishing Point",
-      "addressLocality": "Alappuzha (Alleppey)",
+      "streetAddress": "Phenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road",
+      "addressLocality": "Kozhikode",
       "addressRegion": "Kerala",
-      "postalCode": "688011",
+      "postalCode": "673522",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 9.5097499,
-      "longitude": 76.3470659
+      "latitude": 11.5438889,
+      "longitude": 75.7265439
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -72,21 +72,21 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Phenix Cruise | Luxury Kerala Backwater Houseboat Bookings</title>
+        <title>Akalapuzha Boating Service | Phenix Cruise Houseboat Booking</title>
         <meta
           name="description"
-          content="Experience the serene beauty of Kerala backwaters with Phenix Cruise. Book luxury AC houseboats, romantic honeymoon cruises, private chef lunch tours and events in Alleppey."
+          content="Experience the serene beauty of Kozhikode backwaters with our Akalapuzha Boating Service. Book luxury houseboats, romantic sunset boat rides, and village family cruises."
         />
-        <meta name="keywords" content="kerala houseboats, boat booking kerala, luxury cruise kerala, alleppey houseboats, houseboats booking, backwater tourism kerala, phenix cruise" />
+        <meta name="keywords" content="akalapuzha boating service, akalapuzha boat ride, houseboat in akalapuzha, kerala backwater boating, calicut boating" />
         <link rel="canonical" href="https://phenixcruise.com" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://phenixcruise.com" />
-        <meta property="og:title" content="Phenix Cruise | Luxury Kerala Backwater Houseboat Bookings" />
+        <meta property="og:title" content="Akalapuzha Boating Service | Phenix Cruise Houseboat Booking" />
         <meta
           property="og:description"
-          content="Experience the serene beauty of Kerala backwaters with Phenix Cruise. Book luxury AC houseboats, romantic honeymoon cruises, and premium packages."
+          content="Experience the serene beauty of Kozhikode backwaters with our Akalapuzha Boating Service. Book luxury houseboats, romantic sunset boat rides, and village family cruises."
         />
         <meta property="og:image" content="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
 
@@ -133,10 +133,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1.5px,transparent_1.5px)] opacity-5 pointer-events-none [background-size:24px_24px]" />
           <div className="relative z-10 max-w-3xl mx-auto px-6 space-y-6">
             <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-wide">
-              Ready to Board Phenix Cruise?
+              Ready to Experience Akalapuzha Boating?
             </h2>
             <p className="text-white/70 font-sans font-light max-w-md mx-auto text-xs sm:text-sm leading-relaxed">
-              Plan your private cruise trip or schedule a support appointment with us. Get immediate confirmation on WhatsApp.
+              Book your private Akalapuzha Boating Service reservation today. Plan custom cruises, sunset tours, and enjoy instant WhatsApp confirmation.
             </p>
             <div className="pt-4">
               <Link

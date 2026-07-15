@@ -54,17 +54,17 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
-                ABOUT PHENIX CRUISE
+                ABOUT OUR SERVICE
               </span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-dark tracking-wide mb-6">
-                Experience the Soul of Kerala&apos;s Serene Waters
+                Experience the Best Akalapuzha Boating Service
               </h2>
               <div className="text-dark/80 font-sans font-light leading-relaxed text-base md:text-lg flex flex-col gap-5">
                 <p>
-                  Welcome to Phenix Cruise, where luxury meets the untouched serenity of Kerala’s backwaters. Based in Alleppey, we curate premium houseboat journeys that invite you to slow down and glide through palm-fringed canals, emerald paddy fields, and wide lakes. Every evening brings the magic of a golden sunset reflecting off calm waters, creating a tranquil sanctuary far removed from the bustle of everyday life.
+                  Welcome to Phenix Cruise, where luxury meets the untouched serenity of Kozhikode’s backwaters. As the premier <strong>Akalapuzha Boating Service</strong>, we curate premium houseboat journeys and boat rides that invite you to slow down and glide through palm-fringed village canals, emerald paddy fields, and wide lakes. Enjoy unforgettable backwater experiences with our trusted Akalapuzha boat service, offering safe, scenic, and memorable boat rides for families, couples, tourists, and groups.
                 </p>
                 <p>
-                  Whether you are planning a romantic honeymoon, a family vacation, or a private group celebration, our cruises are tailored to your needs. On board, our experienced crew ensures the highest standards of safety, cleanliness, and attentive hospitality. We also take pride in serving authentic, freshly prepared Kerala cuisine cooked on board by your private chef, ensuring every moment of your cruise is comfortable, memorable, and deeply relaxing.
+                  Whether you are planning a romantic sunset tour, a family boating excursion, or a private group celebration, our services are tailored to your needs. On board, our experienced crew ensures the highest standards of safety, comfort, and attentive hospitality. We also take pride in serving authentic, freshly prepared Kerala cuisine cooked on board, ensuring every moment of your cruise is comfortable, memorable, and deeply relaxing.
                 </p>
               </div>
             </motion.div>

@@ -135,12 +135,12 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Our Services | Phenix Cruise Kerala Tourism & Fleet Rentals</title>
+        <title>Akalapuzha Boating Service & Custom Packages | Phenix Cruise</title>
         <meta
           name="description"
-          content="Explore Phenix Cruise luxury backwater services. Choose from our premium houseboats, day cruise tours, group Shikara rides, or check out our premium repair services."
+          content="Choose from our premium Akalapuzha Boating Service packages: private houseboat cruises, scenic village Shikara rides, sunset boat trips, and Calicut backwater family excursions."
         />
-        <meta name="keywords" content="luxury cruises, shikara ride, houseboat renting, display repair, battery swap" />
+        <meta name="keywords" content="akalapuzha boating service, kerala boating, backwater cruise, village boating, sunset boating, family boating, tourist boat rides, private boat ride, group boating, scenic backwater cruise" />
         <link rel="canonical" href="https://phenixcruise.com/services" />
       </Head>
 
@@ -165,10 +165,10 @@ export default function ServicesPage() {
                 FLEETS & WATERWAYS
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-dark">
-                Kerala Backwater Cruises
+                Akalapuzha Boating Service & Rides
               </h2>
               <p className="text-dark/60 font-light text-sm">
-                Bespoke voyages designed for relaxation, photography, and premium hospitality.
+                Scenic backwater cruises and private boat rides designed for family outings, sunset viewing, and premium village hospitality.
               </p>
             </div>
 

@@ -110,12 +110,12 @@ Preferred Time: ${data.timeSlot}
   return (
     <>
       <Head>
-        <title>Secure Booking Form | Phenix Cruise reservations</title>
+        <title>Secure Booking | Akalapuzha Boating Service Reservation</title>
         <meta
           name="description"
-          content="Book your luxury Kerala houseboat cruise or schedule a technical hardware diagnosis. Quick online reservation with instant WhatsApp confirmation."
+          content="Book your private Akalapuzha Boating Service package online. Fast reservation setup for family boat rides, sunset cruises, or hardware support."
         />
-        <meta name="keywords" content="book houseboat alleppey, screen repair booking, schedule water cruise" />
+        <meta name="keywords" content="book akalapuzha boat ride, schedule family boating, booking calicut houseboat" />
         <link rel="canonical" href="https://phenixcruise.com/booking" />
       </Head>
 

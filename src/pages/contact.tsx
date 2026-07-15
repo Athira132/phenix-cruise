@@ -38,12 +38,12 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact Us & FAQ | Phenix Cruise Kerala Houseboat Booking</title>
+        <title>Contact Us | Akalapuzha Boating Service & Bookings</title>
         <meta
           name="description"
-          content="Find jetty address, reservation contact numbers, business hours, and interactive maps of Phenix Cruise in Alleppey, Kerala. Read our booking FAQs."
+          content="Serving Akalapuzha and nearby backwater destinations in Kerala. Contact Akalapuzha Boating Service directly for houseboat bookings and custom lake rides."
         />
-        <meta name="keywords" content="phenix cruise contact, contact alleppey houseboats, booking helpline alleppey" />
+        <meta name="keywords" content="akalapuzha boating service, akalapuzha boat ride, contact akalapuzha boat booking, backwater tours akalapuzha" />
         <link rel="canonical" href="https://phenixcruise.com/contact" />
       </Head>
 
@@ -51,10 +51,10 @@ export default function ContactPage() {
       <Navbar />
 
       <PageHeader
-        title="Contact & FAQ"
+        title="Contact & Local Info"
         breadcrumbs={[
           { name: "Home", href: "/" },
-          { name: "Contact & FAQ" },
+          { name: "Contact" },
         ]}
       />
 
@@ -73,6 +73,9 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-serif font-bold text-dark">
                   Let's plan your perfect voyage
                 </h2>
+                <p className="text-xs text-dark/70 font-light leading-relaxed">
+                  Serving Akalapuzha and nearby backwater destinations in Kerala. Customers looking for our premier <strong>Akalapuzha Boating Service</strong> can contact us directly for custom boat rides, sunset cruises, or family outings.
+                </p>
                 
                 <div className="space-y-6">
                   {/* Address */}
@@ -83,8 +86,8 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Our Jetty Address</h4>
                       <p className="text-xs text-dark/70 font-light leading-relaxed">
-                        Phenix Cruise Jetty, Punnamada Lake, Near Finishing Point,<br />
-                        Alappuzha (Alleppey), Kerala - 688011, India
+                        Phenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road,<br />
+                        Kozhikode (Calicut) District, Kerala - 673522, India
                       </p>
                     </div>
                   </div>
@@ -159,14 +162,14 @@ export default function ContactPage() {
             {/* Map Frame */}
             <div className="lg:col-span-7 min-h-[350px] relative rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.438596706173!2d76.34706597581177!3d9.509749990572895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b088420bf99e525%3A0xe543e098a58ec402!2sPunnamada%20Finishing%20Point!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.1121085002016!2d75.72654397584163!3d11.543888988655619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6873523f6b4d3%3A0x6b63f5383f9ecffc!2sAkalapuzha%20Boating%20Point!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Phenix Cruise Jetty Location Map"
+                title="Phenix Akalapuzha Boating Service Jetty Map"
                 className="absolute inset-0 w-full h-full"
               />
             </div>

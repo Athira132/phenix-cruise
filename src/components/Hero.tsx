@@ -94,10 +94,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-5xl sm:text-6xl lg:text-[76px] font-serif font-extrabold text-[#F8FAFC] tracking-wide leading-[1.05] text-left mb-6 uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]"
+            className="text-4xl sm:text-5xl lg:text-[68px] font-serif font-extrabold text-[#F8FAFC] tracking-wide leading-[1.05] text-left mb-6 uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]"
           >
-            Experience <br />
-            <span className="text-[#C9A227]">Kerala&apos;s Luxury</span>
+            Experience The Best <br />
+            <span className="text-[#C9A227] normal-case">Akalapuzha Boating Service</span>
           </motion.h1>
 
           {/* Supporting description */}
@@ -107,7 +107,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.6 }}
             className="text-[#F8FAFC] text-sm sm:text-base md:text-lg max-w-xl font-sans font-semibold tracking-wide leading-relaxed mb-10 text-left drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
           >
-            Cruise through breathtaking backwaters aboard our luxury houseboats and create unforgettable memories with Phenix Cruise.
+            Enjoy unforgettable backwater experiences with our trusted Akalapuzha Boating Service, offering safe, scenic, and memorable boat rides for families, couples, tourists, and groups.
           </motion.p>
 
           {/* CTA Buttons (Larger, rounded-14px, premium hover lift) */}
