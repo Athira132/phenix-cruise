@@ -49,24 +49,17 @@ const videoItems = [
   },
   {
     id: 7,
-    title: "Sunset Boat Cruise",
+    title: "Premium Sunset Cruise",
     description: "A magical backwater boating sunset experience in Akalapuzha.",
-    url: "https://youtube.com/shorts/oV-SA52KqSE",
-    thumbnail: "https://img.youtube.com/vi/oV-SA52KqSE/hqdefault.jpg",
+    url: "https://youtube.com/shorts/um7lR_YaRr0",
+    thumbnail: "https://img.youtube.com/vi/um7lR_YaRr0/hqdefault.jpg",
   },
   {
     id: 8,
-    title: "Backwater Shikara Cruise",
+    title: "Akalapuzha Shikara Voyage",
     description: "Serene village canal sailing on our premium wooden Shikara boat.",
-    url: "https://youtube.com/shorts/jVpx2FbaIN0",
-    thumbnail: "https://img.youtube.com/vi/jVpx2FbaIN0/hqdefault.jpg",
-  },
-  {
-    id: 9,
-    title: "Village Life Experience",
-    description: "Glide past palm shores and local settlements in traditional styles.",
-    url: "https://youtube.com/shorts/v5TzrFSgAng",
-    thumbnail: "https://img.youtube.com/vi/v5TzrFSgAng/hqdefault.jpg",
+    url: "https://youtube.com/shorts/XnlSj8z342c",
+    thumbnail: "https://img.youtube.com/vi/XnlSj8z342c/hqdefault.jpg",
   },
 ];
 

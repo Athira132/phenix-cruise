@@ -28,9 +28,8 @@ const videoItems = [
   { id: 1, title: "Cinematic Backwater Voyage", url: "https://www.youtube.com/watch?v=k6M3YbWX284", thumbnail: "https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" },
   { id: 2, title: "Honeymoon Special Setup", url: "https://www.youtube.com/watch?v=nXF3vDXekTM", thumbnail: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg" },
   { id: 3, title: "Traditional Cooking Onboard", url: "https://assets.mixkit.co/videos/preview/mixkit-down-the-river-in-a-bamboo-canoe-6804-large.mp4", thumbnail: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" },
-  { id: 4, title: "Sunset Boat Cruise", url: "https://youtube.com/shorts/oV-SA52KqSE", thumbnail: "https://img.youtube.com/vi/oV-SA52KqSE/hqdefault.jpg" },
-  { id: 5, title: "Backwater Shikara Cruise", url: "https://youtube.com/shorts/jVpx2FbaIN0", thumbnail: "https://img.youtube.com/vi/jVpx2FbaIN0/hqdefault.jpg" },
-  { id: 6, title: "Village Life Experience", url: "https://youtube.com/shorts/v5TzrFSgAng", thumbnail: "https://img.youtube.com/vi/v5TzrFSgAng/hqdefault.jpg" },
+  { id: 4, title: "Premium Sunset Cruise", url: "https://youtube.com/shorts/um7lR_YaRr0", thumbnail: "https://img.youtube.com/vi/um7lR_YaRr0/hqdefault.jpg" },
+  { id: 5, title: "Akalapuzha Shikara Voyage", url: "https://youtube.com/shorts/XnlSj8z342c", thumbnail: "https://img.youtube.com/vi/XnlSj8z342c/hqdefault.jpg" },
 ];
 
 function getEmbedUrl(url: string) {
