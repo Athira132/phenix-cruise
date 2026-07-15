@@ -46,124 +46,110 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen lg:h-screen w-full flex flex-col lg:flex-row overflow-hidden bg-slate-950 select-none animate-fadeIn"
+      className="relative min-h-screen flex items-center overflow-hidden bg-secondary select-none"
     >
       {/* ===================================================
-          LEFT PANEL: Classy Editorial Content Column
+          FADE-IN HERO IMAGE BACKGROUND LAYER
           =================================================== */}
-      <div className="w-full lg:w-[45%] flex flex-col justify-center px-6 md:px-16 pt-32 pb-16 lg:py-0 bg-slate-950 relative z-10 border-r border-white/5">
-        {/* Subtle decorative gold light glow background */}
-        <div className="absolute top-1/4 left-0 w-72 h-72 bg-[#C9A227]/5 rounded-full blur-[80px] pointer-events-none -z-1" />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className="absolute inset-0 w-full h-full z-0 bg-slate-950"
+      >
+        <Image
+          src="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg"
+          alt="Phenix Cruise traditional luxury Kerala houseboat sailing on Alleppey backwaters"
+          fill
+          priority
+          style={{ objectFit: "cover", objectPosition: "center" }}
+          className="opacity-95"
+        />
+      </motion.div>
 
-        <div className="w-full max-w-xl mx-auto lg:mx-0 flex flex-col items-start space-y-6">
+      {/* Subtle top-to-bottom dark gradient overlay (30–40%) for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/20 z-1" />
+
+      {/* ===================================================
+          LEFT-ALIGNED HERO CONTENT OVERLAY (Generous top padding to prevent navbar overlap)
+          =================================================== */}
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-12 pt-40 pb-28 flex flex-col justify-center h-full">
+        <div className="w-full lg:w-[55%] text-left flex flex-col items-start">
+          
           {/* Subtitle Badge */}
           <motion.div
-            initial={{ opacity: 0, y: -15 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md inline-flex items-center"
+            className="mb-6 px-4 py-1.5 rounded-full border border-white/20 bg-white/10 backdrop-blur-md inline-flex items-center shadow-sm"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#C9A227] mr-2.5 animate-pulse" />
-            <span className="text-white text-[10px] uppercase tracking-[0.25em] font-sans font-semibold">
+            <span className="text-white text-xs uppercase tracking-[0.3em] font-sans font-semibold">
               Luxury Backwater Experiences
             </span>
           </motion.div>
 
-          {/* Heading - Editorial style */}
+          {/* Luxury Main Heading */}
           <motion.h1
-            initial={{ opacity: 0, y: 25 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-4xl sm:text-5xl lg:text-[62px] font-serif font-extrabold text-white tracking-wide leading-[1.1] text-left"
+            className="text-5xl sm:text-6xl lg:text-[76px] font-serif font-extrabold text-[#F8FAFC] tracking-wide leading-[1.05] text-left mb-6 uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]"
           >
-            Experience Kerala&apos;s <br />
-            <span className="text-[#C9A227]">Luxury Backwater</span> Cruise
+            Experience <br />
+            <span className="text-[#C9A227]">Kerala&apos;s Luxury</span>
           </motion.h1>
 
           {/* Supporting description */}
           <motion.p
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-slate-300 text-sm sm:text-base font-sans font-light tracking-wide leading-relaxed text-left max-w-md"
+            className="text-[#F8FAFC] text-sm sm:text-base md:text-lg max-w-xl font-sans font-semibold tracking-wide leading-relaxed mb-10 text-left drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
           >
-            Glide through palm-fringed channels and majestic lagoons aboard our custom wooden houseboats. Authentic hospitality meets modern design.
+            Cruise through breathtaking backwaters aboard our luxury houseboats and create unforgettable memories with Phenix Cruise.
           </motion.p>
 
-          {/* Redesigned Premium Buttons (Larger, 16px rounded corners, shadows) */}
+          {/* CTA Buttons (Larger, rounded-14px, premium hover lift) */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="flex flex-row space-x-4 sm:space-x-6 w-full justify-start items-center pt-2"
+            className="flex flex-row space-x-4 sm:space-x-6 mb-14 w-full justify-start items-center"
           >
             <Link
               href="/booking"
-              className="px-8 sm:px-10 py-4 bg-primary hover:bg-primary-hover text-white rounded-[16px] font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 border border-white/10"
+              className="px-8 sm:px-10 py-4 sm:py-4.5 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 border border-white/10"
             >
               Book Now
             </Link>
             <Link
               href="/services"
-              className="px-8 sm:px-10 py-4 bg-white/5 hover:bg-white/10 text-white rounded-[16px] border border-white/10 font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 backdrop-blur-md hover:-translate-y-1 active:scale-95 shadow-md hover:shadow-premium"
+              className="px-8 sm:px-10 py-4 sm:py-4.5 bg-white/20 hover:bg-white/30 text-white rounded-[14px] border border-white/30 font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 backdrop-blur-md hover:-translate-y-1 active:scale-95 shadow-md hover:shadow-premium"
             >
               Explore Packages
             </Link>
           </motion.div>
 
-          {/* Floated stats inside content column */}
+          {/* Stats Section */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
-            className="grid grid-cols-2 gap-y-4 gap-x-6 w-full pt-8 border-t border-white/5"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 w-full max-w-3xl mt-4 border-t border-white/10 pt-8"
           >
             {stats.map((stat, idx) => (
-              <div key={idx} className="flex flex-col items-start justify-center">
-                <span className="text-2xl sm:text-3xl font-serif font-extrabold text-[#C9A227] mb-1">
+              <div key={idx} className="flex flex-col text-left">
+                <span className="text-3xl sm:text-4xl font-serif font-extrabold text-[#C9A227] tracking-wide mb-1 drop-shadow-md">
                   <Counter value={stat.value} suffix={stat.suffix} />
                 </span>
-                <span className="text-[10px] font-sans tracking-wide uppercase text-slate-400 font-bold">
+                <span className="text-[10px] font-sans tracking-widest uppercase text-slate-300 font-bold">
                   {stat.label}
                 </span>
               </div>
             ))}
           </motion.div>
-        </div>
-      </div>
 
-      {/* ===================================================
-          RIGHT PANEL: Editorial Hero Visual Column
-          =================================================== */}
-      <div className="w-full lg:w-[55%] relative h-[50vh] lg:h-full z-0 overflow-hidden bg-slate-950">
-        {/* Main visual Image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="absolute inset-0 w-full h-full"
-        >
-          <Image
-            src="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg"
-            alt="Phenix Cruise traditional luxury Kerala houseboat sailing on Alleppey backwaters"
-            fill
-            priority
-            style={{ objectFit: "cover", objectPosition: "center" }}
-            className="opacity-95"
-          />
-        </motion.div>
-
-        {/* Asymmetrical gradient overlays (35% shading) to balance visual framing */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/20 to-transparent z-1 hidden lg:block" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent z-1 block lg:hidden" />
-        <div className="absolute inset-0 bg-black/20 z-1" />
-
-        {/* Asymmetric curved layout frame overlay */}
-        <div className="absolute bottom-6 right-6 z-10 bg-slate-950/60 backdrop-blur-md border border-white/10 px-6 py-4 rounded-2xl hidden md:flex items-center space-x-3 shadow-premium">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#C9A227] animate-pulse" />
-          <span className="text-white text-xs font-sans tracking-wider uppercase font-semibold">
-            Punnamada Lake, Alleppey
-          </span>
         </div>
       </div>
     </section>
