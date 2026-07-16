@@ -115,21 +115,7 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
 
             </div>
 
-            {/* Cruise Process */}
-            <section className="space-y-6">
-              <h2 className="text-2xl font-serif font-bold text-dark border-b border-slate-200 pb-3">
-                Cruise Itinerary & Timeline
-              </h2>
-              <div className="relative pl-6 border-l-2 border-primary/20 space-y-8">
-                {service.process.map((step, idx) => (
-                  <div key={idx} className="relative">
-                    <span className="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-[#C9A227] border-2 border-white flex items-center justify-center shadow-sm" />
-                    <h4 className="font-serif font-bold text-dark text-sm sm:text-base mb-1">Step {idx + 1}</h4>
-                    <p className="text-xs text-dark/70 font-light leading-relaxed">{step}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
+
 
           </div>
 
