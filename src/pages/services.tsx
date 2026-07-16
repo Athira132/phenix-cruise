@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import CustomCursor from "@/components/CustomCursor";
-import { FaArrowRight, FaClock } from "react-icons/fa";
+import { FaArrowRight, FaClock, FaCheckCircle, FaQuestionCircle } from "react-icons/fa";
 
 // Services Database supporting Luxury Cruises and Boat Rides
 export const servicesData = [
@@ -171,6 +171,68 @@ export default function ServicesPage() {
               ))}
             </div>
           </div>
+
+
+
+          {/* Process Section */}
+          <section className="mt-24 bg-white rounded-3xl border border-slate-100 p-8 md:p-12">
+            <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
+              <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
+                OUR WORKFLOW
+              </span>
+              <h2 className="text-3xl font-serif font-bold text-dark">
+                How It Works
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div className="space-y-4 flex flex-col items-center">
+                <div className="w-12 h-12 rounded-full bg-sand text-primary font-serif text-xl font-bold flex items-center justify-center shadow-sm">1</div>
+                <h4 className="font-serif text-lg font-bold text-dark">Select Service</h4>
+                <p className="text-xs text-dark/60 font-light max-w-xs leading-relaxed">Choose a luxury cruise trip or private boat ride.</p>
+              </div>
+              <div className="space-y-4 flex flex-col items-center">
+                <div className="w-12 h-12 rounded-full bg-sand text-primary font-serif text-xl font-bold flex items-center justify-center shadow-sm">2</div>
+                <h4 className="font-serif text-lg font-bold text-dark">Provide Details</h4>
+                <p className="text-xs text-dark/60 font-light max-w-xs leading-relaxed">Specify preferred booking dates, times, and personal options on our secure form.</p>
+              </div>
+              <div className="space-y-4 flex flex-col items-center">
+                <div className="w-12 h-12 rounded-full bg-sand text-primary font-serif text-xl font-bold flex items-center justify-center shadow-sm">3</div>
+                <h4 className="font-serif text-lg font-bold text-dark">Confirm Booking</h4>
+                <p className="text-xs text-dark/60 font-light max-w-xs leading-relaxed">Receive instant confirmation and connecting coordinates on WhatsApp.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* FAQ Block */}
+          <section className="mt-24 space-y-12">
+            <div className="text-center max-w-2xl mx-auto space-y-3">
+              <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
+                HAVE QUESTIONS?
+              </span>
+              <h2 className="text-3xl font-serif font-bold text-dark">
+                Frequently Asked Questions
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white border border-slate-100 rounded-2xl p-6 space-y-2">
+                <div className="flex items-start space-x-3 text-primary">
+                  <FaQuestionCircle className="text-lg mt-0.5" />
+                  <h4 className="font-serif font-bold text-dark text-sm sm:text-base">Are food ingredients customizable?</h4>
+                </div>
+                <p className="text-xs text-dark/70 font-light leading-relaxed pl-7">Yes, our private chefs adapt dishes to match vegetarian, vegan, halal, and spice-sensitive requests. Tell us during reservation!</p>
+              </div>
+
+              <div className="bg-white border border-slate-100 rounded-2xl p-6 space-y-2">
+                <div className="flex items-start space-x-3 text-primary">
+                  <FaQuestionCircle className="text-lg mt-0.5" />
+                  <h4 className="font-serif font-bold text-dark text-sm sm:text-base">What is the booking deposit policy?</h4>
+                </div>
+                <p className="text-xs text-dark/70 font-light leading-relaxed pl-7">We require a 50% advance deposit to secure your houseboat date and crew. The remaining balance can be settled on boarding.</p>
+              </div>
+            </div>
+          </section>
 
           {/* CTA */}
           <section className="mt-24 text-center bg-slate-900 text-white rounded-3xl p-12 relative overflow-hidden">

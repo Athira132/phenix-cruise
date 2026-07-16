@@ -1,11 +1,33 @@
+import { useState } from "react";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import CustomCursor from "@/components/CustomCursor";
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebookF, FaInstagram, FaYoutube, FaTripadvisor } from "react-icons/fa";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+
+const faqItems = [
+  {
+    question: "How do I book a private houseboat?",
+    answer: "You can use our secure online booking form or message us directly on WhatsApp with your travel date, headcount, and preferred suite room tier. Our desk coordinates available fleets within 10 minutes."
+  },
+  {
+    question: "Are check-in and check-out timings flexible?",
+    answer: "Standard overnight stays check in at 12:00 PM and check out at 9:00 AM the next day. Day trips operate from 11:00 AM to 4:00 PM. Custom boarding offsets are available on request."
+  },
+  {
+    question: "Is onboard dining included in packages?",
+    answer: "Yes, our overnight and day-cruise packages include comprehensive on-board meals (lunch, evening tea snacks, dinner, and breakfast) prepared fresh by your private chef."
+  },
+  {
+    question: "What is your cancellation and booking policy?",
+    answer: "A 30% advance deposit secures your fleet allocation. Cancellations requested 14 days before the cruise receive a full refund. Cancellations closer to the date allow rescheduling based on calendar slots."
+  }
+];
 
 export default function ContactPage() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const handleInquirySubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -186,7 +208,39 @@ export default function ContactPage() {
             </form>
           </section>
 
+          {/* FAQ Accordion Grid */}
+          <section className="space-y-12 max-w-4xl mx-auto">
+            <div className="text-center space-y-3">
+              <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
+                FAQ CORNER
+              </span>
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-dark">
+                Frequently Asked Questions
+              </h2>
+            </div>
 
+            <div className="space-y-4">
+              {faqItems.map((faq, idx) => {
+                const isOpen = openFaq === idx;
+                return (
+                  <div key={idx} className="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm transition-all duration-300">
+                    <button
+                      onClick={() => setOpenFaq(isOpen ? null : idx)}
+                      className="w-full text-left px-6 py-5 flex justify-between items-center text-dark font-serif font-bold text-sm sm:text-base hover:text-primary transition-colors focus:outline-none"
+                    >
+                      <span>{faq.question}</span>
+                      {isOpen ? <FiChevronUp className="text-lg" /> : <FiChevronDown className="text-lg" />}
+                    </button>
+                    {isOpen && (
+                      <div className="px-6 pb-6 text-xs sm:text-sm text-dark/70 font-sans font-light leading-relaxed border-t border-slate-50 pt-4">
+                        {faq.answer}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </section>
 
         </div>
       </main>
