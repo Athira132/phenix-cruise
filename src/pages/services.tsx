@@ -172,10 +172,6 @@ export default function ServicesPage() {
             </div>
           </div>
 
-
-
-
-
           {/* CTA */}
           <section className="mt-24 text-center bg-slate-900 text-white rounded-3xl p-12 relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] opacity-5 pointer-events-none [background-size:24px_24px]" />
