@@ -18,7 +18,6 @@ type BookingFormData = {
   timeSlot: string;
   serviceType: string;
   guests?: number;
-  deviceModel?: string;
   issueDescription: string;
 };
 
@@ -30,13 +29,6 @@ const servicesList = [
   "Honeymoon Cruise",
   "Family Cruise",
   "Shikara Ride",
-  // Repairs
-  "Display Replacement",
-  "Battery Replacement",
-  "Back Glass Repair",
-  "Water Damage Restoration",
-  "Software OS Repair",
-  "Motherboard micro-soldering"
 ];
 
 export default function BookingPage() {
@@ -45,20 +37,9 @@ export default function BookingPage() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
     reset
   } = useForm<BookingFormData>();
-
-  const selectedService = watch("serviceType");
-  const isRepairService = selectedService && [
-    "Display Replacement",
-    "Battery Replacement",
-    "Back Glass Repair",
-    "Water Damage Restoration",
-    "Software OS Repair",
-    "Motherboard micro-soldering"
-  ].includes(selectedService);
 
   const onSubmit = (data: BookingFormData) => {
     // Confetti celebration
@@ -70,27 +51,20 @@ export default function BookingPage() {
     });
 
     const whatsappNumber = "918138866919";
-    let message = `Hello Phoenix Cruise & Support,
-
-I would like to book a service.
-
+    let message = `Hello Phoenix Cruise,
+ 
+I would like to book a cruise service.
+ 
 Name: ${data.name}
 Phone: ${data.phone}
 Email: ${data.email}
 Service Selected: ${data.serviceType}
 Preferred Date: ${data.date}
 Preferred Time: ${data.timeSlot}
-`;
-
-    if (isRepairService) {
-      message += `Device Model: ${data.deviceModel || "Not specified"}\n`;
-      message += `Issue Details: ${data.issueDescription || "None"}\n`;
-    } else {
-      message += `Guests Count: ${data.guests || 1}\n`;
-      message += `Special Customizations: ${data.issueDescription || "None"}\n`;
-    }
-
-    message += `\nPlease contact me to finalize. Thank you!`;
+Guests Count: ${data.guests || 1}
+Special Customizations: ${data.issueDescription || "None"}
+ 
+Please contact me to finalize. Thank you!`;
 
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -266,51 +240,33 @@ Preferred Time: ${data.timeSlot}
                   {errors.timeSlot && <p className="text-[10px] text-red-500">{errors.timeSlot.message}</p>}
                 </div>
 
-                {/* Dynamic Guest Count for Cruises */}
-                {!isRepairService && (
-                  <div className="space-y-2">
-                    <label className="block text-[10px] uppercase font-bold tracking-wider text-dark/60">Number of Guests</label>
-                    <div className="relative">
-                      <span className="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-400"><FaUsers className="text-xs" /></span>
-                      <input
-                        type="number"
-                        min="1"
-                        placeholder="e.g. 2"
-                        {...register("guests", { min: { value: 1, message: "Min 1 guest" } })}
-                        className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:bg-white"
-                      />
-                    </div>
+                {/* Guest Count */}
+                <div className="space-y-2">
+                  <label className="block text-[10px] uppercase font-bold tracking-wider text-dark/60">Number of Guests</label>
+                  <div className="relative">
+                    <span className="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-400"><FaUsers className="text-xs" /></span>
+                    <input
+                      type="number"
+                      min="1"
+                      placeholder="e.g. 2"
+                      {...register("guests", { min: { value: 1, message: "Min 1 guest" } })}
+                      className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:bg-white"
+                    />
                   </div>
-                )}
-
-                {/* Dynamic Device Model for Technical Support */}
-                {isRepairService && (
-                  <div className="space-y-2">
-                    <label className="block text-[10px] uppercase font-bold tracking-wider text-dark/60">Device Model / Details</label>
-                    <div className="relative">
-                      <span className="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-400"><FaLaptop className="text-xs" /></span>
-                      <input
-                        type="text"
-                        placeholder="e.g. iPhone 15 Pro, MacBook Air M2"
-                        {...register("deviceModel")}
-                        className="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:bg-white"
-                      />
-                    </div>
-                  </div>
-                )}
+                </div>
 
               </div>
 
               {/* Description */}
               <div className="space-y-2 col-span-1 md:col-span-2">
                 <label className="block text-[10px] uppercase font-bold tracking-wider text-dark/60">
-                  {isRepairService ? "Issue Description" : "Special Customizations / Dietary Requirements"}
+                  Special Customizations / Dietary Requirements
                 </label>
                 <div className="relative">
                   <span className="absolute top-4 left-0 pl-4 text-slate-400"><FaEdit className="text-xs" /></span>
                   <textarea
                     rows={4}
-                    placeholder={isRepairService ? "Please describe screen cracks, battery life issues, etc." : "Special instructions: honeymoon setup, vegetarian menus, lake boarding location preference."}
+                    placeholder="Special instructions: honeymoon setup, vegetarian menus, lake boarding location preference."
                     {...register("issueDescription")}
                     className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:bg-white resize-none"
                   />

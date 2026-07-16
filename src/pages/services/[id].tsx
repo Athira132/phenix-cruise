@@ -115,10 +115,10 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
 
             </div>
 
-            {/* Repair / Cruise Process */}
+            {/* Cruise Process */}
             <section className="space-y-6">
               <h2 className="text-2xl font-serif font-bold text-dark border-b border-slate-200 pb-3">
-                {service.category === "cruises" ? "Cruise Itinerary & Timeline" : "Repair & Diagnostic Process"}
+                Cruise Itinerary & Timeline
               </h2>
               <div className="relative pl-6 border-l-2 border-primary/20 space-y-8">
                 {service.process.map((step, idx) => (
@@ -169,7 +169,7 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
                 <FaShieldAlt className="mr-2" /> Why Choose Phoenix?
               </h4>
               <p className="text-xs text-dark/70 font-light leading-relaxed">
-                We implement certified standards, live private chef services, and full lifetime warranties for client assurance.
+                We implement certified safety standards, live private chef dining, and experienced naval crew members for customer comfort.
               </p>
             </div>
 
