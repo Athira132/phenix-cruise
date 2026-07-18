@@ -22,7 +22,7 @@ const faqItems = [
   },
   {
     question: "What is your cancellation and booking policy?",
-    answer: "A 30% advance deposit secures your fleet allocation. Cancellations requested 14 days before the cruise receive a full refund. Cancellations closer to the date allow rescheduling based on calendar slots."
+    answer: "Cancellations requested 14 days before the cruise allow a full refund. Cancellations closer to the date allow rescheduling based on calendar slots."
   }
 ];
 
@@ -160,9 +160,9 @@ export default function ContactPage() {
             </div>
 
             {/* Map Frame */}
-            <div className="lg:col-span-7 min-h-[350px] relative rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <div className="lg:col-span-7 min-h-[350px] relative rounded-2xl overflow-hidden border border-slate-100 shadow-sm group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.1121085002016!2d75.72654397584163!3d11.543888988655619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6873523f6b4d3%3A0x6b63f5383f9ecffc!2sAkalapuzha%20Boating%20Point!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=11.505669,75.6596938&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -170,8 +170,18 @@ export default function ContactPage() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Phoenix Akalapuzha Boating Service Jetty Map"
-                className="absolute inset-0 w-full h-full"
+                className="absolute inset-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700"
               />
+              <div className="absolute bottom-4 right-4 z-10">
+                <a
+                  href="https://maps.app.goo.gl/syiqaAiLKzzjaMoA7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white hover:bg-primary text-dark hover:text-white px-4 py-2.5 rounded-luxury shadow-md hover:shadow-premium font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 flex items-center border border-primary/5"
+                >
+                  Open in Google Maps
+                </a>
+              </div>
             </div>
 
           </div>

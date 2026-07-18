@@ -7,7 +7,7 @@ const features = [
   { icon: FaUsers, title: "Experienced Crew", desc: "Fully certified, professional captains and crew members dedicated to your safety." },
   { icon: FaUtensils, title: "Authentic Kerala Food", desc: "Traditional Kerala dishes prepared fresh on board by private chefs, including Karimeen and Toddy shop specials." },
   { icon: FaLock, title: "Private Cruises", desc: "100% private boat bookings for intimate honeymoons, family outings, and corporate retreats." },
-  { icon: FaMap, title: "Scenic Backwaters", desc: "Curated cruise paths displaying the lush palms, beautiful lagoons, and narrow canals of Alleppey." },
+  { icon: FaMap, title: "Scenic Backwaters", desc: "Curated cruise paths displaying the lush palms, beautiful lagoons, and narrow canals of Akalapuzha." },
   { icon: FaShieldAlt, title: "Safe & Comfortable", desc: "Equipped with adult and child life jackets, safety equipment, and maintained under strict sanitization." },
 ];
 

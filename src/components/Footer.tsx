@@ -50,10 +50,10 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <h4 className="font-serif text-sm font-bold text-white uppercase tracking-wider">Packages</h4>
             <ul className="space-y-2.5 font-sans text-xs md:text-sm font-light text-white/60">
-              <li><Link href="/services" className="hover:text-accent transition-colors">Basic Cruise</Link></li>
-              <li><Link href="/services" className="hover:text-accent transition-colors">Deluxe Cruise</Link></li>
-              <li><Link href="/services" className="hover:text-accent transition-colors">Premium Cruise</Link></li>
-              <li><Link href="/services" className="hover:text-accent transition-colors">Luxury Cruise</Link></li>
+              <li><Link href="/services/day-package" className="hover:text-accent transition-colors">Day Package</Link></li>
+              <li><Link href="/services/family-package" className="hover:text-accent transition-colors">Family Package</Link></li>
+              <li><Link href="/services/couple-package" className="hover:text-accent transition-colors">Couple Package</Link></li>
+              <li><Link href="/services/sunset-cruise" className="hover:text-accent transition-colors">Sunset Cruise</Link></li>
             </ul>
           </div>
 
@@ -61,7 +61,7 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-5">
             <h4 className="font-serif text-sm font-bold text-white uppercase tracking-wider">Connect With Us</h4>
             <p className="font-sans text-xs text-white/60 font-light leading-relaxed">
-              Follow our backwater journeys through Alleppey on our official profiles for media highlights and seasonal updates.
+              Follow our backwater journeys through Akalapuzha on our official profiles for media highlights and seasonal updates.
             </p>
             <div className="flex items-center space-x-4 pt-1">
               <a

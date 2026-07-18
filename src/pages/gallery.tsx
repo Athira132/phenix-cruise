@@ -71,9 +71,9 @@ export default function GalleryPage() {
         <title>Photo & Video Gallery | Phoenix Cruise Kerala Tourism</title>
         <meta
           name="description"
-          content="Browse high-resolution photographs and cinematic videos of Phoenix Cruise luxury houseboats, sunsets, and traditional dining arrangements in Alleppey."
+          content="Browse high-resolution photographs and cinematic videos of Phoenix Cruise luxury boats, sunsets, and traditional dining arrangements in Akalapuzha."
         />
-        <meta name="keywords" content="houseboat photos, alleppey backwaters video, tourism kerala gallery" />
+        <meta name="keywords" content="houseboat photos, akalapuzha backwaters video, tourism kerala gallery" />
         <link rel="canonical" href="https://phoenixcruise.com/gallery" />
       </Head>
 

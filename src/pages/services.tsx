@@ -10,84 +10,92 @@ import { FaArrowRight, FaClock, FaCheckCircle, FaQuestionCircle } from "react-ic
 
 // Services Database supporting Luxury Cruises and Boat Rides
 export const servicesData = [
-  // Cruises
   {
-    id: "houseboat",
-    title: "Luxury Houseboat Cruise",
+    id: "day-package",
+    title: "Day Package",
     category: "cruises",
-    shortDesc: "Overnight backwater stay. Fully furnished wooden houseboats with AC bedrooms, private bathroom, and direct river sunset views.",
-    desc: "The ultimate overnight backwater stay. Fully furnished wooden houseboats with AC bedrooms, private bathroom, and direct river sunset views. Relax as you glide through calm rivers and canals.",
-    image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
-    time: "21 Hours (Check-in 12 PM, Check-out 9 AM)",
-    benefits: ["Fully air-conditioned luxury rooms", "Private on-board chef", "Sunset Vembanad lake anchoring", "Premium interior deck space"],
-    problems: ["No internet connectivity in deep water zones", "Limited boarding points after sunset"],
-    process: ["Welcome drink on boarding", "Cruising palm-fringed channels", "Traditional Kerala lunch", "Golden hour sunset anchor", "Candlelit fresh dinner", "Morning return cruise"],
-    price: "From ₹12,500/night"
-  },
-  {
-    id: "shikara",
-    title: "Shikara Ride",
-    category: "cruises",
-    shortDesc: "Navigate through narrow canals and shallow waterways where larger houseboats cannot go, in hand-carved wooden Shikara boats.",
-    desc: "Navigate through narrow canals and shallow waterways where larger houseboats cannot go, in hand-carved wooden Shikara boats. Get close to village life.",
-    image: "https://i.ibb.co/GQkYjgvb/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
-    time: "3-5 Hours (Hourly Booking)",
-    benefits: ["Access narrow village canals", "Eco-friendly silent wooden hull", "Open layout for photography", "Flexible boarding times"],
-    problems: ["No cabin rooms or toilet space on tiny boats", "Weather dependent open design"],
-    process: ["Jetty boarding", "Cruising low-hanging palm canals", "Vembanad lake crossway", "Local village tea stall stop", "Return ride"],
-    price: "From ₹1,200/hour"
-  },
-  {
-    id: "day-cruise",
-    title: "Day Cruise",
-    category: "cruises",
-    shortDesc: "Perfect for travellers who want a 5-hour daytime backwater journey. Includes fresh local lunch prepared live and tea snacks.",
-    desc: "Perfect for travellers who want a 5-hour daytime backwater journey. Includes fresh local lunch prepared live and tea snacks. Ideal for large groups.",
+    shortDesc: "Enjoy a complete 5-hour daytime cruise on our premium Shikara Boat with fresh local lunch, tea, music, and complete onboard facilities.",
+    desc: "Enjoy a complete 5-hour daytime cruise on our premium Shikara Boat with fresh local lunch, tea, music, and complete onboard facilities. Perfect for group trips and family gatherings.",
     image: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
-    time: "5 Hours (11 AM to 4 PM)",
-    benefits: ["Spacious upper deck seating", "Freshly prepared pearl spot fish lunch", "No overnight stays required", "Best value for group picnics"],
-    problems: ["Shorter duration than houseboat stays", "No night lake anchoring experience"],
-    process: ["Welcome drink at 11 AM", "Cruising open lakes and canals", "Hot buffet lunch prepared live", "Upper deck sightseeing", "Tea & Kerala banana fritters", "Disembark at 4 PM"],
-    price: "From ₹8,500/group"
+    time: "5 Hours Shikara Boat",
+    benefits: [
+      "Welcome drink included",
+      "Traditional Kerala lunch: Chicken Biriyani or meals with Fish Fry",
+      "Evening hot tea and traditional snacks",
+      "Optional Add-ons: Seafood, Arabic, Chinese, and Nadan dishes",
+      "Facilities: Restroom, DJ music system, microphone, electric cabin fans"
+    ],
+    problems: [
+      "No overnight stays"
+    ],
+    process: [
+      "Welcome drink on boarding",
+      "Canal & backwater cruise",
+      "Traditional Kerala lunch feast",
+      "Music and sightseeing",
+      "Evening tea & disembark"
+    ],
+    price: "From ₹500 to ₹600 per person / hourly rates from ₹2,000"
+  },
+  {
+    id: "family-package",
+    title: "Family Package",
+    category: "cruises",
+    shortDesc: "Perfect backwater experience for families. For more details, contact us.",
+    desc: "Perfect backwater experience for families. For more details, contact us.",
+    image: "https://i.ibb.co/Y7x5FZFL/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
+    time: "For more information and booking, contact us.",
+    benefits: [
+      "Designed for comfortable family cruises",
+      "For more details, contact us."
+    ],
+    problems: [
+      "For more details, contact us."
+    ],
+    process: [
+      "For more details, contact us."
+    ],
+    price: "For more details, contact us."
+  },
+  {
+    id: "couple-package",
+    title: "Couple Package",
+    category: "cruises",
+    shortDesc: "Romantic couples getaway cruise. For more details, contact us.",
+    desc: "Romantic couples getaway cruise. For more details, contact us.",
+    image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg",
+    time: "For more information and booking, contact us.",
+    benefits: [
+      "Exclusive privacy and setup for couples",
+      "For more details, contact us."
+    ],
+    problems: [
+      "For more details, contact us."
+    ],
+    process: [
+      "For more details, contact us."
+    ],
+    price: "For more details, contact us."
   },
   {
     id: "sunset-cruise",
     title: "Sunset Cruise",
     category: "cruises",
-    shortDesc: "A beautiful 3-hour evening journey. Experience the golden sunset on Akalapuzha lake while enjoying fresh Kerala tea snacks.",
-    desc: "A beautiful 3-hour evening journey. Experience the golden sunset on Akalapuzha lake while enjoying fresh Kerala tea snacks. Perfect for couples and families.",
+    shortDesc: "Witness the beautiful golden hour over the lake. For more details, contact us.",
+    desc: "Witness the beautiful golden hour over the lake. For more details, contact us.",
     image: "https://i.ibb.co/m5bDKmp4/Whats-App-Image-2026-07-14-at-1-19-42-PM.jpg",
-    time: "3 Hours (4 PM to 7 PM)",
-    benefits: ["Breathtaking sunset views", "Complementary Kerala snacks", "Romantic setups available", "Ideal for photography"],
-    problems: ["Weather dependent", "No overnight stays"],
-    process: ["Jetty boarding at 4 PM", "Cruising to sunset viewpoint", "Hot tea & fresh banana fritters", "Relaxing on upper deck", "Return by 7 PM"],
-    price: "From ₹4,500/trip"
-  },
-  {
-    id: "private-charter",
-    title: "Private Charter Services",
-    category: "cruises",
-    shortDesc: "Exclusive boat rentals for corporate events, family celebrations, and private functions with customized catering.",
-    desc: "Exclusive boat rentals for corporate events, family celebrations, and private functions with customized catering. Fully tailorable to your needs.",
-    image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg",
-    time: "Customizable Duration",
-    benefits: ["Complete privacy", "Customized menu selection", "Decorations for events", "Flexible boarding locations"],
-    problems: ["Requires advanced booking of at least 7 days"],
-    process: ["Consultation for details", "Custom decor setup", "Boarding & private cruise", "Live cooking & catering", "Return to base"],
-    price: "From ₹15,000/event"
-  },
-  {
-    id: "island-tour",
-    title: "Island Tour Packages",
-    category: "cruises",
-    shortDesc: "A day tour visiting local village islands, coconut plantations, and historical temples on the backwaters.",
-    desc: "A day tour visiting local village islands, coconut plantations, and historical temples on the backwaters. Get a deep taste of local culture.",
-    image: "https://i.ibb.co/B51fLF7w/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
-    time: "6 Hours (10 AM to 4 PM)",
-    benefits: ["Guided local village walk", "Coconut harvesting demonstration", "Visit ancient temples", "Authentic lunch included"],
-    problems: ["Requires moderate walking on islands"],
-    process: ["Boarding at 10 AM", "Cruise to first island stop", "Guided village walk", "Traditional lunch", "Temple visit", "Return by 4 PM"],
-    price: "From ₹6,000/group"
+    time: "For more information and booking, contact us.",
+    benefits: [
+      "Golden hour views over the backwaters",
+      "For more details, contact us."
+    ],
+    problems: [
+      "For more details, contact us."
+    ],
+    process: [
+      "For more details, contact us."
+    ],
+    price: "For more details, contact us."
   }
 ];
 
@@ -227,9 +235,9 @@ export default function ServicesPage() {
               <div className="bg-white border border-slate-100 rounded-2xl p-6 space-y-2">
                 <div className="flex items-start space-x-3 text-primary">
                   <FaQuestionCircle className="text-lg mt-0.5" />
-                  <h4 className="font-serif font-bold text-dark text-sm sm:text-base">What is the booking deposit policy?</h4>
+                  <h4 className="font-serif font-bold text-dark text-sm sm:text-base">Are safety jackets provided on the boats?</h4>
                 </div>
-                <p className="text-xs text-dark/70 font-light leading-relaxed pl-7">We require a 50% advance deposit to secure your houseboat date and crew. The remaining balance can be settled on boarding.</p>
+                <p className="text-xs text-dark/70 font-light leading-relaxed pl-7">Yes, we provide certified life jackets and safety gear for all guests on board, adhering to safety protocols throughout the cruise.</p>
               </div>
             </div>
           </section>
@@ -243,12 +251,14 @@ export default function ServicesPage() {
                 Connect with our front desk managers to outline your customized booking requirements immediately.
               </p>
               <div className="pt-4">
-                <Link
-                  href="/booking"
-                  className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300"
+                <a
+                  href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%2520backwater%20cruise."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 inline-block text-center"
                 >
-                  Go to Booking Form
-                </Link>
+                  Book Your Cruise
+                </a>
               </div>
             </div>
           </section>

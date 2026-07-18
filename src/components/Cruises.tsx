@@ -4,53 +4,32 @@ import { motion } from "framer-motion";
 
 const cruises = [
   {
-    title: "Luxury Houseboat Cruise",
-    description: "The ultimate overnight backwater stay. Fully furnished wooden houseboats with AC bedrooms, private bathroom, and direct river sunset views.",
-    image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
-    id: "houseboat",
+    title: "Day Package",
+    description: "Enjoy a complete 5-hour daytime cruise on our premium Shikara Boat with fresh local lunch, tea, music, and complete onboard facilities.",
+    image: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
+    id: "day-package",
   },
   {
-    title: "Day Cruise",
-    description: "Perfect for travellers who want a 5-hour daytime backwater journey. Includes fresh local lunch prepared live and tea snacks.",
-    image: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
-    id: "day-cruise",
+    title: "Family Package",
+    description: "Perfect backwater experience for families. For more details, contact us.",
+    image: "https://i.ibb.co/Y7x5FZFL/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
+    id: "family-package",
+  },
+  {
+    title: "Couple Package",
+    description: "Romantic couples getaway cruise. For more details, contact us.",
+    image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg",
+    id: "couple-package",
   },
   {
     title: "Sunset Cruise",
-    description: "A magical 3-hour evening cruise capturing the golden hour sunset reflections on the Vembanad Lake. Includes traditional refreshments.",
+    description: "Witness the beautiful golden hour over the lake. For more details, contact us.",
     image: "https://i.ibb.co/m5bDKmp4/Whats-App-Image-2026-07-14-at-1-19-42-PM.jpg",
-    id: "sunset",
-  },
-  {
-    title: "Honeymoon Cruise",
-    description: "Exclusive romantic decoration, candlelit dinner, custom cake, and absolute privacy for couples to celebrate their special milestone.",
-    image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg",
-    id: "honeymoon",
-  },
-  {
-    title: "Family Cruise",
-    description: "Spacious luxury multi-room houseboats built to comfortably accommodate large families, with safety guards and customized dining plans.",
-    image: "https://i.ibb.co/Y7x5FZFL/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
-    id: "family",
-  },
-  {
-    title: "Shikara Ride",
-    description: "Navigate through the narrow canals and shallow waterways where larger houseboats cannot go, in our hand-carved wooden Shikara boats.",
-    image: "https://i.ibb.co/GQkYjgvb/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
-    id: "shikara",
+    id: "sunset-cruise",
   },
 ];
 
 export default function Cruises() {
-  const selectCruiseType = (title: string) => {
-    const selectEl = document.getElementById("package-select") as HTMLSelectElement | null;
-    if (selectEl) {
-      selectEl.value = title;
-      // Trigger native change event for react-hook-form or state binding
-      selectEl.dispatchEvent(new Event("change", { bubbles: true }));
-    }
-  };
-
   return (
     <section id="cruises" className="py-16 md:py-20 bg-white relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-sand/30 rounded-full blur-[120px] pointer-events-none -z-1" />
@@ -59,19 +38,19 @@ export default function Cruises() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
           <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
-            Premium Fleets
+            Premium Packages
           </span>
           <h2 className="text-4xl md:text-5xl font-serif text-dark tracking-wide mb-4">
-            Our Luxury Cruises
+            Our Cruise Offerings
           </h2>
           <div className="w-16 h-[2px] bg-accent mx-auto mb-6" />
           <p className="text-dark/70 font-sans font-light leading-relaxed text-sm md:text-base">
-            Select from our high-end fleet and curated packages designed to deliver the ultimate serene floating experience.
+            Select from our carefully curated backwater cruise packages. Simply contact us on WhatsApp to book.
           </p>
         </div>
 
         {/* Cruises Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {cruises.map((cruise, idx) => (
             <motion.div
               key={cruise.id}
@@ -82,12 +61,12 @@ export default function Cruises() {
               className="bg-sand/20 rounded-luxury overflow-hidden border border-primary/5 hover:border-primary/10 shadow-premium hover:shadow-premium-hover transition-all duration-500 flex flex-col group"
             >
               {/* Card Image */}
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
                   src={cruise.image}
                   alt={cruise.title}
                   fill
-                  sizes="(max-w-768px) 100vw, 33vw"
+                  sizes="(max-w-768px) 100vw, 50vw"
                   style={{ objectFit: "cover" }}
                   className="transition-transform duration-700 group-hover:scale-105"
                 />
@@ -96,17 +75,29 @@ export default function Cruises() {
               {/* Card Content */}
               <div className="p-6 md:p-8 flex flex-col flex-grow">
                 <h3 className="font-serif text-xl md:text-2xl font-bold text-dark mb-3 group-hover:text-primary transition-colors duration-300">
-                  {cruise.title}
+                  <Link href={`/services/${cruise.id}`} className="hover:underline">
+                    {cruise.title}
+                  </Link>
                 </h3>
                 <p className="font-sans text-xs md:text-sm text-dark/70 leading-relaxed font-light mb-6 flex-grow">
                   {cruise.description}
                 </p>
-                <Link
-                  href="/booking"
-                  className="w-full text-center py-3 bg-white hover:bg-primary text-primary hover:text-white border border-primary/20 hover:border-primary rounded-luxury font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md"
-                >
-                  Book This Cruise
-                </Link>
+                <div className="grid grid-cols-2 gap-4">
+                  <Link
+                    href={`/services/${cruise.id}`}
+                    className="text-center py-3 bg-white hover:bg-slate-50 text-dark border border-slate-200 rounded-luxury font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 active:scale-95 shadow-sm"
+                  >
+                    View Details
+                  </Link>
+                  <a
+                    href={`https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20am%20interested%20in%20the%20${encodeURIComponent(cruise.title)}.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-center py-3 bg-primary hover:bg-primary-hover text-white rounded-luxury font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md"
+                  >
+                    Enquire Now
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}

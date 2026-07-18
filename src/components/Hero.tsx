@@ -59,7 +59,7 @@ export default function Hero() {
       >
         <Image
           src="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg"
-          alt="Phoenix Cruise traditional luxury Kerala houseboat sailing on Alleppey backwaters"
+          alt="Phoenix Cruise traditional luxury Kerala boating on Akalapuzha backwaters"
           fill
           priority
           style={{ objectFit: "cover", objectPosition: "center" }}
@@ -117,12 +117,14 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.8 }}
             className="flex flex-row space-x-4 sm:space-x-6 mb-14 w-full justify-start items-center"
           >
-            <Link
-              href="/booking"
-              className="px-8 sm:px-10 py-4 sm:py-4.5 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 border border-white/10"
+            <a
+              href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 sm:px-10 py-4 sm:py-4.5 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 border border-white/10 text-center"
             >
-              Book Now
-            </Link>
+              Book Your Cruise
+            </a>
             <Link
               href="/services"
               className="px-8 sm:px-10 py-4 sm:py-4.5 bg-white/20 hover:bg-white/30 text-white rounded-[14px] border border-white/30 font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 backdrop-blur-md hover:-translate-y-1 active:scale-95 shadow-md hover:shadow-premium"

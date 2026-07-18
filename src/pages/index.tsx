@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Cruises from "@/components/Cruises";
+import DayPackageDetails from "@/components/DayPackageDetails";
+import FoodAndSafety from "@/components/FoodAndSafety";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import StickyButtons from "@/components/StickyButtons";
@@ -46,8 +48,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 11.5438889,
-      "longitude": 75.7265439
+      "latitude": 11.505669,
+      "longitude": 75.6596938
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -125,6 +127,12 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Day Package details */}
+        <DayPackageDetails />
+
+        {/* Food and safety specifications */}
+        <FoodAndSafety />
+
         {/* Customer Reviews Preview (Testimonials slider) */}
         <Testimonials />
 
@@ -139,12 +147,14 @@ export default function Home() {
               Book your private Akalapuzha Boating Service reservation today. Plan custom cruises, sunset tours, and enjoy instant WhatsApp confirmation.
             </p>
             <div className="pt-4">
-              <Link
-                href="/booking"
-                className="px-10 py-4.5 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95"
+              <a
+                href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-10 py-4.5 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 text-center inline-block"
               >
-                Book Your Service
-              </Link>
+                Book Your Cruise
+              </a>
             </div>
           </div>
         </section>

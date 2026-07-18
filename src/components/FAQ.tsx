@@ -5,7 +5,7 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 const faqs = [
   {
     question: "How do I book a cruise?",
-    answer: "You can book a cruise directly by using the 'Book Now' form on our website. After filling in your preferred dates, package, and contact details, clicking submit will automatically generate a WhatsApp message containing all details. Our team will verify availability and send you the payment invoice immediately to confirm your booking.",
+    answer: "You can book a cruise directly by using the 'Book Now' form on our website. After filling in your preferred dates, package, and contact details, clicking submit will automatically generate a WhatsApp message containing all details. Our team will verify availability and contact you on WhatsApp to confirm your booking details.",
   },
   {
     question: "Are meals included in the packages?",
@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     question: "Is secure parking available at the boarding points?",
-    answer: "Yes, we provide secure, 24/7 guarded private parking facilities at our boarding jetty in Alleppey (Alappuzha) free of charge for all our guests. You can park your private cars and buses safely until you return.",
+    answer: "Yes, we provide secure, 24/7 guarded private parking facilities at our boarding jetty in Calicut (Akalapuzha) free of charge for all our guests. You can park your private cars and buses safely until you return.",
   },
   {
     question: "What are the standard check-in and check-out timings?",
-    answer: "For overnight stays, standard check-in is at 12:00 PM (noon) and check-out is at 9:00 AM the following morning. For day cruises, the timings are usually 11:00 AM to 5:00 PM. Customized timings can also be arranged upon request depending on availability.",
+    answer: "For standard check-in, check-out, and cruise duration timings for each package option, please contact us. For more information and booking, contact us.",
   },
   {
     question: "Is there proper air conditioning and backup power on board?",

@@ -13,7 +13,7 @@ const features = [
   { icon: FaUsers, title: "Certified Crew", desc: "Expert captains, life savers, and helpers dedicated to passenger safety." },
   { icon: FaUtensils, title: "Authentic Chefs", desc: "Personal chefs serving fresh, locally-sourced backwater specialities and Karimeen." },
   { icon: FaLock, title: "Exclusive Privacy", desc: "Private bookings designed for romantic getaways, family outings, and corporate meets." },
-  { icon: FaMap, title: "Curated Trails", desc: "Cruise through hidden canals, paddy fields, and lagoons of Alappuzha." },
+  { icon: FaMap, title: "Curated Trails", desc: "Cruise through hidden canals, paddy fields, and lagoons of Akalapuzha." },
   { icon: FaShieldAlt, title: "Safety Infrastructure", desc: "Full safety gears, life rafts, fire suppression, and strict sanitization rules." },
 ];
 
@@ -148,15 +148,17 @@ export default function AboutPage() {
           <div className="relative z-10 max-w-3xl mx-auto px-6 space-y-8">
             <h2 className="text-3xl md:text-5xl font-serif font-bold">Ready for a Bespoke Cruise Journey?</h2>
             <p className="text-white/70 font-light max-w-lg mx-auto text-sm sm:text-base leading-relaxed">
-              Explore Alleppey with Kerala's highest-rated luxury houseboat team. Tell us your date and dynamic food preferences!
+              Explore Akalapuzha with Kerala's highest-rated luxury boating team. Tell us your date and food preferences!
             </p>
             <div className="flex justify-center">
-              <Link
-                href="/booking"
-                className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95"
+              <a
+                href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 text-center"
               >
                 Reserve Your Cruise Now
-              </Link>
+              </a>
             </div>
           </div>
         </section>

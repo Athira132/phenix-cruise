@@ -67,7 +67,7 @@ export default function TestimonialsPage() {
           name="description"
           content="Read what our national and international guests say about Phoenix Cruise luxury houseboats, culinary tours, honeymoon decor packages, and backwater safaris."
         />
-        <meta name="keywords" content="phoenix cruise reviews, guest testimonials kerala, alleppey boat reviews" />
+        <meta name="keywords" content="phoenix cruise reviews, guest testimonials kerala, akalapuzha boat reviews" />
         <link rel="canonical" href="https://phoenixcruise.com/testimonials" />
       </Head>
 
@@ -160,12 +160,14 @@ export default function TestimonialsPage() {
               Have you recently sailed with us? Share your feedback to help future travellers plan their Kerala backwater voyages!
             </p>
             <div className="pt-2">
-              <Link
-                href="/booking"
-                className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300"
+              <a
+                href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 inline-block text-center"
               >
                 Book Your Own Journey
-              </Link>
+              </a>
             </div>
           </section>
 

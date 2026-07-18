@@ -43,8 +43,8 @@ export default function Contact() {
                 <div>
                   <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Our Jetty Address</h4>
                   <p className="font-sans text-xs md:text-sm text-dark/70 font-light leading-relaxed">
-                    Phoenix Cruise Jetty, Punnamada Lake, Near Finishing Point,<br />
-                    Alappuzha (Alleppey), Kerala - 688011, India
+                    Phoenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road,<br />
+                    Kozhikode (Calicut) District, Kerala - 673522, India
                   </p>
                 </div>
               </div>
@@ -129,18 +129,28 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 h-[400px] lg:h-auto min-h-[350px] relative rounded-luxury overflow-hidden shadow-premium border border-primary/5 group"
           >
-            {/* Google Map Iframe for Punnamada finishing point Alleppey */}
+            {/* Google Map Iframe for Akalapuzha jetty point */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.438596706173!2d76.34706597581177!3d9.509749990572895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b088420bf99e525%3A0xe543e098a58ec402!2sPunnamada%20Finishing%20Point!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?q=11.505669,75.6596938&z=15&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Phoenix Cruise Jetty Location Map"
+              title="Phoenix Akalapuzha Boating Service Jetty Location Map"
               className="absolute inset-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700"
             />
+            <div className="absolute bottom-4 right-4 z-10">
+              <a
+                href="https://maps.app.goo.gl/syiqaAiLKzzjaMoA7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-primary text-dark hover:text-white px-4 py-2.5 rounded-luxury shadow-md hover:shadow-premium font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 flex items-center border border-primary/5"
+              >
+                Open in Google Maps
+              </a>
+            </div>
           </motion.div>
 
         </div>

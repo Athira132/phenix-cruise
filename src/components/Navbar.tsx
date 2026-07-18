@@ -85,14 +85,16 @@ export default function Navbar() {
             </ul>
 
             {/* Book Now Button */}
-            <Link
-              href="/booking"
+            <a
+              href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative inline-flex items-center justify-center px-6 py-2.5 overflow-hidden font-medium text-white transition-all duration-300 bg-primary rounded-luxury hover:bg-primary-hover shadow-md group hover:shadow-premium"
             >
               <span className="relative text-sm tracking-widest uppercase font-semibold">
-                Book Now
+                Book Your Cruise
               </span>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -147,13 +149,15 @@ export default function Navbar() {
                 transition={{ delay: navLinks.length * 0.05 + 0.2 }}
                 className="pt-6"
               >
-                <Link
-                  href="/booking"
+                <a
+                  href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
                   className="w-full text-center inline-block px-8 py-4 font-sans font-bold text-white bg-primary hover:bg-primary-hover rounded-luxury tracking-widest uppercase transition-colors shadow-lg"
                 >
-                  Book Now
-                </Link>
+                  Book Your Cruise
+                </a>
               </motion.div>
             </div>
             

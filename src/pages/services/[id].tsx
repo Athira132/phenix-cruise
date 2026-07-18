@@ -139,12 +139,14 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
                 </div>
               </div>
 
-              <Link
-                href="/booking"
-                className="w-full inline-flex items-center justify-center py-3.5 bg-primary hover:bg-primary-hover text-white rounded-[12px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-premium active:scale-95"
+              <a
+                href={`https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20the%20${encodeURIComponent(service.title)}.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center py-3.5 bg-primary hover:bg-primary-hover text-white rounded-[12px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-premium active:scale-95 text-center"
               >
-                Book This Service Now
-              </Link>
+                Book Your Cruise
+              </a>
             </div>
 
             {/* Why Choose Us */}

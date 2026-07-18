@@ -22,13 +22,10 @@ type BookingFormData = {
 };
 
 const servicesList = [
-  // Cruises
-  "Luxury Houseboat Cruise",
-  "Day Cruise",
+  "Day Package",
+  "Family Package",
+  "Couple Package",
   "Sunset Cruise",
-  "Honeymoon Cruise",
-  "Family Cruise",
-  "Shikara Ride",
 ];
 
 export default function BookingPage() {
