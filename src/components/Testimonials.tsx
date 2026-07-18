@@ -114,24 +114,13 @@ export default function Testimonials() {
               </div>
 
               {/* Reviewer Meta info */}
-              <div className="flex items-center space-x-4 border-t border-white/10 pt-6">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden border border-accent/30 flex-shrink-0">
-                  <Image
-                    src={reviews[index].image}
-                    alt={reviews[index].name}
-                    fill
-                    sizes="48px"
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-                <div>
-                  <h4 className="font-serif text-white font-bold text-base md:text-lg">
-                    {reviews[index].name}
-                  </h4>
-                  <span className="font-sans text-xs text-white/60">
-                    {reviews[index].location}
-                  </span>
-                </div>
+              <div className="border-t border-white/10 pt-6">
+                <h4 className="font-serif text-accent font-bold text-base md:text-lg">
+                  {reviews[index].name}
+                </h4>
+                <span className="font-sans text-xs text-white/50 mt-0.5 block">
+                  {reviews[index].location}
+                </span>
               </div>
             </motion.div>
           </AnimatePresence>

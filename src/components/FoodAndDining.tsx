@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaUtensils, FaShieldAlt, FaShip, FaCoffee, FaCheck } from "react-icons/fa";
+import { FaUtensils, FaCoffee, FaCheck, FaGlassMartiniAlt } from "react-icons/fa";
 
 const foodImages = [
-  { src: "https://i.ibb.co/gLDj3rmn/image.png", alt: "Freshly prepared Karimeen fish curry and rice on banana leaf" },
+  { src: "https://i.ibb.co/gLDj3rmn/image.png", alt: "Freshly prepared Karimeen fish fry on banana leaf" },
   { src: "https://i.ibb.co/YJjmvNQ/image.png", alt: "Traditional Kerala backwater dining feast spread" },
   { src: "https://i.ibb.co/Fq6vx8GP/image.png", alt: "Delightful local seafood starters served live" },
   { src: "https://i.ibb.co/bMdMwtxD/image.png", alt: "Fresh seasonal juices and traditional evening snacks" },
   { src: "https://i.ibb.co/CsP03WXL/image.png", alt: "Authentic clay-pot cooking prepared live by onboard chefs" },
 ];
 
-export default function FoodAndSafety() {
+export default function FoodAndDining() {
   return (
-    <section id="food-and-safety" className="py-20 bg-white relative overflow-hidden">
+    <section id="food-and-dining" className="py-20 bg-white relative overflow-hidden">
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-sand/20 rounded-full blur-[120px] pointer-events-none -z-1" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -22,80 +22,71 @@ export default function FoodAndSafety() {
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-3">
               <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block">
-                Hospitality & Standards
+                Gastronomic Journey
               </span>
               <h2 className="text-4xl md:text-5xl font-serif text-dark tracking-wide leading-tight">
-                Premium Dining & Safety Aboard
+                Fresh & Premium Dining Onboard
               </h2>
               <div className="w-16 h-[2px] bg-accent" />
             </div>
 
             <p className="font-sans text-dark/70 font-light leading-relaxed text-sm md:text-base">
-              We are committed to delivering the ultimate backwater experience by matching breathtaking scenery with exceptional food hygiene and cruise safety standards. Relax with absolute peace of mind.
+              Enjoy freshly prepared, delicious food served as part of your cruise experience. We prioritize quality ingredients, fresh preparations, and local/international dining selections to offer a comfortable dining experience during the cruise.
             </p>
 
-            {/* Core Pillars */}
+            {/* Included Menu */}
             <div className="space-y-6">
+              <h3 className="font-serif text-lg font-bold text-dark border-b border-slate-100 pb-2">
+                Food & Dining Included
+              </h3>
               
-              {/* Quality Food */}
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-xl bg-sand flex items-center justify-center text-primary flex-shrink-0 mr-4 border border-primary/5">
-                  <FaUtensils className="text-lg" />
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="p-4 bg-sand/30 rounded-xl border border-primary/5 space-y-1.5">
+                  <span className="text-[10px] uppercase tracking-wider text-primary font-bold block">Welcome</span>
+                  <h5 className="font-serif font-bold text-dark text-sm">Welcome Drink</h5>
+                  <p className="text-xs text-dark/60 font-light leading-relaxed">Chilled seasonal fresh fruit drinks on boarding.</p>
                 </div>
-                <div className="space-y-1">
-                  <h4 className="font-serif text-base font-bold text-dark">Quality Food & Fresh Preparation</h4>
-                  <p className="font-sans text-xs md:text-sm text-dark/65 font-light leading-relaxed">
-                    Our onboard private chefs prepare every dish fresh in well-maintained kitchens. We source fresh fish and local organic ingredients daily to present authentic Kerala flavors.
-                  </p>
+                
+                <div className="p-4 bg-sand/30 rounded-xl border border-primary/5 space-y-1.5">
+                  <span className="text-[10px] uppercase tracking-wider text-primary font-bold block">Main Feast</span>
+                  <h5 className="font-serif font-bold text-dark text-sm">Delicious Lunch</h5>
+                  <p className="text-xs text-dark/60 font-light leading-relaxed">Chicken Biriyani or traditional Kerala meals with fish fry.</p>
                 </div>
-              </div>
-
-              {/* Comfortable Dining */}
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-xl bg-sand flex items-center justify-center text-primary flex-shrink-0 mr-4 border border-primary/5">
-                  <FaCoffee className="text-lg" />
-                </div>
-                <div className="space-y-1">
-                  <h4 className="font-serif text-base font-bold text-dark">Comfortable Dining Experience</h4>
-                  <p className="font-sans text-xs md:text-sm text-dark/65 font-light leading-relaxed">
-                    Enjoy your breakfast, lunch, and dinner in our spacious, well-ventilated open-deck dining lounge. We ensure top-tier tablescapes, clean drinking water, and premium hospitality.
-                  </p>
+                
+                <div className="p-4 bg-sand/30 rounded-xl border border-primary/5 space-y-1.5">
+                  <span className="text-[10px] uppercase tracking-wider text-primary font-bold block">Evening</span>
+                  <h5 className="font-serif font-bold text-dark text-sm">Tea &amp; Snacks</h5>
+                  <p className="text-xs text-dark/60 font-light leading-relaxed">Hot local tea/coffee served with traditional snacks.</p>
                 </div>
               </div>
+            </div>
 
-              {/* Cruise Safety */}
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-xl bg-sand flex items-center justify-center text-primary flex-shrink-0 mr-4 border border-primary/5">
-                  <FaShieldAlt className="text-lg" />
-                </div>
-                <div className="space-y-1">
-                  <h4 className="font-serif text-base font-bold text-dark">Safety & Comfort During the Cruise</h4>
-                  <p className="font-sans text-xs md:text-sm text-dark/65 font-light leading-relaxed">
-                    Your safety is our absolute priority. We provide premium-certified life jackets for all age groups, a fully stocked medical kit, and operate only during safe, permitted daylight weather hours.
-                  </p>
-                </div>
+            {/* Food Add-ons */}
+            <div className="space-y-3">
+              <h3 className="font-serif text-lg font-bold text-dark border-b border-slate-100 pb-2">
+                Food Add-ons Available
+              </h3>
+              <p className="text-xs text-dark/60 font-light">
+                Customize your boating dining experience with these delicious local and international food options:
+              </p>
+              <div className="flex flex-wrap gap-2.5 pt-1">
+                {["Fresh Seafood Specialities", "Arabic Cuisine Dishes", "Popular Chinese Dishes", "Traditional Kerala Nadan Dishes"].map((addon, index) => (
+                  <span
+                    key={index}
+                    className="px-3.5 py-1.5 bg-slate-50 border border-slate-150 rounded-lg text-xs font-sans font-medium text-dark/80 flex items-center shadow-sm"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent mr-2" />
+                    {addon}
+                  </span>
+                ))}
               </div>
-
-              {/* Fleet Maintenance */}
-              <div className="flex items-start">
-                <div className="w-12 h-12 rounded-xl bg-sand flex items-center justify-center text-primary flex-shrink-0 mr-4 border border-primary/5">
-                  <FaShip className="text-lg" />
-                </div>
-                <div className="space-y-1">
-                  <h4 className="font-serif text-base font-bold text-dark">Well-Maintained Cruise Experience</h4>
-                  <p className="font-sans text-xs md:text-sm text-dark/65 font-light leading-relaxed">
-                    Every Shikara and houseboat undergoes routine cleaning, hygiene checks, and complete structural audits. Our experienced crew members are trained in first-aid and safety navigation.
-                  </p>
-                </div>
-              </div>
-
             </div>
           </div>
 
           {/* Right Column: Premium Food Gallery */}
           <div className="lg:col-span-6 space-y-6">
             <span className="text-primary text-xs uppercase tracking-[0.2em] font-sans font-semibold block text-center lg:text-left">
-              Onboard Dining Gallery
+              Freshly Prepared Culinary Gallery
             </span>
 
             {/* Grid Layout for images */}
@@ -171,7 +162,6 @@ export default function FoodAndSafety() {
                 </div>
               </div>
             </div>
-
           </div>
 
         </div>

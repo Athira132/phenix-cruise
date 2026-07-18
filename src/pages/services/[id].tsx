@@ -35,8 +35,8 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
   return (
     <>
       <Head>
-        <title>{service.category === "cruises" ? `${service.title} | Akalapuzha Boating Service` : `${service.title} | Phoenix Custom Services`}</title>
-        <meta name="description" content={service.category === "cruises" ? `${service.shortDesc} Book your private boat ride with our trusted Akalapuzha Boating Service in Kerala.` : service.shortDesc} />
+        <title>{service.category === "cruises" ? `${service.title} | Akalappuzha Boating Service` : `${service.title} | Phoenix Custom Services`}</title>
+        <meta name="description" content={service.category === "cruises" ? `${service.shortDesc} Book your private boat ride with our trusted Akalappuzha Boating Service in Kerala.` : service.shortDesc} />
         <link rel="canonical" href={`https://phoenixcruise.com/services/${service.id}`} />
       </Head>
 
@@ -80,39 +80,19 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
               </p>
             </section>
 
-            {/* Benefits & Problems Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              
-              {/* Benefits */}
-              <div className="bg-white rounded-2xl p-6 border border-slate-100 space-y-4">
-                <h3 className="font-serif font-bold text-lg text-emerald-800 flex items-center">
-                  <FaCheckCircle className="mr-2 text-emerald-500" /> Key Benefits
-                </h3>
-                <ul className="space-y-2.5 text-xs text-dark/70 font-light">
-                  {service.benefits.map((b, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span>
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Problems */}
-              <div className="bg-white rounded-2xl p-6 border border-slate-100 space-y-4">
-                <h3 className="font-serif font-bold text-lg text-rose-800 flex items-center">
-                  <FaExclamationTriangle className="mr-2 text-rose-500" /> Common Challenges
-                </h3>
-                <ul className="space-y-2.5 text-xs text-dark/70 font-light">
-                  {service.problems.map((p, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <span className="text-rose-500 mr-2">•</span>
-                      <span>{p}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
+            {/* Benefits Section */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 border border-slate-100 space-y-4">
+              <h3 className="font-serif font-bold text-lg md:text-xl text-emerald-800 flex items-center">
+                <FaCheckCircle className="mr-2.5 text-emerald-500" /> Key Benefits &amp; Features
+              </h3>
+              <ul className="space-y-3.5 text-xs md:text-sm text-dark/70 font-light">
+                {service.benefits.map((b, idx) => (
+                  <li key={idx} className="flex items-start">
+                    <span className="text-emerald-500 mr-2.5 mt-0.5">•</span>
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
           </div>

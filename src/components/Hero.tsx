@@ -59,7 +59,7 @@ export default function Hero() {
       >
         <Image
           src="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg"
-          alt="Phoenix Cruise traditional luxury Kerala boating on Akalapuzha backwaters"
+          alt="Phoenix Cruise traditional luxury Kerala boating on Akalappuzha backwaters"
           fill
           priority
           style={{ objectFit: "cover", objectPosition: "center" }}
@@ -97,7 +97,7 @@ export default function Hero() {
             className="text-4xl sm:text-5xl lg:text-[68px] font-serif font-extrabold text-[#F8FAFC] tracking-wide leading-[1.05] text-left mb-6 uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]"
           >
             Experience The Best <br />
-            <span className="text-[#C9A227] normal-case">Akalapuzha Boating Service</span>
+            <span className="text-[#C9A227] normal-case">Akalappuzha Boat Service</span>
           </motion.h1>
 
           {/* Supporting description */}
@@ -107,7 +107,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.6 }}
             className="text-[#F8FAFC] text-sm sm:text-base md:text-lg max-w-xl font-sans font-semibold tracking-wide leading-relaxed mb-10 text-left drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
           >
-            Enjoy unforgettable backwater experiences with our trusted Akalapuzha Boating Service, offering safe, scenic, and memorable boat rides for families, couples, tourists, and groups.
+            Enjoy a memorable Akalappuzha backwater experience with quality dining, comfortable cruising, and a safe, well-maintained boat ride.
           </motion.p>
 
           {/* CTA Buttons (Larger, rounded-14px, premium hover lift) */}

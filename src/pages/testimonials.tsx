@@ -67,7 +67,7 @@ export default function TestimonialsPage() {
           name="description"
           content="Read what our national and international guests say about Phoenix Cruise luxury houseboats, culinary tours, honeymoon decor packages, and backwater safaris."
         />
-        <meta name="keywords" content="phoenix cruise reviews, guest testimonials kerala, akalapuzha boat reviews" />
+        <meta name="keywords" content="phoenix cruise reviews, guest testimonials kerala, akalappuzha boat reviews" />
         <link rel="canonical" href="https://phoenixcruise.com/testimonials" />
       </Head>
 
@@ -130,22 +130,11 @@ export default function TestimonialsPage() {
                   </p>
                 </div>
 
-                <div className="flex items-center space-x-4 border-t border-slate-100 pt-6 mt-6 relative z-10">
-                  <div className="relative w-11 h-11 rounded-full overflow-hidden border border-accent/20 bg-slate-100 flex-shrink-0">
-                    <Image
-                      src={rev.image}
-                      alt={rev.name}
-                      fill
-                      sizes="44px"
-                      style={{ objectFit: "cover" }}
-                    />
-                  </div>
-                  <div className="min-w-0">
-                    <h4 className="font-serif font-bold text-dark text-sm sm:text-base truncate">{rev.name}</h4>
-                    <div className="flex justify-between items-center text-[10px] text-dark/50 mt-0.5">
-                      <span className="truncate mr-1">{rev.location}</span>
-                      <span className="flex-shrink-0 text-accent/80 font-semibold">• {rev.date}</span>
-                    </div>
+                <div className="border-t border-slate-100 pt-6 mt-6 relative z-10">
+                  <h4 className="font-serif font-bold text-dark text-sm sm:text-base truncate">{rev.name}</h4>
+                  <div className="flex justify-between items-center text-[10px] text-dark/50 mt-0.5">
+                    <span className="truncate mr-1">{rev.location}</span>
+                    <span className="flex-shrink-0 text-accent/80 font-semibold">• {rev.date}</span>
                   </div>
                 </div>
               </div>

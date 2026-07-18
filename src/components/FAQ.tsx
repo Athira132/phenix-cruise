@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Is secure parking available at the boarding points?",
-    answer: "Yes, we provide secure, 24/7 guarded private parking facilities at our boarding jetty in Calicut (Akalapuzha) free of charge for all our guests. You can park your private cars and buses safely until you return.",
+    answer: "Yes, we provide secure, 24/7 guarded private parking facilities at our boarding jetty in Calicut (Akalappuzha) free of charge for all our guests. You can park your private cars and buses safely until you return.",
   },
   {
     question: "What are the standard check-in and check-out timings?",

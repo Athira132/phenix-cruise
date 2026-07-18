@@ -7,7 +7,7 @@ const features = [
   { icon: FaUsers, title: "Experienced Crew", desc: "Fully certified, professional captains and crew members dedicated to your safety." },
   { icon: FaUtensils, title: "Authentic Kerala Food", desc: "Traditional Kerala dishes prepared fresh on board by private chefs, including Karimeen and Toddy shop specials." },
   { icon: FaLock, title: "Private Cruises", desc: "100% private boat bookings for intimate honeymoons, family outings, and corporate retreats." },
-  { icon: FaMap, title: "Scenic Backwaters", desc: "Curated cruise paths displaying the lush palms, beautiful lagoons, and narrow canals of Akalapuzha." },
+  { icon: FaMap, title: "Scenic Backwaters", desc: "Curated cruise paths displaying the lush palms, beautiful lagoons, and narrow canals of Akalappuzha." },
   { icon: FaShieldAlt, title: "Safe & Comfortable", desc: "Equipped with adult and child life jackets, safety equipment, and maintained under strict sanitization." },
 ];
 
@@ -57,11 +57,11 @@ export default function About() {
                 ABOUT OUR SERVICE
               </span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-dark tracking-wide mb-6">
-                Experience the Best Akalapuzha Boating Service
+                Experience the Best Akalappuzha Boating Service
               </h2>
               <div className="text-dark/80 font-sans font-light leading-relaxed text-base md:text-lg flex flex-col gap-5">
                 <p>
-                  Welcome to Phoenix Cruise, where luxury meets the untouched serenity of Kozhikode’s backwaters. As the premier <strong>Akalapuzha Boating Service</strong>, we curate premium houseboat journeys and boat rides that invite you to slow down and glide through palm-fringed village canals, emerald paddy fields, and wide lakes. Enjoy unforgettable backwater experiences with our trusted Akalapuzha boat service, offering safe, scenic, and memorable boat rides for families, couples, tourists, and groups.
+                  Welcome to Phoenix Cruise, where luxury meets the untouched serenity of Kozhikode’s backwaters. As the premier <strong>Akalappuzha Boating Service</strong>, we curate premium houseboat journeys and boat rides that invite you to slow down and glide through palm-fringed village canals, emerald paddy fields, and wide lakes. Enjoy unforgettable backwater experiences with our trusted Akalappuzha boat service, offering safe, scenic, and memorable boat rides for families, couples, tourists, and groups.
                 </p>
                 <p>
                   Whether you are planning a romantic sunset tour, a family boating excursion, or a private group celebration, our services are tailored to your needs. On board, our experienced crew ensures the highest standards of safety, comfort, and attentive hospitality. We also take pride in serving authentic, freshly prepared Kerala cuisine cooked on board, ensuring every moment of your cruise is comfortable, memorable, and deeply relaxing.

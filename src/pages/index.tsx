@@ -7,7 +7,8 @@ import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Cruises from "@/components/Cruises";
 import DayPackageDetails from "@/components/DayPackageDetails";
-import FoodAndSafety from "@/components/FoodAndSafety";
+import FoodAndDining from "@/components/FoodAndDining";
+import SafetyAndComfort from "@/components/SafetyAndComfort";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import StickyButtons from "@/components/StickyButtons";
@@ -40,7 +41,7 @@ export default function Home() {
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Phoenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road",
+      "streetAddress": "Phoenix Akalappuzha Boating Service Jetty, Akalappuzha Lake Road",
       "addressLocality": "Kozhikode",
       "addressRegion": "Kerala",
       "postalCode": "673522",
@@ -74,39 +75,41 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Akalapuzha Boating Service | Phoenix Cruise Houseboat Booking</title>
+        <title>Akalappuzha Boat Service | Phoenix Cruise Houseboat &amp; Shikara Booking</title>
         <meta
           name="description"
-          content="Experience the serene beauty of Kozhikode backwaters with our Akalapuzha Boating Service. Book luxury houseboats, romantic sunset boat rides, and village family cruises."
+          content="Experience the serene beauty of Kozhikode backwaters with our Akalappuzha Boat Service. Book luxury cruises, romantic sunset rides, and village family boat tours."
         />
-        <meta name="keywords" content="akalapuzha boating service, akalapuzha boat ride, houseboat in akalapuzha, kerala backwater boating, calicut boating" />
+        <meta name="keywords" content="akalappuzha boat service, akalappuzha boat ride, akalappuzha backwater cruise, boat service in akalappuzha, akalappuzha shikara boat, kerala backwater boat ride, shikara boat service in kerala" />
         <link rel="canonical" href="https://phoenixcruise.com" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://phoenixcruise.com" />
-        <meta property="og:title" content="Akalapuzha Boating Service | Phoenix Cruise Houseboat Booking" />
+        <meta property="og:title" content="Akalappuzha Boat Service | Phoenix Cruise Houseboat &amp; Shikara Booking" />
         <meta
           property="og:description"
-          content="Experience the serene beauty of Kozhikode backwaters with our Akalapuzha Boating Service. Book luxury houseboats, romantic sunset boat rides, and village family cruises."
+          content="Experience the serene beauty of Kozhikode backwaters with our Akalappuzha Boat Service. Book luxury cruises, romantic sunset rides, and village family boat tours."
         />
         <meta property="og:image" content="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
 
-        {/* Structured Data Script Embeds */}
+        {/* Fonts Preload */}
+        <link rel="preload" href="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" as="image" />
+
+        {/* Schema markup */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrg) }}
         />
       </Head>
 
-      {/* Floating Custom Cursor */}
       <CustomCursor />
 
-      {/* Page Scroll Progress Indicator */}
-      <div className="scroll-progress-bar" style={{ width: `${scrollProgress}%` }} />
+      {/* Progress Scroll Indicator */}
+      <div className="scroll-progress-bar" style={{ width: `${scrollProgress}%` }}></div>
 
       <Navbar />
-      
+
       <main>
         {/* Hero Section */}
         <Hero />
@@ -114,7 +117,7 @@ export default function Home() {
         {/* Why Choose Us */}
         <WhyChooseUs />
 
-        {/* Featured Services (Cruises list) */}
+        {/* Packages Grid */}
         <div className="bg-white pb-16 md:pb-20">
           <Cruises />
           <div className="flex justify-center mt-8">
@@ -130,8 +133,11 @@ export default function Home() {
         {/* Day Package details */}
         <DayPackageDetails />
 
-        {/* Food and safety specifications */}
-        <FoodAndSafety />
+        {/* Dedicated Food and Dining details */}
+        <FoodAndDining />
+
+        {/* Safety and Comfort information */}
+        <SafetyAndComfort />
 
         {/* Customer Reviews Preview (Testimonials slider) */}
         <Testimonials />
@@ -141,10 +147,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1.5px,transparent_1.5px)] opacity-5 pointer-events-none [background-size:24px_24px]" />
           <div className="relative z-10 max-w-3xl mx-auto px-6 space-y-6">
             <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-wide">
-              Ready to Experience Akalapuzha Boating?
+              Ready to Experience the Best Akalappuzha Boat Service?
             </h2>
             <p className="text-white/70 font-sans font-light max-w-md mx-auto text-xs sm:text-sm leading-relaxed">
-              Book your private Akalapuzha Boating Service reservation today. Plan custom cruises, sunset tours, and enjoy instant WhatsApp confirmation.
+              Book your private Akalappuzha backwater cruise reservation today. Plan custom trips, sunset tours, and enjoy instant WhatsApp booking confirmation.
             </p>
             <div className="pt-4">
               <a

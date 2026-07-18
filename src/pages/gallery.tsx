@@ -29,7 +29,7 @@ const videoItems = [
   { id: 2, title: "Honeymoon Special Setup", url: "https://www.youtube.com/watch?v=nXF3vDXekTM", thumbnail: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg" },
   { id: 3, title: "Traditional Cooking Onboard", url: "https://assets.mixkit.co/videos/preview/mixkit-down-the-river-in-a-bamboo-canoe-6804-large.mp4", thumbnail: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" },
   { id: 4, title: "Premium Sunset Cruise", url: "https://youtube.com/shorts/um7lR_YaRr0", thumbnail: "https://img.youtube.com/vi/um7lR_YaRr0/hqdefault.jpg" },
-  { id: 5, title: "Akalapuzha Shikara Voyage", url: "https://youtube.com/shorts/XnlSj8z342c", thumbnail: "https://img.youtube.com/vi/XnlSj8z342c/hqdefault.jpg" },
+  { id: 5, title: "Akalappuzha Shikara Voyage", url: "https://youtube.com/shorts/XnlSj8z342c", thumbnail: "https://img.youtube.com/vi/XnlSj8z342c/hqdefault.jpg" },
 ];
 
 function getEmbedUrl(url: string) {
@@ -71,9 +71,9 @@ export default function GalleryPage() {
         <title>Photo & Video Gallery | Phoenix Cruise Kerala Tourism</title>
         <meta
           name="description"
-          content="Browse high-resolution photographs and cinematic videos of Phoenix Cruise luxury boats, sunsets, and traditional dining arrangements in Akalapuzha."
+          content="Browse high-resolution photographs and cinematic videos of Phoenix Cruise luxury boats, sunsets, and traditional dining arrangements in Akalappuzha."
         />
-        <meta name="keywords" content="houseboat photos, akalapuzha backwaters video, tourism kerala gallery" />
+        <meta name="keywords" content="houseboat photos, akalappuzha backwaters video, tourism kerala gallery" />
         <link rel="canonical" href="https://phoenixcruise.com/gallery" />
       </Head>
 
