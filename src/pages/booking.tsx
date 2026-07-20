@@ -81,12 +81,12 @@ Please contact me to finalize. Thank you!`;
   return (
     <>
       <Head>
-        <title>Secure Booking | Akalappuzha Boating Service Reservation</title>
+        <title>Secure Booking | Akalapuzha Boating Service Reservation</title>
         <meta
           name="description"
-          content="Book your private Akalappuzha Boating Service package online. Fast reservation setup for family boat rides, sunset cruises, or group packages."
+          content="Book your private Akalapuzha Boating Service package online. Fast reservation setup for family boat rides, sunset cruises, or group packages."
         />
-        <meta name="keywords" content="book akalappuzha boat ride, schedule family boating, booking calicut houseboat" />
+        <meta name="keywords" content="book akalapuzha boat ride, schedule family boating, booking calicut houseboat" />
         <link rel="canonical" href="https://phoenixcruise.com/booking" />
       </Head>
 

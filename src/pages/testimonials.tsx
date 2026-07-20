@@ -12,7 +12,7 @@ const reviews = [
     location: "Cochin, Kerala",
     rating: 5,
     date: "1 week ago",
-    text: "An absolute dream! The service was top quality all the way. The private chef made delicious authentic Kerala seafood for our family. The sunset on the Akalappuzha backwaters was spectacular.",
+    text: "An absolute dream! The service was top quality all the way. The private chef made delicious authentic Kerala seafood for our family. The sunset on the Akalapuzha backwaters was spectacular.",
   },
   {
     name: "Rahul Nair",
@@ -58,9 +58,9 @@ export default function TestimonialsPage() {
         <title>Guest Testimonials &amp; Reviews | Phoenix Cruise Kerala</title>
         <meta
           name="description"
-          content="Read what our guests say about Phoenix Cruise luxury boat rides, culinary experiences, food quality, safety, and Akalappuzha backwater safaris."
+          content="Read what our guests say about Phoenix Cruise luxury boat rides, culinary experiences, food quality, safety, and Akalapuzha backwater safaris."
         />
-        <meta name="keywords" content="phoenix cruise reviews, guest testimonials kerala, akalappuzha boat reviews" />
+        <meta name="keywords" content="phoenix cruise reviews, guest testimonials kerala, akalapuzha boat reviews" />
         <link rel="canonical" href="https://phoenixcruise.com/testimonials" />
       </Head>
 

@@ -9,7 +9,7 @@ const reviews = [
     name: "Anjali Menon",
     location: "Cochin, Kerala",
     rating: 5,
-    text: "An absolute dream! The service was top quality all the way. The private chef prepared delicious authentic Kerala food for our family. The sunset on the Akalappuzha backwaters was spectacular.",
+    text: "An absolute dream! The service was top quality all the way. The private chef prepared delicious authentic Kerala food for our family. The sunset on the Akalapuzha backwaters was spectacular.",
   },
   {
     name: "Rahul Nair",

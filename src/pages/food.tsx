@@ -29,7 +29,7 @@ const foodHighlights = [
   {
     icon: FaSmile,
     title: "Pleasant Dining Atmosphere",
-    desc: "Enjoy your meals in a relaxed open-air cabin while surrounded by the calm, scenic backwaters of Akalappuzha.",
+    desc: "Enjoy your meals in a relaxed open-air cabin while surrounded by the calm, scenic backwaters of Akalapuzha.",
   },
 ];
 
@@ -40,9 +40,9 @@ export default function FoodPage() {
         <title>Onboard Food &amp; Dining Experience | Phenix Cruise</title>
         <meta
           name="description"
-          content="Discover the authentic Kerala food &amp; dining experience on Phenix Cruise. Enjoy freshly prepared local delicacies, Karimeen fish fry, and pleasant backwater dining in Akalappuzha."
+          content="Discover the authentic Kerala food &amp; dining experience on Phenix Cruise. Enjoy freshly prepared local delicacies, Karimeen fish fry, and pleasant backwater dining in Akalapuzha."
         />
-        <meta name="keywords" content="phenix cruise food, kerala backwater dining, akalappuzha cruise food, karimeen fish fry, kerala houseboat cuisine" />
+        <meta name="keywords" content="phenix cruise food, kerala backwater dining, akalapuzha cruise food, karimeen fish fry, kerala houseboat cuisine" />
         <link rel="canonical" href="https://phoenixcruise.com/food" />
       </Head>
 
@@ -151,7 +151,7 @@ export default function FoodPage() {
                 Ready for an Unforgettable Dining Cruise?
               </h3>
               <p className="text-white/70 text-xs sm:text-sm font-light leading-relaxed">
-                Connect with us on WhatsApp to book your Akalappuzha backwater boat cruise with freshly prepared Kerala delicacies.
+                Connect with us on WhatsApp to book your Akalapuzha backwater boat cruise with freshly prepared Kerala delicacies.
               </p>
               <div className="pt-2">
                 <a

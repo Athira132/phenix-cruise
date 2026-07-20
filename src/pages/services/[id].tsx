@@ -35,8 +35,8 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
   return (
     <>
       <Head>
-        <title>{service.category === "cruises" ? `${service.title} | Akalappuzha Boating Service` : `${service.title} | Phoenix Custom Services`}</title>
-        <meta name="description" content={service.category === "cruises" ? `${service.shortDesc} Book your private boat ride with our trusted Akalappuzha Boating Service in Kerala.` : service.shortDesc} />
+        <title>{service.category === "cruises" ? `${service.title} | Akalapuzha Boating Service` : `${service.title} | Phoenix Custom Services`}</title>
+        <meta name="description" content={service.category === "cruises" ? `${service.shortDesc} Book your private boat ride with our trusted Akalapuzha Boating Service in Kerala.` : service.shortDesc} />
         <link rel="canonical" href={`https://phoenixcruise.com/services/${service.id}`} />
       </Head>
 

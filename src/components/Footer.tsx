@@ -29,7 +29,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="font-sans text-xs md:text-sm text-white/60 font-light leading-relaxed max-w-sm">
-              Providing trusted Akalappuzha Boating Service with safe, comfortable, and memorable backwater experiences for tourists, families, and groups across Kerala.
+              Providing trusted Akalapuzha Boating Service with safe, comfortable, and memorable backwater experiences for tourists, families, and groups across Kerala.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-5">
             <h4 className="font-serif text-sm font-bold text-white uppercase tracking-wider">Connect With Us</h4>
             <p className="font-sans text-xs text-white/60 font-light leading-relaxed">
-              Follow our backwater journeys through Akalappuzha on our official profiles for media highlights and seasonal updates.
+              Follow our backwater journeys through Akalapuzha on our official profiles for media highlights and seasonal updates.
             </p>
             <div className="flex items-center space-x-4 pt-1">
               <a

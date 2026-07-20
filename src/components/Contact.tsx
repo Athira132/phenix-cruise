@@ -43,7 +43,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Our Jetty Address</h4>
                   <p className="font-sans text-xs md:text-sm text-dark/70 font-light leading-relaxed">
-                    Phoenix Akalappuzha Boating Service Jetty, Akalappuzha Lake Road,<br />
+                    Phoenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road,<br />
                     Kozhikode (Calicut) District, Kerala - 673522, India
                   </p>
                 </div>
@@ -129,7 +129,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 h-[400px] lg:h-auto min-h-[350px] relative rounded-luxury overflow-hidden shadow-premium border border-primary/5 group"
           >
-            {/* Google Map Iframe for Akalappuzha jetty point */}
+            {/* Google Map Iframe for Akalapuzha jetty point */}
             <iframe
               src="https://maps.google.com/maps?q=11.505669,75.6596938&z=15&output=embed"
               width="100%"
@@ -138,7 +138,7 @@ export default function Contact() {
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Phoenix Akalappuzha Boating Service Jetty Location Map"
+              title="Phoenix Akalapuzha Boating Service Jetty Location Map"
               className="absolute inset-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700"
             />
             <div className="absolute bottom-4 right-4 z-10">

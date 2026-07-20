@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
           </h2>
           <div className="w-16 h-[2px] bg-accent mx-auto mb-6" />
           <p className="text-dark/70 font-sans font-light leading-relaxed text-sm md:text-base">
-            We are dedicated to providing the ultimate, premium, and safe backwater experiences with our Akalappuzha Boating Service.
+            We are dedicated to providing the ultimate, premium, and safe backwater experiences with our Akalapuzha Boating Service.
           </p>
         </div>
 

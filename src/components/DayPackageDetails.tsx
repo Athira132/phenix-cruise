@@ -38,7 +38,7 @@ export default function DayPackageDetails() {
                 Day Outing Experience
               </h3>
               <p className="font-sans text-dark/70 font-light leading-relaxed text-sm sm:text-base">
-                An immersive daytime backwater voyage mapping Akalappuzha's palm-fringed canals. This package provides traditional Kerala delicacies, custom add-ons, and complete privacy for groups.
+                An immersive daytime backwater voyage mapping Akalapuzha's palm-fringed canals. This package provides traditional Kerala delicacies, custom add-ons, and complete privacy for groups.
               </p>
             </div>
 

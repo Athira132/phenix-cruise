@@ -103,12 +103,12 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Akalappuzha Boat Service | Premium Cruises &amp; Shikara Rides</title>
+        <title>Akalapuzha Boat Service | Premium Cruises &amp; Shikara Rides</title>
         <meta
           name="description"
-          content="Book the premier Akalappuzha Boat Service. We offer luxury backwater cruises, traditional Shikara boat rides, sunset cruises, and family packages in Calicut, Kerala."
+          content="Book the premier Akalapuzha Boat Service. We offer luxury backwater cruises, traditional Shikara boat rides, sunset cruises, and family packages in Calicut, Kerala."
         />
-        <meta name="keywords" content="akalappuzha boat service, akalappuzha boat ride, akalappuzha backwater cruise, boat service in akalappuzha, akalappuzha shikara boat, kerala backwater boat ride, shikara boat service in kerala" />
+        <meta name="keywords" content="akalapuzha boat service, akalapuzha boat ride, akalapuzha backwater cruise, boat service in akalapuzha, akalapuzha shikara boat, kerala backwater boat ride, shikara boat service in kerala" />
         <link rel="canonical" href="https://phoenixcruise.com/services" />
       </Head>
 
@@ -133,7 +133,7 @@ export default function ServicesPage() {
                 FLEETS & WATERWAYS
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-dark">
-                Akalappuzha Boat Service &amp; Rides
+                Akalapuzha Boat Service &amp; Rides
               </h2>
               <p className="text-dark/60 font-light text-sm">
                 Scenic backwater cruises and private boat rides designed for family outings, sunset viewing, and premium village hospitality.

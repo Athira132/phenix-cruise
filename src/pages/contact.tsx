@@ -38,12 +38,12 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact Us | Akalappuzha Boating Service & Bookings</title>
+        <title>Contact Us | Akalapuzha Boating Service & Bookings</title>
         <meta
           name="description"
-          content="Serving Akalappuzha and nearby backwater destinations in Kerala. Contact Akalappuzha Boating Service directly for houseboat bookings and custom lake rides."
+          content="Serving Akalapuzha and nearby backwater destinations in Kerala. Contact Akalapuzha Boating Service directly for houseboat bookings and custom lake rides."
         />
-        <meta name="keywords" content="akalappuzha boating service, akalappuzha boat ride, contact akalappuzha boat booking, backwater tours akalappuzha" />
+        <meta name="keywords" content="akalapuzha boating service, akalapuzha boat ride, contact akalapuzha boat booking, backwater tours akalapuzha" />
         <link rel="canonical" href="https://phoenixcruise.com/contact" />
       </Head>
 
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   Let's plan your perfect voyage
                 </h2>
                 <p className="text-xs text-dark/70 font-light leading-relaxed">
-                  Serving Akalappuzha and nearby backwater destinations in Kerala. Customers looking for our premier <strong>Akalappuzha Boating Service</strong> can contact us directly for custom boat rides, sunset cruises, or family outings.
+                  Serving Akalapuzha and nearby backwater destinations in Kerala. Customers looking for our premier <strong>Akalapuzha Boating Service</strong> can contact us directly for custom boat rides, sunset cruises, or family outings.
                 </p>
                 
                 <div className="space-y-6">
@@ -86,7 +86,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Our Jetty Address</h4>
                       <p className="text-xs text-dark/70 font-light leading-relaxed">
-                        Phoenix Akalappuzha Boating Service Jetty, Akalappuzha Lake Road,<br />
+                        Phoenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road,<br />
                         Kozhikode (Calicut) District, Kerala - 673522, India
                       </p>
                     </div>
@@ -169,7 +169,7 @@ export default function ContactPage() {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Phoenix Akalappuzha Boating Service Jetty Map"
+                title="Phoenix Akalapuzha Boating Service Jetty Map"
                 className="absolute inset-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700"
               />
               <div className="absolute bottom-4 right-4 z-10">

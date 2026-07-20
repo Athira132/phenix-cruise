@@ -42,7 +42,7 @@ export default function Home() {
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Phoenix Akalappuzha Boating Service Jetty, Akalappuzha Lake Road",
+      "streetAddress": "Phoenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road",
       "addressLocality": "Kozhikode",
       "addressRegion": "Kerala",
       "postalCode": "673522",
@@ -76,21 +76,21 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Akalappuzha Boat Service | Phoenix Cruise Houseboat &amp; Shikara Booking</title>
+        <title>Akalapuzha Boat Service | Phoenix Cruise Houseboat &amp; Shikara Booking</title>
         <meta
           name="description"
-          content="Experience the serene beauty of Kozhikode backwaters with our Akalappuzha Boat Service. Book luxury cruises, romantic sunset rides, and village family boat tours."
+          content="Experience the serene beauty of Kozhikode backwaters with our Akalapuzha Boat Service. Book luxury cruises, romantic sunset rides, and village family boat tours."
         />
-        <meta name="keywords" content="akalappuzha boat service, akalappuzha boat ride, akalappuzha backwater cruise, boat service in akalappuzha, akalappuzha shikara boat, kerala backwater boat ride, shikara boat service in kerala" />
+        <meta name="keywords" content="akalapuzha boat service, akalapuzha boat ride, akalapuzha backwater cruise, boat service in akalapuzha, akalapuzha shikara boat, kerala backwater boat ride, shikara boat service in kerala" />
         <link rel="canonical" href="https://phoenixcruise.com" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://phoenixcruise.com" />
-        <meta property="og:title" content="Akalappuzha Boat Service | Phoenix Cruise Houseboat &amp; Shikara Booking" />
+        <meta property="og:title" content="Akalapuzha Boat Service | Phoenix Cruise Houseboat &amp; Shikara Booking" />
         <meta
           property="og:description"
-          content="Experience the serene beauty of Kozhikode backwaters with our Akalappuzha Boat Service. Book luxury cruises, romantic sunset rides, and village family boat tours."
+          content="Experience the serene beauty of Kozhikode backwaters with our Akalapuzha Boat Service. Book luxury cruises, romantic sunset rides, and village family boat tours."
         />
         <meta property="og:image" content="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
 
@@ -151,10 +151,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1.5px,transparent_1.5px)] opacity-5 pointer-events-none [background-size:24px_24px]" />
           <div className="relative z-10 max-w-3xl mx-auto px-6 space-y-6">
             <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-wide">
-              Ready to Experience the Best Akalappuzha Boat Service?
+              Ready to Experience the Best Akalapuzha Boat Service?
             </h2>
             <p className="text-white/70 font-sans font-light max-w-md mx-auto text-xs sm:text-sm leading-relaxed">
-              Book your private Akalappuzha backwater cruise reservation today. Plan custom trips, sunset tours, and enjoy instant WhatsApp booking confirmation.
+              Book your private Akalapuzha backwater cruise reservation today. Plan custom trips, sunset tours, and enjoy instant WhatsApp booking confirmation.
             </p>
             <div className="pt-4">
               <a

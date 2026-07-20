@@ -13,7 +13,7 @@ const features = [
   { icon: FaUsers, title: "Certified Crew", desc: "Expert captains, life savers, and helpers dedicated to passenger safety." },
   { icon: FaUtensils, title: "Authentic Chefs", desc: "Personal chefs serving fresh, locally-sourced backwater specialities and Karimeen." },
   { icon: FaLock, title: "Exclusive Privacy", desc: "Private bookings designed for romantic getaways, family outings, and corporate meets." },
-  { icon: FaMap, title: "Curated Trails", desc: "Cruise through hidden canals, paddy fields, and lagoons of Akalappuzha." },
+  { icon: FaMap, title: "Curated Trails", desc: "Cruise through hidden canals, paddy fields, and lagoons of Akalapuzha." },
   { icon: FaShieldAlt, title: "Safety Infrastructure", desc: "Full safety gears, life rafts, fire suppression, and strict sanitization rules." },
 ];
 
@@ -21,12 +21,12 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <title>About Us | Akalappuzha Boating Service Story & Pillars</title>
+        <title>About Us | Akalapuzha Boating Service Story & Pillars</title>
         <meta
           name="description"
-          content="Learn about Phoenix Cruise, a trusted Akalappuzha Boating Service in Kerala. We provide premium backwater boating experiences with a focus on safety, comfort, and customer satisfaction."
+          content="Learn about Phoenix Cruise, a trusted Akalapuzha Boating Service in Kerala. We provide premium backwater boating experiences with a focus on safety, comfort, and customer satisfaction."
         />
-        <meta name="keywords" content="about akalappuzha boating service, premium backwater boating kerala, safety first boat service calicut" />
+        <meta name="keywords" content="about akalapuzha boating service, premium backwater boating kerala, safety first boat service calicut" />
         <link rel="canonical" href="https://phoenixcruise.com/about" />
       </Head>
 
@@ -63,17 +63,17 @@ export default function AboutPage() {
               OUR JOURNEY & STORY
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-dark leading-tight">
-              Gliding Through the Golden Backwaters of Akalappuzha
+              Gliding Through the Golden Backwaters of Akalapuzha
             </h2>
             <div className="text-dark/80 font-light leading-relaxed space-y-4">
               <p>
-                As a trusted <strong>Akalappuzha Boating Service</strong>, Phoenix Cruise was born from a desire to share the raw beauty of Kerala’s legendary backwater lakes and canals through a lens of absolute luxury and local heritage. We provide premium backwater boating experiences, serving tourists, families, couples, and corporate groups with a spiritual slowdown and a chance to hear the rustle of palms, view green paddy fields, and witness magnificent sunsets.
+                As a trusted <strong>Akalapuzha Boating Service</strong>, Phoenix Cruise was born from a desire to share the raw beauty of Kerala’s legendary backwater lakes and canals through a lens of absolute luxury and local heritage. We provide premium backwater boating experiences, serving tourists, families, couples, and corporate groups with a spiritual slowdown and a chance to hear the rustle of palms, view green paddy fields, and witness magnificent sunsets.
               </p>
               <p>
                 Every journey with us prioritizes passenger wellbeing and culinary excellence: we offer a safe cruise experience on carefully maintained boats alongside fresh, hygienically prepared food made with quality ingredients and authentic Kerala flavours.
               </p>
               <p>
-                Today, our Akalappuzha boat service manages a premium fleet of traditional Kerala houseboats and custom boats. We focus on safety, comfort, and customer satisfaction, combining native wood architecture with modern comforts, personalized itineraries, and absolute privacy for all passengers.
+                Today, our Akalapuzha boat service manages a premium fleet of traditional Kerala houseboats and custom boats. We focus on safety, comfort, and customer satisfaction, combining native wood architecture with modern comforts, personalized itineraries, and absolute privacy for all passengers.
               </p>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
           <div className="relative z-10 max-w-3xl mx-auto px-6 space-y-8">
             <h2 className="text-3xl md:text-5xl font-serif font-bold">Ready for a Bespoke Cruise Journey?</h2>
             <p className="text-white/70 font-light max-w-lg mx-auto text-sm sm:text-base leading-relaxed">
-              Explore Akalappuzha with Kerala's highest-rated luxury boating team. Tell us your date and food preferences!
+              Explore Akalapuzha with Kerala's highest-rated luxury boating team. Tell us your date and food preferences!
             </p>
             <div className="flex justify-center">
               <a

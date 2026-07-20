@@ -51,7 +51,7 @@ export default function SafetyAndComfort() {
           </h2>
           <div className="w-16 h-[2px] bg-accent mx-auto mb-6"></div>
           <p className="text-dark/70 font-sans font-light leading-relaxed text-sm md:text-base">
-            We provide a safe, well-equipped, and extremely comfortable boat ride. Enjoy the tranquil backwaters of Akalappuzha with reliable onboard systems.
+            We provide a safe, well-equipped, and extremely comfortable boat ride. Enjoy the tranquil backwaters of Akalapuzha with reliable onboard systems.
           </p>
         </div>
 
