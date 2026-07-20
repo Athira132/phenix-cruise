@@ -21,13 +21,28 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <title>About Us | Akalapuzha Boating Service Story & Pillars</title>
+        <title>About Us | Phoenix Cruise &amp; Akalapuzha Boat Service</title>
         <meta
           name="description"
-          content="Learn about Phoenix Cruise, a trusted Akalapuzha Boating Service in Kerala. We provide premium backwater boating experiences with a focus on safety, comfort, and customer satisfaction."
+          content="Learn about Phoenix Cruise, the premier Akalapuzha boat service in Kerala. Delivering safe, luxurious, and authentic backwater boat cruises for families, couples, and tourists."
         />
-        <meta name="keywords" content="about akalapuzha boating service, premium backwater boating kerala, safety first boat service calicut" />
-        <link rel="canonical" href="https://phoenixcruise.com/about" />
+        <meta name="keywords" content="Phoenix Cruise, Akalapuzha boat service, Akalapuzha boat ride, boat service in Akalapuzha, Kerala backwater boat service, boat cruise in Kerala" />
+        <link rel="canonical" href="https://clever-rutherford.vercel.app/about" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Phoenix Cruise" />
+        <meta property="og:url" content="https://clever-rutherford.vercel.app/about" />
+        <meta property="og:title" content="About Us | Phoenix Cruise &amp; Akalapuzha Boat Service" />
+        <meta property="og:description" content="Learn about Phoenix Cruise, the premier Akalapuzha boat service in Kerala. Delivering safe, luxurious, and authentic backwater boat cruises for families, couples, and tourists." />
+        <meta property="og:image" content="https://i.ibb.co/B51fLF7w/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://clever-rutherford.vercel.app/about" />
+        <meta name="twitter:title" content="About Us | Phoenix Cruise &amp; Akalapuzha Boat Service" />
+        <meta name="twitter:description" content="Learn about Phoenix Cruise, the premier Akalapuzha boat service in Kerala. Delivering safe, luxurious, and authentic backwater boat cruises for families, couples, and tourists." />
+        <meta name="twitter:image" content="https://i.ibb.co/B51fLF7w/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
       </Head>
 
       <CustomCursor />

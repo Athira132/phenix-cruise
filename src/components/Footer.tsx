@@ -85,29 +85,29 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-4 pt-1">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/phoenix_cruise/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#E1306C] hover:text-white hover:border-[#E1306C] hover:scale-110 hover:shadow-[0_0_15px_rgba(225,48,108,0.35)] transition-all duration-300"
-                aria-label="Instagram"
+                aria-label="Follow Phoenix Cruise on Instagram"
               >
                 <FaInstagram className="text-lg" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61591769716259"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] hover:scale-110 hover:shadow-[0_0_15px_rgba(24,119,242,0.35)] transition-all duration-300"
-                aria-label="Facebook"
+                aria-label="Follow Phoenix Cruise on Facebook"
               >
                 <FaFacebookF className="text-lg" />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/channel/UCq0Q_2jwkqYiJisXELYDtLg"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000] hover:scale-110 hover:shadow-[0_0_15px_rgba(255,0,0,0.35)] transition-all duration-300"
-                aria-label="YouTube"
+                aria-label="Subscribe to Phoenix Cruise on YouTube"
               >
                 <FaYoutube className="text-lg" />
               </a>

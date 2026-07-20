@@ -81,13 +81,28 @@ Please contact me to finalize. Thank you!`;
   return (
     <>
       <Head>
-        <title>Secure Booking | Akalapuzha Boating Service Reservation</title>
+        <title>Online Reservation | Phoenix Cruise Akalapuzha Boat Service</title>
         <meta
           name="description"
-          content="Book your private Akalapuzha Boating Service package online. Fast reservation setup for family boat rides, sunset cruises, or group packages."
+          content="Reserve your private Akalapuzha boat ride online with Phoenix Cruise. Select dates for Day Package, Family Package, Couple Package, or Sunset Cruise."
         />
-        <meta name="keywords" content="book akalapuzha boat ride, schedule family boating, booking calicut houseboat" />
-        <link rel="canonical" href="https://phoenixcruise.com/booking" />
+        <meta name="keywords" content="book Akalapuzha boat ride, reserve Phoenix Cruise, Akalapuzha boat service online booking, Kerala backwater boat service reservation" />
+        <link rel="canonical" href="https://clever-rutherford.vercel.app/booking" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Phoenix Cruise" />
+        <meta property="og:url" content="https://clever-rutherford.vercel.app/booking" />
+        <meta property="og:title" content="Online Reservation | Phoenix Cruise Akalapuzha Boat Service" />
+        <meta property="og:description" content="Reserve your private Akalapuzha boat ride online with Phoenix Cruise. Select dates for Day Package, Family Package, Couple Package, or Sunset Cruise." />
+        <meta property="og:image" content="https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://clever-rutherford.vercel.app/booking" />
+        <meta name="twitter:title" content="Online Reservation | Phoenix Cruise Akalapuzha Boat Service" />
+        <meta name="twitter:description" content="Reserve your private Akalapuzha boat ride online with Phoenix Cruise. Select dates for Day Package, Family Package, Couple Package, or Sunset Cruise." />
+        <meta name="twitter:image" content="https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
       </Head>
 
       <CustomCursor />

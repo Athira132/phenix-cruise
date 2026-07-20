@@ -113,17 +113,14 @@ export default function Contact() {
             <div className="pt-8 border-t border-primary/5 mt-8">
               <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-4">Follow Our Journey</h4>
               <div className="flex items-center space-x-3">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-sand flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61591769716259" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-sand flex items-center justify-center text-primary hover:bg-[#1877F2] hover:text-white transition-all duration-300 shadow-sm" aria-label="Facebook Profile">
                   <FaFacebookF className="text-sm" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-sand flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm" aria-label="Instagram">
+                <a href="https://www.instagram.com/phoenix_cruise/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-sand flex items-center justify-center text-primary hover:bg-[#E1306C] hover:text-white transition-all duration-300 shadow-sm" aria-label="Instagram Profile">
                   <FaInstagram className="text-sm" />
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-sand flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm" aria-label="YouTube">
+                <a href="https://www.youtube.com/channel/UCq0Q_2jwkqYiJisXELYDtLg" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-sand flex items-center justify-center text-primary hover:bg-[#FF0000] hover:text-white transition-all duration-300 shadow-sm" aria-label="YouTube Channel">
                   <FaYoutube className="text-sm" />
-                </a>
-                <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-sand flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm" aria-label="TripAdvisor">
-                  <FaTripadvisor className="text-sm" />
                 </a>
               </div>
             </div>
