@@ -48,8 +48,8 @@ export default function Cruises() {
           <div className="w-16 h-[2px] bg-accent mx-auto" />
         </div>
 
-        {/* EXACTLY 4 Cards in ONE SINGLE ROW on Desktop (4-Column Layout) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 max-w-7xl mx-auto">
+        {/* EXACTLY 4 Compact Landscape Cards in ONE SINGLE ROW on Desktop (4-Column Layout) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 max-w-6xl mx-auto">
           {cruises.map((cruise, idx) => (
             <motion.div
               key={cruise.id}
@@ -57,9 +57,9 @@ export default function Cruises() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="group relative rounded-3xl overflow-hidden shadow-lg bg-slate-900 aspect-[4/3] border border-slate-100 flex flex-col justify-end"
+              className="group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-md bg-slate-900 aspect-[16/11] border border-slate-100 flex flex-col justify-end"
             >
-              {/* Landscape Image with Subject-Centered Framing */}
+              {/* Compact Landscape Image with Subject-Centered Framing */}
               <Image
                 src={cruise.image}
                 alt={cruise.alt}
@@ -70,13 +70,13 @@ export default function Cruises() {
               />
 
               {/* Dark Bottom Overlay with Short Title & Action */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent p-5 flex flex-col justify-end text-left z-10">
-                <h3 className="font-serif text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-[#C9A227] transition-colors duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent p-4 flex flex-col justify-end text-left z-10">
+                <h3 className="font-serif text-base sm:text-lg font-bold text-white mb-2.5 group-hover:text-[#C9A227] transition-colors duration-300">
                   {cruise.title}
                 </h3>
                 <Link
                   href={`/services/${cruise.id}`}
-                  className="w-full text-center py-2.5 px-3 bg-primary hover:bg-primary-hover text-white rounded-xl font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md active:scale-95 border border-white/10"
+                  className="w-full text-center py-2 px-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-sans font-bold text-[11px] uppercase tracking-wider transition-all duration-300 shadow-md active:scale-95 border border-white/10"
                 >
                   View Details
                 </Link>
