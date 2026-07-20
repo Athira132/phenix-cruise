@@ -37,15 +37,15 @@ export default function Cruises() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-          <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
-            Premium Packages
+          <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-bold block mb-2">
+            CRUISE EXPERIENCES
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif text-dark tracking-wide mb-4">
-            Our Cruise Offerings
+          <h2 className="text-3xl md:text-5xl font-serif text-dark tracking-wide mb-3">
+            Choose Your Cruise
           </h2>
-          <div className="w-16 h-[2px] bg-accent mx-auto mb-6" />
-          <p className="text-dark/70 font-sans font-light leading-relaxed text-sm md:text-base">
-            Select from our carefully curated backwater cruise packages. Simply contact us on WhatsApp to book.
+          <div className="w-16 h-[2px] bg-accent mx-auto mb-4" />
+          <p className="text-dark/70 font-sans font-normal text-sm md:text-base">
+            Select from our backwater boat experiences on Akalapuzha lake.
           </p>
         </div>
 

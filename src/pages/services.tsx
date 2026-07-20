@@ -34,8 +34,7 @@ export const servicesData = [
       "Traditional Kerala lunch feast",
       "Music and sightseeing",
       "Evening tea & disembark"
-    ],
-    price: "From ₹500 to ₹600 per person / hourly rates from ₹2,000"
+    ]
   },
   {
     id: "family-package",

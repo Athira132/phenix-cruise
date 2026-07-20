@@ -125,10 +125,6 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
                   <span className="text-dark/50">Estimated Duration:</span>
                   <span className="font-bold text-dark flex items-center"><FaClock className="mr-1.5 text-accent" /> {service.time}</span>
                 </div>
-                <div className="flex justify-between items-center py-2 border-b border-slate-100">
-                  <span className="text-dark/50">Pricing Structure:</span>
-                  <span className="font-bold text-primary">{service.price}</span>
-                </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-dark/50">Status:</span>
                   <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-600 font-semibold border border-emerald-200 uppercase text-[9px] tracking-wider">Available</span>

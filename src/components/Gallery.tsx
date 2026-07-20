@@ -112,7 +112,7 @@ export default function Gallery() {
                   alt={item.title}
                   fill
                   sizes="(max-w-768px) 100vw, 33vw"
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "cover" }}
                   className="transition-transform duration-700 group-hover:scale-105"
                 />
                 

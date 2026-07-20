@@ -88,58 +88,22 @@ export default function DayPackageDetails() {
 
           </div>
 
-          {/* Right Column: Pricing & Onboard Facilities */}
+          {/* Right Column: Experience & Onboard Facilities */}
           <div className="lg:col-span-5 bg-slate-900 text-white p-8 md:p-12 lg:p-16 flex flex-col justify-between border-l border-white/5">
             
-            <div className="space-y-10">
+            <div className="space-y-8">
               
-              {/* Group Pricing */}
+              {/* Experience Highlights */}
               <div className="space-y-4">
                 <h4 className="font-serif text-xl font-bold text-white border-b border-white/10 pb-3">
-                  Group Tier Pricing
+                  Experience Highlights
                 </h4>
-                <div className="space-y-3 font-sans">
-                  <div className="flex justify-between items-center py-1">
-                    <span className="text-xs text-white/70">25 to 30 people</span>
-                    <span className="text-sm font-bold text-accent">₹600 / person</span>
-                  </div>
-                  <div className="flex justify-between items-center py-1">
-                    <span className="text-xs text-white/70">30 to 40 people</span>
-                    <span className="text-sm font-bold text-accent">₹550 / person</span>
-                  </div>
-                  <div className="flex justify-between items-center py-1">
-                    <span className="text-xs text-white/70">Up to 40 people</span>
-                    <span className="text-sm font-bold text-accent">₹500 / person</span>
-                  </div>
-                </div>
+                <p className="font-sans text-xs text-white/80 leading-relaxed font-light">
+                  Glide through palm-fringed channels of Akalapuzha with complete comfort, spacious seating, and customizable group options.
+                </p>
               </div>
 
-              {/* Per Hour Charges */}
-              <div className="space-y-4">
-                <h4 className="font-serif text-xl font-bold text-white border-b border-white/10 pb-3">
-                  Per Hour Rental Charges
-                </h4>
-                <div className="space-y-3 font-sans">
-                  <div className="flex justify-between items-center py-1">
-                    <span className="text-xs text-white/70">1 to 25 people</span>
-                    <span className="text-sm font-bold text-accent">₹2,000 / hour</span>
-                  </div>
-                  <div className="flex justify-between items-center py-1">
-                    <span className="text-xs text-white/70">25 to 35 people</span>
-                    <span className="text-sm font-bold text-accent">₹2,500 / hour</span>
-                  </div>
-                  <div className="flex justify-between items-center py-1">
-                    <span className="text-xs text-white/70">35 to 50 people</span>
-                    <span className="text-sm font-bold text-accent">₹3,000 / hour</span>
-                  </div>
-                  <div className="flex justify-between items-center py-1">
-                    <span className="text-xs text-white/70">50 to 60 people</span>
-                    <span className="text-sm font-bold text-accent">₹3,500 / hour</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Facilities */}
+              {/* Onboard Facilities */}
               <div className="space-y-4">
                 <h4 className="font-serif text-xl font-bold text-white border-b border-white/10 pb-3">
                   Onboard Facilities
@@ -151,15 +115,15 @@ export default function DayPackageDetails() {
                   </div>
                   <div className="flex items-center space-x-2.5">
                     <FaVolumeUp className="text-accent text-sm flex-shrink-0" />
-                    <span>DJ Music System</span>
+                    <span>Music System</span>
                   </div>
                   <div className="flex items-center space-x-2.5">
                     <FaMicrophone className="text-accent text-sm flex-shrink-0" />
-                    <span>Onboard Microphone</span>
+                    <span>Onboard Mic</span>
                   </div>
                   <div className="flex items-center space-x-2.5">
                     <FaWind className="text-accent text-sm flex-shrink-0" />
-                    <span>Electric Cabin Fans</span>
+                    <span>Cabin Fans</span>
                   </div>
                 </div>
               </div>
@@ -167,12 +131,12 @@ export default function DayPackageDetails() {
             </div>
 
             {/* Direct Booking Redirect */}
-            <div className="pt-10">
+            <div className="pt-8">
               <a
-                href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20book%20the%205%20Hours%20Shikara%20Boat%20Day%20Package."
+                href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20the%205%20Hours%20Shikara%20Boat%20Day%20Package."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center py-4 bg-accent hover:bg-accent-hover text-dark font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 rounded-xl shadow-md hover:shadow-premium"
+                className="w-full inline-flex items-center justify-center py-4 bg-accent hover:bg-accent-hover text-dark font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 rounded-xl shadow-md"
               >
                 Book Your Cruise via WhatsApp
               </a>

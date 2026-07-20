@@ -112,46 +112,27 @@ export default function FoodPage() {
             </div>
           </div>
 
-          {/* Section 2: 4 Pillars Grid */}
-          <div className="space-y-10">
-            <div className="text-center max-w-2xl mx-auto space-y-3">
-              <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
-                OUR CULINARY STANDARDS
+          {/* Section 2: Visual Culinary Highlight */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-100">
+            <div className="space-y-4">
+              <span className="text-primary text-xs uppercase tracking-[0.25em] font-bold block">
+                OUR CULINARY PROMISE
               </span>
               <h3 className="text-3xl md:text-4xl font-serif font-bold text-dark">
-                Why Guests Love Our Food
+                Fresh &amp; Authentic Local Taste
               </h3>
-              <p className="text-dark/60 text-sm font-light">
-                We take immense pride in delivering a clean, authentic, and memorable dining experience on every cruise.
+              <p className="text-dark/75 font-normal text-sm md:text-base leading-relaxed">
+                Every dish is prepared using fresh ingredients, local spices, and traditional recipes.
               </p>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {foodHighlights.map((item, idx) => {
-                const Icon = item.icon;
-                return (
-                  <motion.div
-                    key={item.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: idx * 0.05 }}
-                    className="bg-white border border-slate-100 hover:border-primary/20 rounded-2xl p-8 shadow-sm hover:shadow-premium transition-all duration-300 flex flex-col justify-between group"
-                  >
-                    <div>
-                      <div className="w-12 h-12 rounded-xl bg-sand flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-6">
-                        <Icon className="text-xl" />
-                      </div>
-                      <h4 className="font-serif text-lg font-bold text-dark mb-3 group-hover:text-primary transition-colors">
-                        {item.title}
-                      </h4>
-                      <p className="text-xs text-dark/70 font-light leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </div>
-                  </motion.div>
-                );
-              })}
+            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-md">
+              <Image
+                src="https://i.ibb.co/gLDj3rmn/image.png"
+                alt="Karimeen Fry Kerala Dining"
+                fill
+                sizes="(max-w-768px) 100vw, 50vw"
+                style={{ objectFit: "cover" }}
+              />
             </div>
           </div>
 

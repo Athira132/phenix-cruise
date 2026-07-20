@@ -41,7 +41,7 @@ export default function Home() {
       "@id": "https://clever-rutherford.vercel.app/#localbusiness",
       "url": "https://clever-rutherford.vercel.app",
       "telephone": "+918138866919",
-      "priceRange": "₹500 - ₹2500",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Purakkad - Muchukunnu Road",
