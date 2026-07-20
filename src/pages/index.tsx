@@ -4,13 +4,16 @@ import { useEffect, useState } from "react";
 import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 import SafeAndQualityHighlight from "@/components/SafeAndQualityHighlight";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Cruises from "@/components/Cruises";
 import DayPackageDetails from "@/components/DayPackageDetails";
 import FoodAndDining from "@/components/FoodAndDining";
-import SafetyAndComfort from "@/components/SafetyAndComfort";
+import VideoGallery from "@/components/VideoGallery";
+import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import StickyButtons from "@/components/StickyButtons";
 
@@ -148,62 +151,40 @@ export default function Home() {
       <Navbar />
 
       <main>
-        {/* Hero Section */}
+        {/* 1. Hero Section (2-Column Editorial, Boat 100% Uncropped & Visible) */}
         <Hero />
 
-        {/* Safe & Quality Highlights */}
-        <SafeAndQualityHighlight />
+        {/* 2. About Introduction (2-Column Image + Short Text) */}
+        <About />
 
-        {/* Why Choose Us */}
-        <WhyChooseUs />
-
-        {/* Packages Grid */}
-        <div className="bg-white pb-16 md:pb-20">
+        {/* 3. Choose Your Cruise (4 Experience Cards) */}
+        <div className="bg-white pb-12 md:pb-16">
           <Cruises />
-          <div className="flex justify-center mt-8">
-            <Link
-              href="/services"
-              className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-premium hover:-translate-y-1 active:scale-95 border border-white/10"
-            >
-              Explore All Our Services
-            </Link>
-          </div>
         </div>
 
-        {/* Day Package details */}
+        {/* 4. Safe & Quality Highlights (Large Photo Cards) */}
+        <SafeAndQualityHighlight />
+
+        {/* 5. Visual Highlights */}
+        <WhyChooseUs />
+
+        {/* 6. Day Package Details */}
         <DayPackageDetails />
 
-        {/* Dedicated Food and Dining details */}
+        {/* 7. Onboard Dining (Fresh Kerala Flavours Photo Showcase) */}
         <FoodAndDining />
 
-        {/* Safety and Comfort information */}
-        <SafetyAndComfort />
+        {/* 8. Video Highlights */}
+        <VideoGallery />
 
-        {/* Customer Reviews Preview (Testimonials slider) */}
+        {/* 9. Photo Showcase Gallery (Masonry Style & Lightbox) */}
+        <Gallery />
+
+        {/* 10. Customer Testimonials */}
         <Testimonials />
 
-        {/* Booking CTA Section */}
-        <section className="py-20 bg-slate-900 text-white text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1.5px,transparent_1.5px)] opacity-5 pointer-events-none [background-size:24px_24px]" />
-          <div className="relative z-10 max-w-3xl mx-auto px-6 space-y-6">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-wide">
-              Ready to Experience the Best Akalapuzha Boat Service?
-            </h2>
-            <p className="text-white/70 font-sans font-light max-w-md mx-auto text-xs sm:text-sm leading-relaxed">
-              Book your private Akalapuzha backwater cruise reservation today. Plan custom trips, sunset tours, and enjoy instant WhatsApp booking confirmation.
-            </p>
-            <div className="pt-4">
-              <a
-                href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-10 py-4.5 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 text-center inline-block"
-              >
-                Book Your Cruise
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* 11. Contact & Location Map */}
+        <Contact />
       </main>
 
       <Footer />

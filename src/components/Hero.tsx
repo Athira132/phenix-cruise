@@ -46,104 +46,104 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-secondary select-none"
+      className="relative min-h-[90vh] lg:min-h-screen flex items-center bg-slate-950 text-white select-none overflow-hidden pt-28 pb-16 lg:py-0"
     >
-      {/* ===================================================
-          FADE-IN HERO IMAGE BACKGROUND LAYER
-          =================================================== */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        className="absolute inset-0 w-full h-full z-0 bg-slate-950"
-      >
-        <Image
-          src="https://i.ibb.co/v4FnnCRs/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
-          alt="Phoenix Cruise Akalapuzha boat service backwater cruise"
-          fill
-          priority
-          style={{ objectFit: "cover", objectPosition: "center 30%" }}
-          className="opacity-90"
-        />
-      </motion.div>
+      {/* Background Subtle Gradient & Glow */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 -z-1" />
+      <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
 
-      {/* Subtle top-to-bottom dark gradient overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/50 z-1" />
-
-      {/* ===================================================
-          HERO CONTENT OVERLAY
-          =================================================== */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-12 pt-36 pb-20 flex flex-col justify-center h-full">
-        <div className="w-full lg:w-[60%] text-left flex flex-col items-start">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full z-10 py-12 lg:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          {/* Subtitle Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-5 px-4 py-1.5 rounded-full border border-white/20 bg-white/10 backdrop-blur-md inline-flex items-center shadow-sm"
-          >
-            <span className="w-2 h-2 rounded-full bg-[#C9A227] mr-2.5 animate-pulse" />
-            <span className="text-white text-xs uppercase tracking-[0.25em] font-sans font-semibold">
-              Phoenix Cruise Akalapuzha
-            </span>
-          </motion.div>
-
-          {/* Short, Powerful Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4 }}
-            className="text-4xl sm:text-5xl lg:text-[64px] font-serif font-extrabold text-[#F8FAFC] tracking-wide leading-[1.1] text-left mb-5 uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]"
-          >
-            Cruise The <br />
-            <span className="text-[#C9A227] normal-case">Akalapuzha Backwaters</span>
-          </motion.h1>
-
-          {/* Minimal Supporting Text */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6 }}
-            className="text-[#F8FAFC] text-base sm:text-lg max-w-lg font-sans font-medium tracking-wide leading-relaxed mb-8 text-left drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
-          >
-            Experience scenic backwaters, fresh Kerala food, and safe boat rides.
-          </motion.p>
-
-          {/* Primary Booking Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="flex flex-row space-x-4 mb-10 w-full justify-start items-center"
-          >
-            <a
-              href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 sm:px-10 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 border border-white/10 text-center"
+          {/* Left Column: Short Heading & CTA */}
+          <div className="lg:col-span-6 flex flex-col items-start text-left">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="mb-5 px-4 py-1.5 rounded-full border border-white/20 bg-white/10 backdrop-blur-md inline-flex items-center shadow-sm"
             >
-              Book Your Cruise
-            </a>
-          </motion.div>
+              <span className="w-2 h-2 rounded-full bg-[#C9A227] mr-2.5 animate-pulse" />
+              <span className="text-white text-xs uppercase tracking-[0.25em] font-sans font-semibold">
+                Phoenix Cruise Akalapuzha
+              </span>
+            </motion.div>
 
-          {/* Stats Section */}
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="text-4xl sm:text-5xl lg:text-[60px] font-serif font-extrabold text-[#F8FAFC] tracking-wide leading-[1.1] text-left mb-5 uppercase"
+            >
+              Cruise The <br />
+              <span className="text-[#C9A227] normal-case">Akalapuzha Backwaters</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="text-slate-300 text-base sm:text-lg max-w-lg font-sans font-normal leading-relaxed mb-8 text-left"
+            >
+              Experience scenic backwaters, fresh Kerala food, and safe boat rides with Phoenix Cruise.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6 }}
+              className="mb-10 w-full"
+            >
+              <a
+                href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 sm:px-10 py-4 bg-primary hover:bg-primary-hover text-white rounded-[14px] font-sans font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-premium hover:-translate-y-1 active:scale-95 inline-block text-center border border-white/10"
+              >
+                Book Your Cruise
+              </a>
+            </motion.div>
+
+            {/* Key Quick Stats */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.8 }}
+              className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full border-t border-white/15 pt-6"
+            >
+              {stats.map((stat, idx) => (
+                <div key={idx} className="flex flex-col text-left">
+                  <span className="text-2xl sm:text-3xl font-serif font-extrabold text-[#C9A227] tracking-wide mb-0.5">
+                    <Counter value={stat.value} suffix={stat.suffix} />
+                  </span>
+                  <span className="text-[10px] font-sans tracking-widest uppercase text-slate-300 font-medium">
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
+            </motion.div>
+
+          </div>
+
+          {/* Right Column: Full Boat Visual Showcase (100% Uncropped & Visible) */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-2xl border-t border-white/15 pt-6"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="lg:col-span-6 relative w-full"
           >
-            {stats.map((stat, idx) => (
-              <div key={idx} className="flex flex-col text-left">
-                <span className="text-2xl sm:text-3xl font-serif font-extrabold text-[#C9A227] tracking-wide mb-0.5 drop-shadow-md">
-                  <Counter value={stat.value} suffix={stat.suffix} />
-                </span>
-                <span className="text-[10px] font-sans tracking-widest uppercase text-slate-200 font-medium">
-                  {stat.label}
-                </span>
-              </div>
-            ))}
+            <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl border border-white/15 bg-slate-900 group">
+              <Image
+                src="https://i.ibb.co/v4FnnCRs/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
+                alt="Phoenix Cruise Akalapuzha boat - full view"
+                fill
+                priority
+                sizes="(max-w-768px) 100vw, 50vw"
+                style={{ objectFit: "cover", objectPosition: "center" }}
+                className="transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60" />
+            </div>
           </motion.div>
 
         </div>
