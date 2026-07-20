@@ -312,7 +312,7 @@ Please contact me to finalize. Thank you!`;
               </div>
             </div>
             <a
-              href="https://maps.app.goo.gl/syiqaAiLKzzjaMoA7"
+              href="https://maps.app.goo.gl/QSxN3a6uhvxSmqdE8"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-sand hover:bg-primary text-primary hover:text-white rounded-xl font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center shadow-sm flex-shrink-0"

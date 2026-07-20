@@ -35,7 +35,7 @@ export default function Footer() {
             {/* Clickable Business Address */}
             <div className="pt-2">
               <a
-                href="https://maps.app.goo.gl/syiqaAiLKzzjaMoA7"
+                href="https://maps.app.goo.gl/QSxN3a6uhvxSmqdE8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-start space-x-3 text-white/70 hover:text-white transition-colors"

@@ -101,7 +101,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Our Location</h4>
                       <a
-                        href="https://maps.app.goo.gl/syiqaAiLKzzjaMoA7"
+                        href="https://maps.app.goo.gl/QSxN3a6uhvxSmqdE8"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="font-sans text-xs md:text-sm text-dark/70 font-light leading-relaxed hover:text-primary transition-colors block group"
@@ -182,7 +182,7 @@ export default function ContactPage() {
             {/* Map Frame */}
             <div className="lg:col-span-7 min-h-[350px] relative rounded-2xl overflow-hidden border border-slate-100 shadow-sm group">
               <iframe
-                src="https://maps.google.com/maps?q=11.505669,75.6596938&z=15&output=embed"
+                src="https://maps.google.com/maps?q=Purakkad+-+Muchukunnu+Road,+Moodadi,+Kerala+673307&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -194,7 +194,7 @@ export default function ContactPage() {
               />
               <div className="absolute bottom-4 right-4 z-10">
                 <a
-                  href="https://maps.app.goo.gl/syiqaAiLKzzjaMoA7"
+                  href="https://maps.app.goo.gl/QSxN3a6uhvxSmqdE8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white hover:bg-primary text-dark hover:text-white px-4 py-2.5 rounded-luxury shadow-md hover:shadow-premium font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 flex items-center border border-primary/5"
