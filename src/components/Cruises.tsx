@@ -7,29 +7,29 @@ const cruises = [
     title: "Day Cruise",
     image: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
     id: "day-package",
-    alt: "Day Cruise Akalapuzha",
+    alt: "Daytime Akalapuzha backwater boat cruise",
     position: "center 75%",
   },
   {
     title: "Houseboat Experience",
     image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
     id: "family-package",
-    alt: "Luxury Houseboat Experience",
+    alt: "Traditional Kerala wooden houseboat experience",
     position: "center 65%",
   },
   {
     title: "Overnight Stay",
-    image: "https://i.ibb.co/GQkYjgvb/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
+    image: "/images/overnight_stay_bedroom.jpg",
     id: "sunset-cruise",
-    alt: "Overnight Stay Cruise",
-    position: "center 70%",
+    alt: "Luxury houseboat overnight stay bedroom suite",
+    position: "center",
   },
   {
-    title: "Family Cruise",
-    image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
+    title: "Family & Group Cruise",
+    image: "/images/family_group_cruise.jpg",
     id: "couple-package",
-    alt: "Family Cruise Akalapuzha",
-    position: "center 75%",
+    alt: "Family & group backwater cruise experience",
+    position: "center",
   },
 ];
 
@@ -48,8 +48,8 @@ export default function Cruises() {
           <div className="w-16 h-[2px] bg-accent mx-auto" />
         </div>
 
-        {/* 4 Wide Landscape Cards Grid (2x2 Grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
+        {/* EXACTLY 4 Cards in ONE SINGLE ROW on Desktop (4-Column Layout) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 max-w-7xl mx-auto">
           {cruises.map((cruise, idx) => (
             <motion.div
               key={cruise.id}
@@ -57,26 +57,26 @@ export default function Cruises() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="group relative rounded-3xl overflow-hidden shadow-lg bg-slate-900 aspect-[16/10] border border-slate-100 flex flex-col justify-end"
+              className="group relative rounded-3xl overflow-hidden shadow-lg bg-slate-900 aspect-[4/3] border border-slate-100 flex flex-col justify-end"
             >
-              {/* Wide Landscape Image with Boat-Centered Framing */}
+              {/* Landscape Image with Subject-Centered Framing */}
               <Image
                 src={cruise.image}
                 alt={cruise.alt}
                 fill
-                sizes="(max-w-768px) 100vw, 50vw"
+                sizes="(max-w-768px) 100vw, (max-w-1024px) 50vw, 25vw"
                 style={{ objectFit: "cover", objectPosition: cruise.position }}
                 className="opacity-90 group-hover:scale-105 transition-transform duration-700"
               />
 
               {/* Dark Bottom Overlay with Short Title & Action */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent p-6 md:p-8 flex items-end justify-between text-left z-10">
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-white group-hover:text-[#C9A227] transition-colors duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent p-5 flex flex-col justify-end text-left z-10">
+                <h3 className="font-serif text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-[#C9A227] transition-colors duration-300">
                   {cruise.title}
                 </h3>
                 <Link
                   href={`/services/${cruise.id}`}
-                  className="px-5 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-xl font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md active:scale-95 border border-white/10 flex-shrink-0 ml-4"
+                  className="w-full text-center py-2.5 px-3 bg-primary hover:bg-primary-hover text-white rounded-xl font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md active:scale-95 border border-white/10"
                 >
                   View Details
                 </Link>

@@ -45,18 +45,27 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          {/* Logo */}
-          <Link href="/" className="flex flex-col select-none group">
-            <span className={`font-serif text-2xl md:text-3xl font-bold tracking-wide transition-colors duration-300 ${
-              scrolled ? "text-primary" : "text-white"
-            }`}>
-              Phoenix Cruise
-            </span>
-            <span className={`font-sans text-[9px] uppercase tracking-[0.3em] font-semibold transition-colors duration-300 ${
-              scrolled ? "text-accent" : "text-white/80"
-            }`}>
-              Luxury Backwaters
-            </span>
+          {/* Logo with Perfect Circular Container */}
+          <Link href="/" className="flex items-center space-x-3 select-none group">
+            <div className="relative w-11 h-11 md:w-13 md:h-13 rounded-full overflow-hidden border-2 border-[#C9A227]/50 bg-white flex items-center justify-center shadow-md flex-shrink-0">
+              <img
+                src="https://i.ibb.co/4RTKNWv7/Whats-App-Image-2026-07-20-at-10-58-58-PM.jpg"
+                alt="Phoenix Cruise Logo"
+                className="w-full h-full object-cover scale-125 transform transition-transform group-hover:scale-135 duration-300"
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className={`font-serif text-xl md:text-2xl font-bold tracking-wide transition-colors duration-300 ${
+                scrolled ? "text-primary" : "text-white"
+              }`}>
+                Phoenix Cruise
+              </span>
+              <span className={`font-sans text-[9px] uppercase tracking-[0.25em] font-semibold transition-colors duration-300 ${
+                scrolled ? "text-accent" : "text-white/80"
+              }`}>
+                Akalapuzha Boat Service
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav Links */}

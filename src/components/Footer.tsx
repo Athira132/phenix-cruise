@@ -20,13 +20,22 @@ export default function Footer() {
           
           {/* Column 1: Brand Info */}
           <div className="lg:col-span-4 space-y-6">
-            <Link href="/" className="flex flex-col select-none">
-              <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-white">
-                Phoenix Cruise
-              </span>
-              <span className="font-sans text-[9px] uppercase tracking-[0.3em] text-accent font-semibold">
-                Luxury Backwaters
-              </span>
+            <Link href="/" className="flex items-center space-x-3 select-none group">
+              <div className="relative w-11 h-11 md:w-13 md:h-13 rounded-full overflow-hidden border-2 border-[#C9A227]/50 bg-white flex items-center justify-center shadow-md flex-shrink-0">
+                <img
+                  src="https://i.ibb.co/4RTKNWv7/Whats-App-Image-2026-07-20-at-10-58-58-PM.jpg"
+                  alt="Phoenix Cruise Logo"
+                  className="w-full h-full object-cover scale-125 transform transition-transform group-hover:scale-135 duration-300"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif text-xl md:text-2xl font-bold tracking-wide text-white">
+                  Phoenix Cruise
+                </span>
+                <span className="font-sans text-[9px] uppercase tracking-[0.25em] text-accent font-semibold">
+                  Akalapuzha Boat Service
+                </span>
+              </div>
             </Link>
             <p className="font-sans text-xs md:text-sm text-white/60 font-light leading-relaxed max-w-sm">
               Providing trusted Akalapuzha boat service in Kerala with safe, comfortable, and memorable backwater experiences for tourists, families, and groups.
