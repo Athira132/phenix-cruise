@@ -155,34 +155,31 @@ export default function Home() {
         {/* 1. Existing Full-Screen Hero Section */}
         <Hero />
 
-        {/* 2. Three Large Image-Based Highlight Cards (Safety First, Fresh Kerala Flavours, Feel at Home) */}
+        {/* 2. First Three Visual Highlight Cards (Safety First, Fresh Kerala Flavours, Feel at Home) */}
         <SafeAndQualityHighlight />
 
-        {/* 3. New Three-Image Choice Section (Day Cruise, Houseboat Experience, Overnight Stay) */}
-        <ThreeImageChoice />
-
-        {/* 4. Find Your Perfect Cruise (4 Wide Landscape Experience Cards) */}
+        {/* 3. Find Your Perfect Cruise (4 Wide Landscape Experience Cards with Full Boat Visibility) */}
         <Cruises />
 
-        {/* 5. Short Introduction / About Phoenix Cruise */}
+        {/* 4. Short Introduction / About Phoenix Cruise */}
         <About />
 
-        {/* 6. Tranquil Akalapuzha Views (Visual Backwater Showcase) */}
+        {/* 5. WHY CHOOSE US (Safety First, Quality Food, Family Friendly - 3 Landscape Image Cards) */}
         <WhyChooseUs />
 
-        {/* 7. Onboard Dining (Fresh Kerala Flavours Photo Showcase) */}
+        {/* 6. Onboard Dining (Fresh Kerala Flavours Photo Showcase) */}
         <FoodAndDining />
 
-        {/* 8. Video Highlights (Vertical 9:16 Cards) */}
+        {/* 7. Video Highlights (Vertical 9:16 Cards) */}
         <VideoGallery />
 
-        {/* 9. Photo Showcase Gallery (Masonry Style & Lightbox with New Photos) */}
+        {/* 8. Photo Showcase Gallery (Masonry Style & Lightbox) */}
         <Gallery />
 
-        {/* 10. Customer Testimonials */}
+        {/* 9. Customer Testimonials */}
         <Testimonials />
 
-        {/* 11. Contact & Location Map */}
+        {/* 10. Contact & Location Map */}
         <Contact />
       </main>
 

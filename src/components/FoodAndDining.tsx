@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaUtensils, FaCoffee, FaCheck, FaGlassMartiniAlt } from "react-icons/fa";
 
 const foodImages = [
+  { src: "/images/kerala_food_feast.jpg", alt: "Authentic Kerala banana leaf feast with fish curry & seafood" },
   { src: "https://i.ibb.co/gLDj3rmn/image.png", alt: "Freshly prepared Karimeen fish fry on banana leaf" },
   { src: "https://i.ibb.co/YJjmvNQ/image.png", alt: "Traditional Kerala backwater dining feast spread" },
   { src: "https://i.ibb.co/Fq6vx8GP/image.png", alt: "Delightful local seafood starters served live" },

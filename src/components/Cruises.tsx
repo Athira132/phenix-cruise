@@ -8,24 +8,28 @@ const cruises = [
     image: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
     id: "day-package",
     alt: "Day Cruise Akalapuzha",
+    position: "center 75%",
   },
   {
     title: "Houseboat Experience",
     image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
     id: "family-package",
     alt: "Luxury Houseboat Experience",
+    position: "center 65%",
   },
   {
     title: "Overnight Stay",
     image: "https://i.ibb.co/GQkYjgvb/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
     id: "sunset-cruise",
     alt: "Overnight Stay Cruise",
+    position: "center 70%",
   },
   {
     title: "Family Cruise",
     image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
     id: "couple-package",
     alt: "Family Cruise Akalapuzha",
+    position: "center 75%",
   },
 ];
 
@@ -55,13 +59,13 @@ export default function Cruises() {
               transition={{ duration: 0.5, delay: idx * 0.05 }}
               className="group relative rounded-3xl overflow-hidden shadow-lg bg-slate-900 aspect-[16/10] border border-slate-100 flex flex-col justify-end"
             >
-              {/* Wide Landscape Image */}
+              {/* Wide Landscape Image with Boat-Centered Framing */}
               <Image
                 src={cruise.image}
                 alt={cruise.alt}
                 fill
                 sizes="(max-w-768px) 100vw, 50vw"
-                style={{ objectFit: "cover", objectPosition: "center" }}
+                style={{ objectFit: "cover", objectPosition: cruise.position }}
                 className="opacity-90 group-hover:scale-105 transition-transform duration-700"
               />
 
