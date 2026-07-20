@@ -37,27 +37,27 @@ export default function FoodPage() {
   return (
     <>
       <Head>
-        <title>Food &amp; Dining Experience | Phoenix Cruise Akalapuzha</title>
+        <title>Onboard Food &amp; Dining | Phoenix Cruise Akalapuzha</title>
         <meta
           name="description"
-          content="Discover authentic Kerala food &amp; dining on Phoenix Cruise Akalapuzha boat service. Enjoy freshly prepared local delicacies, Karimeen fish fry, and pleasant backwater dining in Kerala."
+          content="Discover fresh Kerala food &amp; dining on Phoenix Cruise Akalapuzha boat service. Enjoy freshly prepared local seafood, Karimeen fry, and backwater dining."
         />
-        <meta name="keywords" content="Akalapuzha boat service food, Phoenix Cruise dining, Kerala backwater dining, Akalapuzha cruise food, Kerala backwater boat service" />
-        <link rel="canonical" href="https://clever-rutherford.vercel.app/food" />
+        <meta name="keywords" content="Onboard Food &amp; Dining, Akalapuzha boat service, Akalapuzha boat ride, Phoenix Cruise, Akalapuzha, Kerala backwater boat service, Kerala boat cruise" />
+        <link rel="canonical" href="https://phoenixcruise.in/food" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Phoenix Cruise" />
-        <meta property="og:url" content="https://clever-rutherford.vercel.app/food" />
-        <meta property="og:title" content="Food &amp; Dining Experience | Phoenix Cruise Akalapuzha" />
-        <meta property="og:description" content="Discover authentic Kerala food &amp; dining on Phoenix Cruise Akalapuzha boat service. Enjoy freshly prepared local delicacies, Karimeen fish fry, and pleasant backwater dining in Kerala." />
+        <meta property="og:url" content="https://phoenixcruise.in/food" />
+        <meta property="og:title" content="Onboard Food &amp; Dining | Phoenix Cruise Akalapuzha" />
+        <meta property="og:description" content="Discover fresh Kerala food &amp; dining on Phoenix Cruise Akalapuzha boat service. Enjoy freshly prepared local seafood, Karimeen fry, and backwater dining." />
         <meta property="og:image" content="https://i.ibb.co/YJjmvNQ/image.png" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://clever-rutherford.vercel.app/food" />
-        <meta name="twitter:title" content="Food &amp; Dining Experience | Phoenix Cruise Akalapuzha" />
-        <meta name="twitter:description" content="Discover authentic Kerala food &amp; dining on Phoenix Cruise Akalapuzha boat service. Enjoy freshly prepared local delicacies, Karimeen fish fry, and pleasant backwater dining in Kerala." />
+        <meta name="twitter:url" content="https://phoenixcruise.in/food" />
+        <meta name="twitter:title" content="Onboard Food &amp; Dining | Phoenix Cruise Akalapuzha" />
+        <meta name="twitter:description" content="Discover fresh Kerala food &amp; dining on Phoenix Cruise Akalapuzha boat service. Enjoy freshly prepared local seafood, Karimeen fry, and backwater dining." />
         <meta name="twitter:image" content="https://i.ibb.co/YJjmvNQ/image.png" />
       </Head>
 

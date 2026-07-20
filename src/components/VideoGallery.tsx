@@ -98,7 +98,7 @@ export default function VideoGallery() {
               <div className="relative w-full h-full bg-slate-900 flex items-center justify-center">
                 <Image
                   src={video.thumbnail}
-                  alt="Video Thumbnail"
+                  alt={video.title}
                   fill
                   sizes="(max-w-768px) 100vw, 33vw"
                   style={{ objectFit: "contain" }}

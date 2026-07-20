@@ -55,27 +55,27 @@ export default function TestimonialsPage() {
   return (
     <>
       <Head>
-        <title>Guest Reviews &amp; Testimonials | Phoenix Cruise Akalapuzha</title>
+        <title>Guest Reviews &amp; Ratings | Phoenix Cruise Akalapuzha</title>
         <meta
           name="description"
-          content="Read verified guest reviews for Phoenix Cruise Akalapuzha boat service. Discover guest experiences on backwater boat rides, quality dining, and safety in Kerala."
+          content="Read verified guest reviews and experiences for Phoenix Cruise Akalapuzha boat service in Kerala. High-rated family boat rides and backwater cruises."
         />
-        <meta name="keywords" content="Phoenix Cruise reviews, Akalapuzha boat service reviews, Akalapuzha boat ride testimonials, Kerala backwater boat service reviews" />
-        <link rel="canonical" href="https://clever-rutherford.vercel.app/testimonials" />
+        <meta name="keywords" content="Guest Reviews, Phoenix Cruise reviews, Akalapuzha boat service, Akalapuzha boat ride, Phoenix Cruise, Akalapuzha, Kerala backwater boat service, Kerala boat cruise" />
+        <link rel="canonical" href="https://phoenixcruise.in/testimonials" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Phoenix Cruise" />
-        <meta property="og:url" content="https://clever-rutherford.vercel.app/testimonials" />
-        <meta property="og:title" content="Guest Reviews &amp; Testimonials | Phoenix Cruise Akalapuzha" />
-        <meta property="og:description" content="Read verified guest reviews for Phoenix Cruise Akalapuzha boat service. Discover guest experiences on backwater boat rides, quality dining, and safety in Kerala." />
+        <meta property="og:url" content="https://phoenixcruise.in/testimonials" />
+        <meta property="og:title" content="Guest Reviews &amp; Ratings | Phoenix Cruise Akalapuzha" />
+        <meta property="og:description" content="Read verified guest reviews and experiences for Phoenix Cruise Akalapuzha boat service in Kerala. High-rated family boat rides and backwater cruises." />
         <meta property="og:image" content="https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://clever-rutherford.vercel.app/testimonials" />
-        <meta name="twitter:title" content="Guest Reviews &amp; Testimonials | Phoenix Cruise Akalapuzha" />
-        <meta name="twitter:description" content="Read verified guest reviews for Phoenix Cruise Akalapuzha boat service. Discover guest experiences on backwater boat rides, quality dining, and safety in Kerala." />
+        <meta name="twitter:url" content="https://phoenixcruise.in/testimonials" />
+        <meta name="twitter:title" content="Guest Reviews &amp; Ratings | Phoenix Cruise Akalapuzha" />
+        <meta name="twitter:description" content="Read verified guest reviews and experiences for Phoenix Cruise Akalapuzha boat service in Kerala. High-rated family boat rides and backwater cruises." />
         <meta name="twitter:image" content="https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg" />
       </Head>
 

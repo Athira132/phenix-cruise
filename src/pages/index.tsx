@@ -31,64 +31,20 @@ export default function Home() {
   }, []);
 
   // JSON-LD Structured Data
-  const jsonLdOrg = [
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Phoenix Cruise - Akalapuzha Boat Service",
-      "alternateName": "Akalapuzha Boat Service",
-      "image": "https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg",
-      "@id": "https://clever-rutherford.vercel.app/#localbusiness",
-      "url": "https://clever-rutherford.vercel.app",
-      "telephone": "+918138866919",
-      "priceRange": "₹500 - ₹2500",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Purakkad - Muchukunnu Road",
-        "addressLocality": "Moodadi",
-        "addressRegion": "Kerala",
-        "postalCode": "673307",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 11.505669,
-        "longitude": 75.6596938
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "08:00",
-        "closes": "22:00"
-      },
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61591769716259",
-        "https://www.instagram.com/phoenix_cruise/",
-        "https://www.youtube.com/channel/UCq0Q_2jwkqYiJisXELYDtLg"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Phoenix Cruise",
-      "url": "https://clever-rutherford.vercel.app"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "TouristAttraction",
-      "name": "Akalapuzha Backwater Cruise & Boating",
-      "description": "Scenic backwater boat cruise service in Akalapuzha, Kerala offering Shikara boat rides, quality dining, and sunset cruises.",
-      "location": {
-        "@type": "Place",
-        "name": "Akalapuzha Backwaters",
+  const jsonLdOrg = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://phoenixcruise.in/#localbusiness",
+        "name": "Phoenix Cruise",
+        "alternateName": "Akalapuzha Boat Service",
+        "description": "Phoenix Cruise provides memorable Akalapuzha boat service experiences in Kerala, offering scenic backwater cruises, quality food, and safe boat rides.",
+        "image": "https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg",
+        "url": "https://phoenixcruise.in/",
+        "telephone": "+918138866919",
+        "priceRange": "₹500 - ₹2500",
+        "hasMap": "https://maps.app.goo.gl/QSxN3a6uhvxSmqdE8",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Purakkad - Muchukunnu Road",
@@ -96,38 +52,109 @@ export default function Home() {
           "addressRegion": "Kerala",
           "postalCode": "673307",
           "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.505669,
+          "longitude": 75.6596938
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "22:00"
+        },
+        "sameAs": [
+          "https://www.instagram.com/phoenix_cruise/",
+          "https://www.facebook.com/profile.php?id=61591769716259",
+          "https://www.youtube.com/channel/UCq0Q_2jwkqYiJisXELYDtLg"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://phoenixcruise.in/#organization",
+        "name": "Phoenix Cruise",
+        "url": "https://phoenixcruise.in/",
+        "logo": "https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+918138866919",
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": ["en", "ml"]
+        },
+        "sameAs": [
+          "https://www.instagram.com/phoenix_cruise/",
+          "https://www.facebook.com/profile.php?id=61591769716259",
+          "https://www.youtube.com/channel/UCq0Q_2jwkqYiJisXELYDtLg"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://phoenixcruise.in/#service",
+        "name": "Akalapuzha Boat Service",
+        "serviceType": "Backwater Boat Cruise & Boating",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Phoenix Cruise"
+        },
+        "areaServed": {
+          "@type": "State",
+          "name": "Kerala"
+        },
+        "description": "Scenic backwater boat cruise services in Akalapuzha including Shikara boat rides, day package cruises, sunset tours, and onboard dining."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://phoenixcruise.in/#website",
+        "url": "https://phoenixcruise.in/",
+        "name": "Phoenix Cruise",
+        "publisher": {
+          "@id": "https://phoenixcruise.in/#organization"
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://phoenixcruise.in/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://phoenixcruise.in/"
+          }
+        ]
       }
-    }
-  ];
+    ]
+  };
 
   return (
     <>
       <Head>
-        <title>Akalapuzha Boat Service | Phoenix Cruise Kerala Backwater Boating</title>
+        <title>Akalapuzha Boat Service | Phoenix Cruise Kerala</title>
         <meta
           name="description"
-          content="Experience the serene beauty of Kozhikode backwaters with Phoenix Cruise Akalapuzha boat service in Kerala. Book luxury houseboat cruises, Shikara boat rides, and quality dining."
+          content="Enjoy a memorable backwater experience with Phoenix Cruise, your trusted Akalapuzha boat service in Kerala. Experience scenic boat rides, quality food, and a safe and enjoyable cruise experience."
         />
-        <meta name="keywords" content="Akalapuzha boat service, Akalapuzha boat ride, Phoenix Cruise, Akalapuzha, boat service in Akalapuzha, Kerala backwater boat service, boat cruise in Kerala, Phoenix Cruise Akalapuzha, Moodadi boat cruise" />
-        <link rel="canonical" href="https://clever-rutherford.vercel.app/" />
+        <meta name="keywords" content="Akalapuzha boat service, Akalapuzha boat ride, Phoenix Cruise, Phoenix Cruise Akalapuzha, Akalapuzha, boat service in Akalapuzha, Kerala backwater boat service, Kerala boat cruise" />
+        <link rel="canonical" href="https://phoenixcruise.in/" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Phoenix Cruise" />
-        <meta property="og:url" content="https://clever-rutherford.vercel.app/" />
-        <meta property="og:title" content="Akalapuzha Boat Service | Phoenix Cruise Kerala Backwater Boating" />
+        <meta property="og:url" content="https://phoenixcruise.in/" />
+        <meta property="og:title" content="Akalapuzha Boat Service | Phoenix Cruise Kerala" />
         <meta
           property="og:description"
-          content="Experience the serene beauty of Kozhikode backwaters with Phoenix Cruise Akalapuzha boat service in Kerala. Book luxury houseboat cruises, Shikara boat rides, and quality dining."
+          content="Enjoy a memorable backwater experience with Phoenix Cruise, your trusted Akalapuzha boat service in Kerala. Experience scenic boat rides, quality food, and a safe and enjoyable cruise experience."
         />
         <meta property="og:image" content="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
 
         {/* Twitter / X */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://clever-rutherford.vercel.app/" />
-        <meta name="twitter:title" content="Akalapuzha Boat Service | Phoenix Cruise Kerala Backwater Boating" />
-        <meta name="twitter:description" content="Experience the serene beauty of Kozhikode backwaters with Phoenix Cruise Akalapuzha boat service in Kerala. Book luxury houseboat cruises, Shikara boat rides, and quality dining." />
+        <meta name="twitter:url" content="https://phoenixcruise.in/" />
+        <meta name="twitter:title" content="Akalapuzha Boat Service | Phoenix Cruise Kerala" />
+        <meta name="twitter:description" content="Enjoy a memorable backwater experience with Phoenix Cruise, your trusted Akalapuzha boat service in Kerala. Experience scenic boat rides, quality food, and a safe and enjoyable cruise experience." />
         <meta name="twitter:image" content="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
 
         {/* Fonts Preload */}
