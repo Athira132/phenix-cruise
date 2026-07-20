@@ -50,7 +50,7 @@ export default function Hero() {
     >
       {/* ===================================================
           FULL-WIDTH HERO BOAT IMAGE BACKGROUND
-          (Top sky cropped, 100% boat bow-to-stern visible)
+          (Boat positioned on right, clean text space on left)
           =================================================== */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -59,19 +59,19 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full z-0 bg-slate-950"
       >
         <Image
-          src="https://i.ibb.co/v4FnnCRs/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
+          src="https://i.ibb.co/pBQY8xcz/image.png"
           alt="Phoenix Cruise Akalapuzha boat service backwater cruise"
           fill
           priority
           sizes="100vw"
-          style={{ objectFit: "cover", objectPosition: "center 38%" }}
-          className="opacity-90"
+          style={{ objectFit: "cover", objectPosition: "center 40%" }}
+          className="opacity-95"
         />
       </motion.div>
 
-      {/* Responsive dark gradient overlay for crystal clear text readability while leaving boat vivid */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-slate-950/40 lg:to-transparent z-1" />
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-black/50 z-1 pointer-events-none" />
+      {/* Subtle left-side dark gradient overlay for text readability without darkening the vibrant boat on the right */}
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/35 to-transparent z-1" />
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/40 z-1 pointer-events-none" />
 
       {/* ===================================================
           HERO CONTENT OVERLAY (LEFT ALIGNED)
