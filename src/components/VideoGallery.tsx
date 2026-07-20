@@ -82,35 +82,41 @@ export default function VideoGallery() {
           </p>
         </div>
 
-        {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Video Grid (Vertical Portrait Cards - 9:16) */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
           {videoItems.map((video) => (
             <motion.div
               key={video.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="border border-primary/5 rounded-luxury overflow-hidden hover:shadow-premium transition-all duration-300 relative aspect-[16/9] group cursor-pointer"
+              transition={{ duration: 0.5 }}
+              className="border border-slate-100 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 relative aspect-[9/16] group cursor-pointer bg-slate-900"
               onClick={() => setSelectedVideo(video)}
             >
               {/* Thumbnail Container */}
               <div className="relative w-full h-full bg-slate-900 flex items-center justify-center">
                 <Image
                   src={video.thumbnail}
-                  alt="Video Thumbnail"
+                  alt={video.title}
                   fill
-                  sizes="(max-w-768px) 100vw, 33vw"
-                  style={{ objectFit: "contain" }}
-                  className="transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-w-768px) 50vw, 20vw"
+                  style={{ objectFit: "cover", objectPosition: "center" }}
+                  className="opacity-90 transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-secondary/35 transition-opacity duration-300 group-hover:bg-secondary/45" />
-                
+
                 {/* Play Button Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-14 h-14 rounded-full bg-white/90 text-primary flex items-center justify-center shadow-md transform transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
-                    <FaPlay className="ml-1 text-lg" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 group-hover:bg-black/25 transition-all">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary/90 text-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg border border-white/20 pl-0.5">
+                    <FaPlay className="text-sm md:text-base text-white" />
                   </div>
+                </div>
+
+                {/* Bottom Title Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent p-4 flex flex-col justify-end text-left pointer-events-none">
+                  <h3 className="font-sans text-xs md:text-sm font-bold text-white leading-tight line-clamp-2">
+                    {video.title}
+                  </h3>
                 </div>
               </div>
             </motion.div>

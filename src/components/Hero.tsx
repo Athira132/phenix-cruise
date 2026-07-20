@@ -63,6 +63,7 @@ export default function Hero() {
           alt="Phoenix Cruise Akalapuzha boat service backwater cruise"
           fill
           priority
+          quality={80}
           sizes="100vw"
           style={{ objectFit: "cover", objectPosition: "center 40%" }}
           className="opacity-95"

@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import SafeAndQualityHighlight from "@/components/SafeAndQualityHighlight";
+import ThreeImageChoice from "@/components/ThreeImageChoice";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Cruises from "@/components/Cruises";
 import DayPackageDetails from "@/components/DayPackageDetails";
@@ -154,28 +155,28 @@ export default function Home() {
         {/* 1. Existing Full-Screen Hero Section */}
         <Hero />
 
-        {/* 2. Three Large Image-Based Highlight Cards (Safety/Comfort, Kerala Food, Cruise Experience) */}
+        {/* 2. Three Large Image-Based Highlight Cards (Safety First, Fresh Kerala Flavours, Feel at Home) */}
         <SafeAndQualityHighlight />
 
-        {/* 3. Choose Your Cruise Experience ("Find Your Perfect Cruise" + 4 Large Experience Cards) */}
+        {/* 3. New Three-Image Choice Section (Day Cruise, Houseboat Experience, Overnight Stay) */}
+        <ThreeImageChoice />
+
+        {/* 4. Find Your Perfect Cruise (4 Wide Landscape Experience Cards) */}
         <Cruises />
 
-        {/* 4. Short Introduction / About Phoenix Cruise */}
+        {/* 5. Short Introduction / About Phoenix Cruise */}
         <About />
 
-        {/* 5. Visual Highlights */}
+        {/* 6. Tranquil Akalapuzha Views (Visual Backwater Showcase) */}
         <WhyChooseUs />
-
-        {/* 6. Day Package Specification Details */}
-        <DayPackageDetails />
 
         {/* 7. Onboard Dining (Fresh Kerala Flavours Photo Showcase) */}
         <FoodAndDining />
 
-        {/* 8. Video Highlights */}
+        {/* 8. Video Highlights (Vertical 9:16 Cards) */}
         <VideoGallery />
 
-        {/* 9. Photo Showcase Gallery (Masonry Style & Lightbox) */}
+        {/* 9. Photo Showcase Gallery (Masonry Style & Lightbox with New Photos) */}
         <Gallery />
 
         {/* 10. Customer Testimonials */}

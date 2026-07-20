@@ -11,6 +11,12 @@ const galleryItems = [
     image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
   },
   {
+    id: 2,
+    title: "Akalapuzha Backwater Cruise Fleet",
+    category: "Cruises",
+    image: "https://i.ibb.co/60kjvbqw/Whats-App-Image-2026-07-14-at-1-19-56-PM.jpg",
+  },
+  {
     id: 3,
     title: "Sunset Lake Crossing",
     category: "Sunset",
@@ -51,6 +57,30 @@ const galleryItems = [
     title: "Luxury Boat Moored by Palm Bank",
     category: "Houseboats",
     image: "https://i.ibb.co/h14vRRT4/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
+  },
+  {
+    id: 10,
+    title: "Cruising Along Palm Shorelines",
+    category: "Cruises",
+    image: "https://i.ibb.co/9kzPswmC/Whats-App-Image-2026-07-14-at-1-19-42-PM.jpg",
+  },
+  {
+    id: 11,
+    title: "Comfortable Viewing Cabin",
+    category: "Cruises",
+    image: "https://i.ibb.co/TqJDz1Ss/Whats-App-Image-2026-07-14-at-1-19-42-PM-1.jpg",
+  },
+  {
+    id: 12,
+    title: "Tranquil Lake Reflection",
+    category: "Backwaters",
+    image: "https://i.ibb.co/N2pwwXtT/image.png",
+  },
+  {
+    id: 13,
+    title: "Scenic Backwater Palms",
+    category: "Backwaters",
+    image: "https://i.ibb.co/0pPgJyPc/image.png",
   },
 ];
 

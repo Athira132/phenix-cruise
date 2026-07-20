@@ -58,38 +58,47 @@ export default function AboutPage() {
 
       <main className="bg-slate-50 font-sans">
         {/* Intro Section */}
-        <section className="py-16 md:py-24 max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <section className="py-12 md:py-20 max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           <div className="lg:col-span-6 relative">
-            <div className="relative aspect-[4/5] md:aspect-[1.2] lg:aspect-[4/5] rounded-[20px] overflow-hidden shadow-premium group">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 group">
               <Image
                 src="https://i.ibb.co/Kc9rJqF9/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
-                alt="Kerala backwater luxury boat view"
+                alt="Phoenix Cruise Akalapuzha Boat Service"
                 fill
                 sizes="(max-w-768px) 100vw, 50vw"
                 style={{ objectFit: "cover", objectPosition: "center" }}
                 className="transition-transform duration-700 group-hover:scale-105"
               />
             </div>
-            <div className="absolute -inset-3 border border-accent/20 rounded-[20px] -z-1 translate-x-2 translate-y-2 pointer-events-none" />
           </div>
 
-          <div className="lg:col-span-6 space-y-6">
-            <span className="text-primary text-xs uppercase tracking-[0.25em] font-semibold block">
-              OUR JOURNEY & STORY
+          <div className="lg:col-span-6 space-y-5">
+            <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-bold block">
+              ABOUT PHOENIX CRUISE
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-dark leading-tight">
-              Gliding Through the Golden Backwaters of Akalapuzha
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-dark leading-tight">
+              Your Time on the Water
             </h2>
-            <div className="text-dark/80 font-light leading-relaxed space-y-4">
+            <div className="text-dark/80 font-sans text-sm md:text-base leading-relaxed space-y-3 font-normal">
               <p>
-                As a trusted <strong>Akalapuzha Boating Service</strong>, Phoenix Cruise was born from a desire to share the raw beauty of Kerala’s legendary backwater lakes and canals through a lens of absolute luxury and local heritage. We provide premium backwater boating experiences, serving tourists, families, couples, and corporate groups with a spiritual slowdown and a chance to hear the rustle of palms, view green paddy fields, and witness magnificent sunsets.
+                Phoenix Cruise offers peaceful backwater boat rides across Akalapuzha lake in Kozhikode, Kerala.
               </p>
               <p>
-                Every journey with us prioritizes passenger wellbeing and culinary excellence: we offer a safe cruise experience on carefully maintained boats alongside fresh, hygienically prepared food made with quality ingredients and authentic Kerala flavours.
+                We prioritize passenger safety, comfortable seating, and fresh authentic Kerala food prepared with quality ingredients.
               </p>
               <p>
-                Today, our Akalapuzha boat service manages a premium fleet of traditional Kerala houseboats and custom boats. We focus on safety, comfort, and customer satisfaction, combining native wood architecture with modern comforts, personalized itineraries, and absolute privacy for all passengers.
+                Enjoy memorable family outings, group trips, and private backwater cruises with complete peace of mind.
               </p>
+            </div>
+            <div className="pt-2">
+              <a
+                href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20a%20backwater%20cruise."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3.5 bg-primary hover:bg-primary-hover text-white rounded-xl font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 inline-block shadow-md"
+              >
+                Book Your Cruise
+              </a>
             </div>
           </div>
         </section>
