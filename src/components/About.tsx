@@ -27,7 +27,7 @@ export default function About() {
           >
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group border border-slate-100">
               <Image
-                src="https://i.ibb.co/v4FnnCRs/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
+                src="https://i.ibb.co/Kc9rJqF9/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
                 alt="Phoenix Cruise Akalapuzha Boat Service"
                 fill
                 sizes="(max-w-768px) 100vw, 50vw"

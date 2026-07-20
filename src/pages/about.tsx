@@ -62,7 +62,7 @@ export default function AboutPage() {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[4/5] md:aspect-[1.2] lg:aspect-[4/5] rounded-[20px] overflow-hidden shadow-premium group">
               <Image
-                src="https://i.ibb.co/B51fLF7w/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg"
+                src="https://i.ibb.co/Kc9rJqF9/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
                 alt="Kerala backwater luxury boat view"
                 fill
                 sizes="(max-w-768px) 100vw, 50vw"
