@@ -123,10 +123,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Helplines</h4>
                       <p className="text-xs text-dark/70 font-light">
-                        Reservations: <a href="tel:+918138866919" className="hover:text-primary transition-colors font-semibold">+91 81388 66919</a>
-                      </p>
-                      <p className="text-xs text-dark/70 font-light mt-1">
-                        General Support: <a href="tel:+919567043039" className="hover:text-primary transition-colors">+91 95670 43039</a>
+                        Call / Reservations: <a href="tel:+918138866919" className="hover:text-primary transition-colors font-semibold">+91 81388 66919</a>
                       </p>
                       <p className="text-xs text-dark/70 font-light mt-2 flex items-center">
                         WhatsApp: <a href="https://wa.me/918138866919" target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:underline ml-1 font-semibold flex items-center"><FaWhatsapp className="mr-1" />+91 81388 66919</a>

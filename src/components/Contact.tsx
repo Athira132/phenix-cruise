@@ -65,10 +65,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Call & WhatsApp</h4>
                   <p className="font-sans text-xs md:text-sm text-dark/70 font-light">
-                    Main Phone: <a href="tel:+918138866919" className="hover:text-primary transition-colors">+91 81388 66919</a>
-                  </p>
-                  <p className="font-sans text-xs md:text-sm text-dark/70 font-light mt-1">
-                    Alternate Phone: <a href="tel:+919567043039" className="hover:text-primary transition-colors">+91 95670 43039</a>
+                    Phone / Call: <a href="tel:+918138866919" className="hover:text-primary transition-colors font-semibold">+91 81388 66919</a>
                   </p>
                   <p className="font-sans text-xs md:text-sm text-dark/70 font-light mt-2 flex items-center">
                     WhatsApp: <a href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20cruise%20packages.%0A%0APlease%20share%20the%20available%20options.%0A%0AThank%20you." target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:underline ml-1 font-semibold flex items-center"><FaWhatsapp className="mr-1" />+91 81388 66919</a>
