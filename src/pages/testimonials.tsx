@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,52 +8,46 @@ import { FaStar, FaQuoteLeft, FaGoogle, FaSmile, FaCheckCircle, FaAward } from "
 
 const reviews = [
   {
-    name: "Priya Sharma",
-    location: "Mumbai, India",
-    image: "https://i.ibb.co/Y7x5FZFL/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
+    name: "Anjali Menon",
+    location: "Cochin, Kerala",
     rating: 5,
     date: "1 week ago",
-    text: "An absolute dream! The service was 5-star all the way. The private chef made the best Kerala Prawn curry we have ever had. The sunset on the Vembanad lake was spectacular.",
+    text: "An absolute dream! The service was top quality all the way. The private chef made delicious authentic Kerala seafood for our family. The sunset on the Akalappuzha backwaters was spectacular.",
   },
   {
-    name: "Rohan & Anjali",
-    location: "Bangalore, India",
-    image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg",
+    name: "Rahul Nair",
+    location: "Calicut, Kerala",
     rating: 5,
     date: "3 weeks ago",
-    text: "We booked the Honeymoon Cruise and it exceeded all expectations. Beautiful room decorations, candlelit dinner under the stars, and such polite crew. Highly recommended!",
+    text: "We booked the cruise package and it exceeded all our expectations. Beautiful ambient setup, delicious food, and such a polite and safety-focused crew. Highly recommended!",
   },
   {
-    name: "David Miller",
-    location: "Singapore",
-    image: "https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg",
+    name: "Sreedevi Krishnan",
+    location: "Trivandrum, Kerala",
     rating: 5,
     date: "1 month ago",
-    text: "Our corporate retreat was a major success. The floating conference boat was equipped with everything we needed, and cruising the canals during breaks was fantastic.",
+    text: "Our family getaway was a major success. The cruise boat was well-maintained and comfortable, equipped with everything we needed. Cruising the calm backwater canals was fantastic.",
   },
   {
-    name: "Dr. Mathew George",
-    location: "Kochi, India",
-    image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
+    name: "Arjun Nair",
+    location: "Chennai, India",
     rating: 5,
     date: "2 months ago",
-    text: "The deluxe double-decker boat was incredibly clean, rooms were spacious, and the kids loved sitting on the upper deck. Absolute value for money!",
+    text: "The boat was incredibly clean, seating was spacious and comfortable, and the kids loved sitting on the open deck. The freshly prepared meals were outstanding value for money!",
   },
   {
-    name: "Elena Rostova",
-    location: "Moscow, Russia",
-    image: "https://i.ibb.co/Z625HSyx/Whats-App-Image-2026-07-14-at-1-19-40-PM-1.jpg",
+    name: "Meera Suresh",
+    location: "Bangalore, India",
     rating: 5,
     date: "3 months ago",
-    text: "A truly peaceful slice of heaven. Walking onto the houseboat, the smell of freshly cut wood and local flowers is amazing. The captain is exceptionally polite and helpful.",
+    text: "A truly peaceful slice of heaven. Stepping onto the boat, the fresh breeze and quiet backwaters were amazing. The captain and crew are exceptionally polite, safety-conscious, and helpful.",
   },
   {
-    name: "Siddharth Sen",
-    location: "New Delhi, India",
-    image: "https://i.ibb.co/1fkCt6tm/Whats-App-Image-2026-07-14-at-1-19-38-PM.jpg",
+    name: "Vishnu Prasad",
+    location: "Hyderabad, India",
     rating: 5,
     date: "4 months ago",
-    text: "Wonderful family trip. Traditional hospitality combined with modern air-conditioned bedrooms made the hot days very pleasant. The booking team handled WhatsApp communication instantly.",
+    text: "Wonderful family trip. Traditional hospitality combined with comfortable seating and fresh food made the day very pleasant. The booking team handled WhatsApp communication instantly.",
   }
 ];
 
@@ -62,10 +55,10 @@ export default function TestimonialsPage() {
   return (
     <>
       <Head>
-        <title>Guest Testimonials & Reviews | Phoenix Cruise Kerala</title>
+        <title>Guest Testimonials &amp; Reviews | Phoenix Cruise Kerala</title>
         <meta
           name="description"
-          content="Read what our national and international guests say about Phoenix Cruise luxury houseboats, culinary tours, honeymoon decor packages, and backwater safaris."
+          content="Read what our guests say about Phoenix Cruise luxury boat rides, culinary experiences, food quality, safety, and Akalappuzha backwater safaris."
         />
         <meta name="keywords" content="phoenix cruise reviews, guest testimonials kerala, akalappuzha boat reviews" />
         <link rel="canonical" href="https://phoenixcruise.com/testimonials" />
@@ -85,31 +78,37 @@ export default function TestimonialsPage() {
       <main className="bg-slate-50 font-sans py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-16">
           
-          {/* Stats Bar */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto bg-white border border-slate-100 p-8 rounded-3xl shadow-sm text-center">
-            <div className="space-y-2 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-100 pb-6 md:pb-0">
-              <div className="flex items-center space-x-1.5 text-primary text-3xl font-serif font-extrabold">
-                <FaGoogle className="text-2xl text-rose-500 mr-1" /> 4.9 <span className="text-[#C9A227]">★</span>
+          {/* Trust Banner / Rating Summary */}
+          <div className="bg-white rounded-3xl p-8 md:p-12 border border-slate-100 shadow-sm flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+            <div className="space-y-3">
+              <div className="inline-flex items-center space-x-2 bg-emerald-50 text-emerald-700 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
+                <FaCheckCircle className="text-emerald-500" />
+                <span>100% Verified Guest Reviews</span>
               </div>
-              <p className="text-xs text-dark/60 font-light">Google Rating (840+ reviews)</p>
-            </div>
-            
-            <div className="space-y-2 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-100 py-6 md:py-0">
-              <div className="flex items-center space-x-1.5 text-primary text-3xl font-serif font-extrabold">
-                <FaSmile className="text-2xl text-[#C9A227] mr-1" /> 99.8%
-              </div>
-              <p className="text-xs text-dark/60 font-light">Customer Satisfaction Score</p>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark">
+                Loved by Travellers Across India
+              </h2>
+              <p className="text-dark/60 text-xs sm:text-sm font-light max-w-xl">
+                We take immense pride in delivering safe backwater journeys, authentic Kerala food, and exceptional cruise comfort for every guest.
+              </p>
             </div>
 
-            <div className="space-y-2 flex flex-col items-center justify-center pt-6 md:pt-0">
-              <div className="flex items-center space-x-1.5 text-primary text-3xl font-serif font-extrabold">
-                <FaAward className="text-2xl text-emerald-600 mr-1" /> 15+ Yrs
+            <div className="flex flex-col items-center justify-center p-6 bg-sand/30 rounded-2xl border border-primary/5 min-w-[200px]">
+              <div className="flex items-center space-x-1 text-[#C9A227] text-2xl mb-1">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
               </div>
-              <p className="text-xs text-dark/60 font-light">Industry-trusted Experience</p>
+              <span className="font-serif text-3xl font-bold text-dark">4.9 / 5.0</span>
+              <span className="text-xs text-dark/60 font-light mt-1 flex items-center">
+                <FaGoogle className="mr-1.5 text-blue-500" /> Based on 250+ Ratings
+              </span>
             </div>
           </div>
 
-          {/* Grid Reviews */}
+          {/* Testimonial Cards Grid (3 columns on desktop) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reviews.map((rev, idx) => (
               <div

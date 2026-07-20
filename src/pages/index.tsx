@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import SafeAndQualityHighlight from "@/components/SafeAndQualityHighlight";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Cruises from "@/components/Cruises";
 import DayPackageDetails from "@/components/DayPackageDetails";
@@ -113,6 +114,9 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         <Hero />
+
+        {/* Safe & Quality Highlights */}
+        <SafeAndQualityHighlight />
 
         {/* Why Choose Us */}
         <WhyChooseUs />

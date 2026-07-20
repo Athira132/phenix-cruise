@@ -70,6 +70,9 @@ export default function AboutPage() {
                 As a trusted <strong>Akalappuzha Boating Service</strong>, Phoenix Cruise was born from a desire to share the raw beauty of Kerala’s legendary backwater lakes and canals through a lens of absolute luxury and local heritage. We provide premium backwater boating experiences, serving tourists, families, couples, and corporate groups with a spiritual slowdown and a chance to hear the rustle of palms, view green paddy fields, and witness magnificent sunsets.
               </p>
               <p>
+                Every journey with us prioritizes passenger wellbeing and culinary excellence: we offer a safe cruise experience on carefully maintained boats alongside fresh, hygienically prepared food made with quality ingredients and authentic Kerala flavours.
+              </p>
+              <p>
                 Today, our Akalappuzha boat service manages a premium fleet of traditional Kerala houseboats and custom boats. We focus on safety, comfort, and customer satisfaction, combining native wood architecture with modern comforts, personalized itineraries, and absolute privacy for all passengers.
               </p>
             </div>

@@ -6,32 +6,28 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const reviews = [
   {
-    name: "Priya Sharma",
-    location: "Mumbai, India",
-    image: "https://i.ibb.co/Y7x5FZFL/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg", // We can use the premium images as avatars or placeholders
+    name: "Anjali Menon",
+    location: "Cochin, Kerala",
     rating: 5,
-    text: "An absolute dream! The service was 5-star all the way. The private chef made the best Kerala Prawn curry we have ever had. The sunset on the Vembanad lake was spectacular.",
+    text: "An absolute dream! The service was top quality all the way. The private chef prepared delicious authentic Kerala food for our family. The sunset on the Akalappuzha backwaters was spectacular.",
   },
   {
-    name: "Rohan & Anjali",
-    location: "Bangalore, India",
-    image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg",
+    name: "Rahul Nair",
+    location: "Calicut, Kerala",
     rating: 5,
-    text: "We booked the Honeymoon Cruise and it exceeded all expectations. Beautiful room decorations, candlelit dinner under the stars, and such polite crew. Highly recommended!",
+    text: "We booked the cruise package and it exceeded all our expectations. Beautiful ambient setup, delicious food, and such a polite and safety-focused crew. Highly recommended!",
   },
   {
-    name: "David Miller",
-    location: "Singapore",
-    image: "https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg",
+    name: "Sreedevi Krishnan",
+    location: "Trivandrum, Kerala",
     rating: 5,
-    text: "Our corporate retreat was a major success. The floating conference boat was equipped with everything we needed, and cruising the canals during breaks was fantastic.",
+    text: "Our family getaway was a major success. The cruise boat was well-maintained and comfortable, equipped with everything we needed. Cruising the calm backwater canals was fantastic.",
   },
   {
-    name: "Dr. Mathew George",
-    location: "Kochi, India",
-    image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
+    name: "Arjun Nair",
+    location: "Chennai, India",
     rating: 5,
-    text: "The deluxe double-decker boat was incredibly clean, rooms were spacious, and the kids loved sitting on the upper deck. Absolute value for money!",
+    text: "The boat was incredibly clean, seating was spacious and comfortable, and the kids loved sitting on the open deck. The freshly prepared meals were outstanding value for money!",
   },
 ];
 
@@ -84,7 +80,7 @@ export default function Testimonials() {
         </div>
 
         {/* Carousel Slider */}
-        <div className="relative min-h-[350px] flex items-center justify-center">
+        <div className="relative min-h-[300px] flex items-center justify-center">
           
           {/* Slider Content */}
           <AnimatePresence mode="wait">

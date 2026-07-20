@@ -49,8 +49,8 @@ export default function Cruises() {
           </p>
         </div>
 
-        {/* Cruises Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        {/* Cruises Grid (4 cards in one row on desktop) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {cruises.map((cruise, idx) => (
             <motion.div
               key={cruise.id}
@@ -58,7 +58,7 @@ export default function Cruises() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.05 }}
-              className="bg-sand/20 rounded-luxury overflow-hidden border border-primary/5 hover:border-primary/10 shadow-premium hover:shadow-premium-hover transition-all duration-500 flex flex-col group"
+              className="bg-sand/20 rounded-luxury overflow-hidden border border-primary/5 hover:border-primary/10 shadow-premium hover:shadow-premium-hover transition-all duration-500 flex flex-col group h-full"
             >
               {/* Card Image */}
               <div className="relative aspect-[16/10] overflow-hidden">
@@ -66,26 +66,26 @@ export default function Cruises() {
                   src={cruise.image}
                   alt={cruise.title}
                   fill
-                  sizes="(max-w-768px) 100vw, 50vw"
+                  sizes="(max-w-768px) 100vw, (max-w-1024px) 50vw, 25vw"
                   style={{ objectFit: "cover" }}
                   className="transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
 
               {/* Card Content */}
-              <div className="p-6 md:p-8 flex flex-col flex-grow">
-                <h3 className="font-serif text-xl md:text-2xl font-bold text-dark mb-3 group-hover:text-primary transition-colors duration-300">
+              <div className="p-5 md:p-6 flex flex-col flex-grow">
+                <h3 className="font-serif text-lg md:text-xl font-bold text-dark mb-2.5 group-hover:text-primary transition-colors duration-300">
                   <Link href={`/services/${cruise.id}`} className="hover:underline">
                     {cruise.title}
                   </Link>
                 </h3>
-                <p className="font-sans text-xs md:text-sm text-dark/70 leading-relaxed font-light mb-6 flex-grow">
+                <p className="font-sans text-xs text-dark/70 leading-relaxed font-light mb-5 flex-grow">
                   {cruise.description}
                 </p>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-2.5 pt-2">
                   <Link
                     href={`/services/${cruise.id}`}
-                    className="text-center py-3 bg-white hover:bg-slate-50 text-dark border border-slate-200 rounded-luxury font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 active:scale-95 shadow-sm"
+                    className="text-center py-2.5 px-2 bg-white hover:bg-slate-50 text-dark border border-slate-200 rounded-luxury font-sans font-bold text-[10px] xl:text-xs uppercase tracking-wider transition-all duration-300 active:scale-95 shadow-sm truncate"
                   >
                     View Details
                   </Link>
@@ -93,7 +93,7 @@ export default function Cruises() {
                     href={`https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20am%20interested%20in%20the%20${encodeURIComponent(cruise.title)}.`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-center py-3 bg-primary hover:bg-primary-hover text-white rounded-luxury font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md"
+                    className="text-center py-2.5 px-2 bg-primary hover:bg-primary-hover text-white rounded-luxury font-sans font-bold text-[10px] xl:text-xs uppercase tracking-wider transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md truncate"
                   >
                     Enquire Now
                   </a>
