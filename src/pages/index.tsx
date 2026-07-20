@@ -151,24 +151,22 @@ export default function Home() {
       <Navbar />
 
       <main>
-        {/* 1. Hero Section (2-Column Editorial, Boat 100% Uncropped & Visible) */}
+        {/* 1. Existing Full-Screen Hero Section */}
         <Hero />
 
-        {/* 2. About Introduction (2-Column Image + Short Text) */}
-        <About />
-
-        {/* 3. Choose Your Cruise (4 Experience Cards) */}
-        <div className="bg-white pb-12 md:pb-16">
-          <Cruises />
-        </div>
-
-        {/* 4. Safe & Quality Highlights (Large Photo Cards) */}
+        {/* 2. Three Large Image-Based Highlight Cards (Safety/Comfort, Kerala Food, Cruise Experience) */}
         <SafeAndQualityHighlight />
+
+        {/* 3. Choose Your Cruise Experience ("Find Your Perfect Cruise" + 4 Large Experience Cards) */}
+        <Cruises />
+
+        {/* 4. Short Introduction / About Phoenix Cruise */}
+        <About />
 
         {/* 5. Visual Highlights */}
         <WhyChooseUs />
 
-        {/* 6. Day Package Details */}
+        {/* 6. Day Package Specification Details */}
         <DayPackageDetails />
 
         {/* 7. Onboard Dining (Fresh Kerala Flavours Photo Showcase) */}
