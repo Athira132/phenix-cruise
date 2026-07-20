@@ -25,11 +25,11 @@ const galleryItems = [
 ];
 
 const videoItems = [
-  { id: 1, title: "Cinematic Backwater Voyage", url: "https://www.youtube.com/watch?v=k6M3YbWX284", thumbnail: "https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" },
-  { id: 2, title: "Honeymoon Special Setup", url: "https://www.youtube.com/watch?v=nXF3vDXekTM", thumbnail: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg" },
-  { id: 3, title: "Traditional Cooking Onboard", url: "https://assets.mixkit.co/videos/preview/mixkit-down-the-river-in-a-bamboo-canoe-6804-large.mp4", thumbnail: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" },
-  { id: 4, title: "Premium Sunset Cruise", url: "https://youtube.com/shorts/um7lR_YaRr0", thumbnail: "https://img.youtube.com/vi/um7lR_YaRr0/hqdefault.jpg" },
-  { id: 5, title: "Akalapuzha Shikara Voyage", url: "https://youtube.com/shorts/XnlSj8z342c", thumbnail: "https://img.youtube.com/vi/XnlSj8z342c/hqdefault.jpg" },
+  { id: 1, title: "Akalapuzha Backwater Shikara Cruise Highlights", url: "https://youtube.com/shorts/9_p0tpAz-Ak?si=CfmhTmmnLJwf1dq3", thumbnail: "https://img.youtube.com/vi/9_p0tpAz-Ak/hqdefault.jpg" },
+  { id: 2, title: "Phoenix Cruise Backwater Voyage Experience", url: "https://youtube.com/shorts/bSFPXygxrMI?si=3YHd7Y5bupw50UzN", thumbnail: "https://img.youtube.com/vi/bSFPXygxrMI/hqdefault.jpg" },
+  { id: 3, title: "Scenic Golden Hour Boating in Akalapuzha", url: "https://youtube.com/shorts/uj7uFjIhOtI?si=rvSI_bH1B67jvSpw", thumbnail: "https://img.youtube.com/vi/uj7uFjIhOtI/hqdefault.jpg" },
+  { id: 4, title: "Fresh Onboard Kerala Dining & Cruise", url: "https://youtube.com/shorts/1xesva6zYMQ?si=epjTIB_X8dmKCvMP", thumbnail: "https://img.youtube.com/vi/1xesva6zYMQ/hqdefault.jpg" },
+  { id: 5, title: "Family & Group Boating Adventure", url: "https://youtube.com/shorts/wJPzy58yID0?si=wvqhWtCCHuUZ_e8f", thumbnail: "https://img.youtube.com/vi/wJPzy58yID0/hqdefault.jpg" },
 ];
 
 function getEmbedUrl(url: string) {
