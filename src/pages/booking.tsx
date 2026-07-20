@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import CustomCursor from "@/components/CustomCursor";
-import { FaUser, FaPhoneAlt, FaEnvelope, FaCalendarAlt, FaClock, FaUsers, FaLaptop, FaEdit, FaCheck } from "react-icons/fa";
+import { FaUser, FaPhoneAlt, FaEnvelope, FaCalendarAlt, FaClock, FaUsers, FaLaptop, FaEdit, FaCheck, FaMapMarkerAlt } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
 import confetti from "canvas-confetti";
 
@@ -281,6 +281,30 @@ Please contact me to finalize. Thank you!`;
               </div>
             </form>
           </motion.div>
+
+          {/* Business Location Info Card */}
+          <div className="bg-white border border-slate-100 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+            <div className="flex items-start space-x-4">
+              <div className="w-12 h-12 rounded-2xl bg-sand flex items-center justify-center text-primary flex-shrink-0 border border-primary/5 mt-0.5">
+                <FaMapMarkerAlt className="text-xl" />
+              </div>
+              <div className="space-y-1">
+                <h4 className="font-serif text-lg font-bold text-dark">Phoenix Cruise</h4>
+                <p className="text-xs text-primary font-semibold uppercase tracking-wider">Akalapuzha Boat Service</p>
+                <p className="text-xs text-dark/70 font-light leading-relaxed">
+                  Purakkad - Muchukunnu Road, Moodadi, Kerala 673307, India
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://maps.app.goo.gl/syiqaAiLKzzjaMoA7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-sand hover:bg-primary text-primary hover:text-white rounded-xl font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center shadow-sm flex-shrink-0"
+            >
+              Get Directions <FaMapMarkerAlt className="ml-2 text-xs" />
+            </a>
+          </div>
 
         </div>
       </main>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,8 +29,27 @@ export default function Footer() {
               </span>
             </Link>
             <p className="font-sans text-xs md:text-sm text-white/60 font-light leading-relaxed max-w-sm">
-              Providing trusted Akalapuzha Boating Service with safe, comfortable, and memorable backwater experiences for tourists, families, and groups across Kerala.
+              Providing trusted Akalapuzha boat service in Kerala with safe, comfortable, and memorable backwater experiences for tourists, families, and groups.
             </p>
+            
+            {/* Clickable Business Address */}
+            <div className="pt-2">
+              <a
+                href="https://maps.app.goo.gl/syiqaAiLKzzjaMoA7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start space-x-3 text-white/70 hover:text-white transition-colors"
+                title="Open location in Google Maps"
+              >
+                <FaMapMarkerAlt className="text-accent text-sm flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+                <div className="font-sans text-xs leading-relaxed">
+                  <span className="font-serif font-bold text-white block text-sm group-hover:text-accent transition-colors">Phoenix Cruise</span>
+                  <span className="text-accent font-semibold block text-[11px] uppercase tracking-wider">Akalapuzha Boat Service</span>
+                  Purakkad - Muchukunnu Road,<br />
+                  Moodadi, Kerala 673307, India
+                </div>
+              </a>
+            </div>
           </div>
 
           {/* Column 2: Quick Links */}

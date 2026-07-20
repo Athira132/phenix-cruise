@@ -37,15 +37,23 @@ export default function Contact() {
 
               {/* Address */}
               <div className="flex items-start">
-                <div className="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-primary flex-shrink-0 mr-4 shadow-sm border border-primary/5">
+                <div className="w-10 h-10 rounded-full bg-sand flex items-center justify-center text-primary flex-shrink-0 mr-4 shadow-sm border border-primary/5 mt-0.5">
                   <FaMapMarkerAlt />
                 </div>
                 <div>
-                  <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Our Jetty Address</h4>
-                  <p className="font-sans text-xs md:text-sm text-dark/70 font-light leading-relaxed">
-                    Phoenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road,<br />
-                    Kozhikode (Calicut) District, Kerala - 673522, India
-                  </p>
+                  <h4 className="font-serif text-sm font-bold text-dark uppercase tracking-wider mb-1">Our Location</h4>
+                  <a
+                    href="https://maps.app.goo.gl/syiqaAiLKzzjaMoA7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-sans text-xs md:text-sm text-dark/70 font-light leading-relaxed hover:text-primary transition-colors block group"
+                    title="Click to open Google Maps directions"
+                  >
+                    <span className="font-serif font-bold text-dark block text-base group-hover:text-primary transition-colors">Phoenix Cruise</span>
+                    <span className="text-primary font-semibold block text-xs uppercase tracking-wider mb-0.5">Akalapuzha Boat Service</span>
+                    Purakkad - Muchukunnu Road,<br />
+                    Moodadi, Kerala 673307, India
+                  </a>
                 </div>
               </div>
 

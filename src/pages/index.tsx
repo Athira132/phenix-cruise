@@ -42,10 +42,10 @@ export default function Home() {
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Phoenix Akalapuzha Boating Service Jetty, Akalapuzha Lake Road",
-      "addressLocality": "Kozhikode",
+      "streetAddress": "Purakkad - Muchukunnu Road",
+      "addressLocality": "Moodadi",
       "addressRegion": "Kerala",
-      "postalCode": "673522",
+      "postalCode": "673307",
       "addressCountry": "IN"
     },
     "geo": {
