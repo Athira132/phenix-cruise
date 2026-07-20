@@ -12,11 +12,6 @@ export default function Document() {
           rel="stylesheet"
         />
         <meta name="theme-color" content="#0F766E" />
-        {/* Google Search Console Verification */}
-        <meta
-          name="google-site-verification"
-          content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "PASTE_REAL_CODE_HERE"}
-        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className="antialiased">

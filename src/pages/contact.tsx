@@ -38,28 +38,28 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact Phoenix Cruise | Akalapuzha Boat Service</title>
+        <title>Contact Us | Phoenix Cruise Akalapuzha Boat Service</title>
         <meta
           name="description"
-          content="Contact Phoenix Cruise for Akalapuzha boat service bookings in Moodadi, Kerala. Call or WhatsApp 8138866919 for instant reservations."
+          content="Contact Phoenix Cruise for Akalapuzha boat service reservations in Moodadi, Kerala. Call or WhatsApp +91 81388 66919 for instant boat cruise bookings."
         />
-        <meta name="keywords" content="Contact Phoenix Cruise, Akalapuzha boat service, Akalapuzha boat ride, Phoenix Cruise Akalapuzha, boat service in Akalapuzha, Kerala backwater boat service, Kerala boat cruise" />
-        <link rel="canonical" href="https://phoenixcruise.in/contact" />
+        <meta name="keywords" content="contact Phoenix Cruise, Akalapuzha boat service contact, Akalapuzha boat ride booking, Kerala backwater boat service phone" />
+        <link rel="canonical" href="https://clever-rutherford.vercel.app/contact" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Phoenix Cruise" />
-        <meta property="og:url" content="https://phoenixcruise.in/contact" />
-        <meta property="og:title" content="Contact Phoenix Cruise | Akalapuzha Boat Service" />
-        <meta property="og:description" content="Contact Phoenix Cruise for Akalapuzha boat service bookings in Moodadi, Kerala. Call or WhatsApp 8138866919 for instant reservations." />
-        <meta property="og:image" content="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
+        <meta property="og:url" content="https://clever-rutherford.vercel.app/contact" />
+        <meta property="og:title" content="Contact Us | Phoenix Cruise Akalapuzha Boat Service" />
+        <meta property="og:description" content="Contact Phoenix Cruise for Akalapuzha boat service reservations in Moodadi, Kerala. Call or WhatsApp +91 81388 66919 for instant boat cruise bookings." />
+        <meta property="og:image" content="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://phoenixcruise.in/contact" />
-        <meta name="twitter:title" content="Contact Phoenix Cruise | Akalapuzha Boat Service" />
-        <meta name="twitter:description" content="Contact Phoenix Cruise for Akalapuzha boat service bookings in Moodadi, Kerala. Call or WhatsApp 8138866919 for instant reservations." />
-        <meta name="twitter:image" content="https://i.ibb.co/q2fpRmZ/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
+        <meta name="twitter:url" content="https://clever-rutherford.vercel.app/contact" />
+        <meta name="twitter:title" content="Contact Us | Phoenix Cruise Akalapuzha Boat Service" />
+        <meta name="twitter:description" content="Contact Phoenix Cruise for Akalapuzha boat service reservations in Moodadi, Kerala. Call or WhatsApp +91 81388 66919 for instant boat cruise bookings." />
+        <meta name="twitter:image" content="https://i.ibb.co/3Z9wVvK/Whats-App-Image-2026-07-14-at-1-19-37-PM.jpg" />
       </Head>
 
       <CustomCursor />

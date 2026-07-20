@@ -103,27 +103,27 @@ export default function ServicesPage() {
   return (
     <>
       <Head>
-        <title>Boat Services in Akalapuzha | Phoenix Cruise</title>
+        <title>Akalapuzha Boat Service Packages | Phoenix Cruise Kerala</title>
         <meta
           name="description"
-          content="Explore Akalapuzha boat service packages by Phoenix Cruise in Kerala. Day package, family boating, couple package, and scenic sunset cruises."
+          content="Explore Akalapuzha boat service packages with Phoenix Cruise in Kerala. Offering 5-hour Day Package, Family Package, Couple Package, and Sunset Cruise."
         />
-        <meta name="keywords" content="Boat Services in Akalapuzha, Akalapuzha boat service, Akalapuzha boat ride, Phoenix Cruise, Akalapuzha, Kerala backwater boat service, Kerala boat cruise" />
-        <link rel="canonical" href="https://phoenixcruise.in/services" />
+        <meta name="keywords" content="Akalapuzha boat service, Akalapuzha boat ride, Phoenix Cruise, Akalapuzha, boat service in Akalapuzha, Kerala backwater boat service, boat cruise in Kerala" />
+        <link rel="canonical" href="https://clever-rutherford.vercel.app/services" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Phoenix Cruise" />
-        <meta property="og:url" content="https://phoenixcruise.in/services" />
-        <meta property="og:title" content="Boat Services in Akalapuzha | Phoenix Cruise" />
-        <meta property="og:description" content="Explore Akalapuzha boat service packages by Phoenix Cruise in Kerala. Day package, family boating, couple package, and scenic sunset cruises." />
+        <meta property="og:url" content="https://clever-rutherford.vercel.app/services" />
+        <meta property="og:title" content="Akalapuzha Boat Service Packages | Phoenix Cruise Kerala" />
+        <meta property="og:description" content="Explore Akalapuzha boat service packages with Phoenix Cruise in Kerala. Offering 5-hour Day Package, Family Package, Couple Package, and Sunset Cruise." />
         <meta property="og:image" content="https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://phoenixcruise.in/services" />
-        <meta name="twitter:title" content="Boat Services in Akalapuzha | Phoenix Cruise" />
-        <meta name="twitter:description" content="Explore Akalapuzha boat service packages by Phoenix Cruise in Kerala. Day package, family boating, couple package, and scenic sunset cruises." />
+        <meta name="twitter:url" content="https://clever-rutherford.vercel.app/services" />
+        <meta name="twitter:title" content="Akalapuzha Boat Service Packages | Phoenix Cruise Kerala" />
+        <meta name="twitter:description" content="Explore Akalapuzha boat service packages with Phoenix Cruise in Kerala. Offering 5-hour Day Package, Family Package, Couple Package, and Sunset Cruise." />
         <meta name="twitter:image" content="https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
       </Head>
 

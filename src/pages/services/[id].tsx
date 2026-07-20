@@ -35,23 +35,23 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
   return (
     <>
       <Head>
-        <title>{`${service.title} | Phoenix Cruise Akalapuzha`}</title>
+        <title>{`${service.title} | Phoenix Cruise Akalapuzha Boat Service`}</title>
         <meta name="description" content={`${service.shortDesc} Book your private Akalapuzha boat ride with Phoenix Cruise in Kerala.`} />
-        <meta name="keywords" content={`Akalapuzha boat service, ${service.title}, Akalapuzha boat ride, Phoenix Cruise, Akalapuzha, Kerala backwater boat service, Kerala boat cruise`} />
-        <link rel="canonical" href={`https://phoenixcruise.in/services/${service.id}`} />
+        <meta name="keywords" content={`Akalapuzha boat service, ${service.title}, Akalapuzha boat ride, Phoenix Cruise, Akalapuzha, Kerala backwater boat service`} />
+        <link rel="canonical" href={`https://clever-rutherford.vercel.app/services/${service.id}`} />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Phoenix Cruise" />
-        <meta property="og:url" content={`https://phoenixcruise.in/services/${service.id}`} />
-        <meta property="og:title" content={`${service.title} | Phoenix Cruise Akalapuzha`} />
+        <meta property="og:url" content={`https://clever-rutherford.vercel.app/services/${service.id}`} />
+        <meta property="og:title" content={`${service.title} | Phoenix Cruise Akalapuzha Boat Service`} />
         <meta property="og:description" content={`${service.shortDesc} Book your private Akalapuzha boat ride with Phoenix Cruise in Kerala.`} />
         <meta property="og:image" content={service.image} />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content={`https://phoenixcruise.in/services/${service.id}`} />
-        <meta name="twitter:title" content={`${service.title} | Phoenix Cruise Akalapuzha`} />
+        <meta name="twitter:url" content={`https://clever-rutherford.vercel.app/services/${service.id}`} />
+        <meta name="twitter:title" content={`${service.title} | Phoenix Cruise Akalapuzha Boat Service`} />
         <meta name="twitter:description" content={`${service.shortDesc} Book your private Akalapuzha boat ride with Phoenix Cruise in Kerala.`} />
         <meta name="twitter:image" content={service.image} />
       </Head>

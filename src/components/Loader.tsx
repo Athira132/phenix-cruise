@@ -33,14 +33,14 @@ export default function Loader() {
         >
           <div className="text-center px-4 max-w-md w-full">
             {/* Elegant Logo / Title */}
-            <motion.div
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               className="text-4xl md:text-5xl font-serif text-primary tracking-wide mb-2"
             >
               Phoenix Cruise
-            </motion.div>
+            </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
