@@ -106,24 +106,24 @@ export default function DayPackageDetails() {
               {/* Onboard Facilities */}
               <div className="space-y-4">
                 <h4 className="font-serif text-xl font-bold text-white border-b border-white/10 pb-3">
-                  Onboard Facilities
+                  Onboard Amenities &amp; Comfort
                 </h4>
-                <div className="grid grid-cols-2 gap-4 font-sans text-xs text-white/80">
-                  <div className="flex items-center space-x-2.5">
-                    <FaToilet className="text-accent text-sm flex-shrink-0" />
-                    <span>Clean Restroom</span>
+                <div className="grid grid-cols-2 gap-3 font-sans text-xs text-white">
+                  <div className="px-3.5 py-2.5 bg-white/10 rounded-xl border border-white/15 backdrop-blur-sm">
+                    <span className="font-bold block text-accent mb-0.5">Hygiene</span>
+                    Clean Restroom
                   </div>
-                  <div className="flex items-center space-x-2.5">
-                    <FaVolumeUp className="text-accent text-sm flex-shrink-0" />
-                    <span>Music System</span>
+                  <div className="px-3.5 py-2.5 bg-white/10 rounded-xl border border-white/15 backdrop-blur-sm">
+                    <span className="font-bold block text-accent mb-0.5">Sound System</span>
+                    Music &amp; Onboard Mic
                   </div>
-                  <div className="flex items-center space-x-2.5">
-                    <FaMicrophone className="text-accent text-sm flex-shrink-0" />
-                    <span>Onboard Mic</span>
+                  <div className="px-3.5 py-2.5 bg-white/10 rounded-xl border border-white/15 backdrop-blur-sm">
+                    <span className="font-bold block text-accent mb-0.5">Seating</span>
+                    Spacious Viewing Deck
                   </div>
-                  <div className="flex items-center space-x-2.5">
-                    <FaWind className="text-accent text-sm flex-shrink-0" />
-                    <span>Cabin Fans</span>
+                  <div className="px-3.5 py-2.5 bg-white/10 rounded-xl border border-white/15 backdrop-blur-sm">
+                    <span className="font-bold block text-accent mb-0.5">Cooling</span>
+                    Cabin Air Fans
                   </div>
                 </div>
               </div>
