@@ -5,23 +5,16 @@ import { motion } from "framer-motion";
 const cruises = [
   {
     title: "Day Cruise",
-    image: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
+    image: "https://i.ibb.co/9kzPswmC/Whats-App-Image-2026-07-14-at-1-19-42-PM.jpg",
     id: "day-package",
-    alt: "Daytime Akalapuzha backwater boat cruise",
-    position: "center 75%",
+    alt: "Daytime Akalapuzha backwater boat cruise experience",
+    position: "center",
   },
   {
     title: "Houseboat Experience",
-    image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
+    image: "https://i.ibb.co/h14vRRT4/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
     id: "family-package",
-    alt: "Traditional Kerala wooden houseboat experience",
-    position: "center 65%",
-  },
-  {
-    title: "Overnight Stay",
-    image: "/images/overnight_stay_bedroom.jpg",
-    id: "sunset-cruise",
-    alt: "Luxury houseboat overnight stay bedroom suite",
+    alt: "Luxury traditional Kerala houseboat moored by palm bank",
     position: "center",
   },
   {
@@ -48,8 +41,8 @@ export default function Cruises() {
           <div className="w-16 h-[2px] bg-accent mx-auto" />
         </div>
 
-        {/* EXACTLY 4 Compact Landscape Cards in ONE SINGLE ROW on Desktop (4-Column Layout) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 max-w-6xl mx-auto">
+        {/* 3 Prominent Experience Cards in ONE SINGLE ROW on Desktop (3-Column Layout) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
           {cruises.map((cruise, idx) => (
             <motion.div
               key={cruise.id}
@@ -57,26 +50,26 @@ export default function Cruises() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-md bg-slate-900 aspect-[16/11] border border-slate-100 flex flex-col justify-end"
+              className="group relative rounded-3xl overflow-hidden shadow-lg bg-slate-900 aspect-[4/3] border border-slate-100 flex flex-col justify-end"
             >
-              {/* Compact Landscape Image with Subject-Centered Framing */}
+              {/* Prominent Landscape Image */}
               <Image
                 src={cruise.image}
                 alt={cruise.alt}
                 fill
-                sizes="(max-w-768px) 100vw, (max-w-1024px) 50vw, 25vw"
+                sizes="(max-w-768px) 100vw, 33vw"
                 style={{ objectFit: "cover", objectPosition: cruise.position }}
                 className="opacity-90 group-hover:scale-105 transition-transform duration-700"
               />
 
               {/* Dark Bottom Overlay with Short Title & Action */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent p-4 flex flex-col justify-end text-left z-10">
-                <h3 className="font-serif text-base sm:text-lg font-bold text-white mb-2.5 group-hover:text-[#C9A227] transition-colors duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent p-6 md:p-7 flex flex-col justify-end text-left z-10">
+                <h3 className="font-serif text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-[#C9A227] transition-colors duration-300">
                   {cruise.title}
                 </h3>
                 <Link
                   href={`/services/${cruise.id}`}
-                  className="w-full text-center py-2 px-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-sans font-bold text-[11px] uppercase tracking-wider transition-all duration-300 shadow-md active:scale-95 border border-white/10"
+                  className="w-full text-center py-3 px-4 bg-primary hover:bg-primary-hover text-white rounded-xl font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md active:scale-95 border border-white/10"
                 >
                   View Details
                 </Link>

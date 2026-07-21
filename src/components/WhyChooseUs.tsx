@@ -16,7 +16,7 @@ const whyChooseUsItems = [
   },
   {
     title: "Family Friendly",
-    image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
+    image: "/images/family_friendly_why_choose_us.jpg",
     alt: "Family & Group Backwater Cruise Experience",
     position: "center",
   },
