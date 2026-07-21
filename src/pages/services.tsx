@@ -57,7 +57,7 @@ export const servicesData = [
     category: "cruises",
     shortDesc: "Experience a serene 5-hour traditional wooden houseboat cruise along Kerala's tranquil backwaters with custom food and luxury amenities.",
     desc: "Relax aboard our traditional Kerala wooden houseboat. Cruise peacefully through Akalapuzha's scenic waterways while enjoying authentic Kerala meals, evening refreshments, sound entertainment, and spacious viewing decks.",
-    image: "https://i.ibb.co/273vPY7K/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
+    image: "https://i.ibb.co/9k6JQ9Hn/Whats-App-Image-2026-07-14-at-1-19-56-PM.jpg",
     time: "5 Hours Relaxing Cruise",
     foodIncluded: [
       "Welcome Drink",

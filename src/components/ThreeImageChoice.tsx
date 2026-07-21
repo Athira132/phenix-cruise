@@ -11,7 +11,7 @@ const choices = [
   },
   {
     title: "Houseboat Experience",
-    image: "https://i.ibb.co/N290Vy3m/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
+    image: "https://i.ibb.co/9k6JQ9Hn/Whats-App-Image-2026-07-14-at-1-19-56-PM.jpg",
     link: "/services/family-package",
     alt: "Luxury Houseboat Experience",
   },
