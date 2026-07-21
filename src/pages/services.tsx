@@ -12,89 +12,141 @@ import { FaArrowRight, FaClock, FaCheckCircle, FaQuestionCircle } from "react-ic
 export const servicesData = [
   {
     id: "day-package",
-    title: "Day Package",
+    title: "Day Cruise Package",
+    subtitle: "5 Hours of Scenic Shikara Boat Experience",
     category: "cruises",
-    shortDesc: "Enjoy a complete 5-hour daytime cruise on our premium Shikara Boat with fresh local lunch, tea, music, and complete onboard facilities.",
-    desc: "Enjoy a complete 5-hour daytime cruise on our premium Shikara Boat with fresh local lunch, tea, music, and complete onboard facilities. Perfect for group trips and family gatherings.",
-    image: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
+    shortDesc: "5 Hours of scenic Shikara Boat backwater cruise in Kerala, complete with fresh dining, music system, and full onboard facilities.",
+    desc: "Immerse yourself in a 5-hour daytime backwater voyage along Akalapuzha's palm-fringed channels. Includes welcome drinks, traditional Kerala feast, evening snacks, onboard DJ sound system, and privacy for groups.",
+    image: "https://i.ibb.co/9kzPswmC/Whats-App-Image-2026-07-14-at-1-19-42-PM.jpg",
     time: "5 Hours Shikara Boat",
-    benefits: [
-      "Welcome drink included",
-      "Traditional Kerala lunch: Chicken Biriyani or meals with Fish Fry",
-      "Evening hot tea and traditional snacks",
-      "Optional Add-ons: Seafood, Arabic, Chinese, and Nadan dishes",
-      "Facilities: Restroom, DJ music system, microphone, electric cabin fans"
+    foodIncluded: [
+      "Welcome Drink",
+      "Lunch (Biriyani or Traditional Meals with Fish Fry)",
+      "Evening Tea & Snacks"
     ],
-    problems: [
-      "No overnight stays"
+    foodAddons: [
+      "Seafood",
+      "Arabic Dishes",
+      "Chinese Dishes",
+      "Nadan Kerala Dishes"
     ],
-    process: [
-      "Welcome drink on boarding",
-      "Canal & backwater cruise",
-      "Traditional Kerala lunch feast",
-      "Music and sightseeing",
-      "Evening tea & disembark"
-    ]
+    perPersonPricing: [
+      { group: "25–30 People", price: "₹600", unit: "per person" },
+      { group: "30–40 People", price: "₹550", unit: "per person" },
+      { group: "Up to 40 People", price: "₹500", unit: "per person" }
+    ],
+    hourlyCharges: [
+      { group: "1–25 People", price: "₹2,000", unit: "per hour" },
+      { group: "25–35 People", price: "₹2,500", unit: "per hour" },
+      { group: "35–50 People", price: "₹3,000", unit: "per hour" },
+      { group: "50–60 People", price: "₹3,500", unit: "per hour" }
+    ],
+    facilities: [
+      { name: "Bathroom", desc: "Clean, hygienic onboard restroom" },
+      { name: "DJ Music System", desc: "High-power Bluetooth sound system" },
+      { name: "Microphone", desc: "Onboard mic for announcements & music" },
+      { name: "Fan", desc: "Cabin air fans for optimal breeze & comfort" }
+    ],
+    ctaTitle: "Book Your Day Cruise",
+    whatsappMsg: "Hello Phoenix Cruise, I would like to enquiry about booking the Day Cruise Package (5 Hours Shikara Boat)."
   },
   {
     id: "family-package",
-    title: "Family Package",
+    title: "Houseboat Experience",
+    subtitle: "5 Hours of Relaxing Backwater Cruise",
     category: "cruises",
-    shortDesc: "Perfect backwater experience for families. For more details, contact us.",
-    desc: "Perfect backwater experience for families. For more details, contact us.",
-    image: "https://i.ibb.co/Y7x5FZFL/Whats-App-Image-2026-07-14-at-1-19-38-PM-1.jpg",
-    time: "For more information and booking, contact us.",
-    benefits: [
-      "Designed for comfortable family cruises",
-      "For more details, contact us."
+    shortDesc: "Experience a serene 5-hour traditional wooden houseboat cruise along Kerala's tranquil backwaters with custom food and luxury amenities.",
+    desc: "Relax aboard our traditional Kerala wooden houseboat. Cruise peacefully through Akalapuzha's scenic waterways while enjoying authentic Kerala meals, evening refreshments, sound entertainment, and spacious viewing decks.",
+    image: "https://i.ibb.co/273vPY7K/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
+    time: "5 Hours Relaxing Cruise",
+    foodIncluded: [
+      "Welcome Drink",
+      "Lunch (Biriyani or Traditional Meals with Fish Fry)",
+      "Evening Tea & Snacks"
     ],
-    problems: [
-      "For more details, contact us."
+    foodAddons: [
+      "Seafood",
+      "Arabic Dishes",
+      "Chinese Dishes",
+      "Nadan Kerala Dishes"
     ],
-    process: [
-      "For more details, contact us."
+    perPersonPricing: [
+      { group: "25–30 People", price: "₹600", unit: "per person" },
+      { group: "30–40 People", price: "₹550", unit: "per person" },
+      { group: "Up to 40 People", price: "₹500", unit: "per person" }
     ],
-    price: "For more details, contact us."
+    hourlyCharges: [
+      { group: "1–25 People", price: "₹2,000", unit: "per hour" },
+      { group: "25–35 People", price: "₹2,500", unit: "per hour" },
+      { group: "35–50 People", price: "₹3,000", unit: "per hour" },
+      { group: "50–60 People", price: "₹3,500", unit: "per hour" }
+    ],
+    facilities: [
+      { name: "Bathroom", desc: "Clean, hygienic onboard restroom" },
+      { name: "DJ Music System", desc: "High-power Bluetooth sound system" },
+      { name: "Microphone", desc: "Onboard mic for announcements & music" },
+      { name: "Fan", desc: "Cabin air fans for optimal breeze & comfort" }
+    ],
+    ctaTitle: "Plan Your Houseboat Experience",
+    whatsappMsg: "Hello Phoenix Cruise, I would like to enquiry about booking the Houseboat Experience (5 Hours Cruise)."
   },
   {
     id: "couple-package",
-    title: "Couple Package",
+    title: "Family & Group Cruise",
+    subtitle: "Custom Outings, Celebrations & Group Gatherings",
     category: "cruises",
-    shortDesc: "Romantic couples getaway cruise. For more details, contact us.",
-    desc: "Romantic couples getaway cruise. For more details, contact us.",
-    image: "https://i.ibb.co/WWVZD0Sf/Whats-App-Image-2026-07-14-at-1-19-44-PM-1.jpg",
-    time: "For more information and booking, contact us.",
-    benefits: [
-      "Exclusive privacy and setup for couples",
-      "For more details, contact us."
+    shortDesc: "Ideal backwater cruise for family outings, group trips, friends' gatherings, birthday celebrations, corporate team events, and special occasions.",
+    desc: "Designed specifically for family get-togethers, friends' reunions, birthday parties, and corporate outings. Enjoy spacious seating, custom group food catering, DJ music system, and tailored backwater cruise packages.",
+    image: "/images/family_group_cruise.jpg",
+    time: "Customizable Duration",
+    whyChoose: [
+      "Spacious and comfortable cruise experience for all age groups",
+      "Suitable for families, friends' reunions, and corporate outings",
+      "Scenic palm-fringed Kerala backwater routes",
+      "Freshly prepared Kerala dining and custom food catering options",
+      "Onboard music, DJ system, and microphone for celebrations",
+      "Perfect for birthdays, anniversaries, and special group occasions"
     ],
-    problems: [
-      "For more details, contact us."
+    foodIncluded: [
+      "Welcome Drink",
+      "Lunch (Biriyani or Traditional Meals with Fish Fry)",
+      "Evening Tea & Snacks"
     ],
-    process: [
-      "For more details, contact us."
+    foodAddons: [
+      "Seafood",
+      "Arabic Dishes",
+      "Chinese Dishes",
+      "Nadan Kerala Dishes"
     ],
-    price: "For more details, contact us."
+    facilities: [
+      { name: "Bathroom", desc: "Clean, hygienic onboard restroom" },
+      { name: "DJ Music System", desc: "High-power Bluetooth sound system" },
+      { name: "Microphone", desc: "Onboard mic for announcements & music" },
+      { name: "Fan", desc: "Cabin air fans for optimal breeze & comfort" }
+    ],
+    isCustomQuote: true,
+    ctaTitle: "Plan Your Group Cruise",
+    whatsappMsg: "Hello Phoenix Cruise, I would like to get a Custom Group Quote for a Family & Group Cruise."
   },
   {
     id: "sunset-cruise",
     title: "Sunset Cruise",
+    subtitle: "Golden Hour Over Akalapuzha Backwaters",
     category: "cruises",
-    shortDesc: "Witness the beautiful golden hour over the lake. For more details, contact us.",
-    desc: "Witness the beautiful golden hour over the lake. For more details, contact us.",
+    shortDesc: "Witness the beautiful golden hour over the lake with refreshments and scenic views.",
+    desc: "Experience the golden hour over Akalapuzha's calm waters as the sun sets behind coconut palms. Includes refreshments and soothing ambient music.",
     image: "https://i.ibb.co/m5bDKmp4/Whats-App-Image-2026-07-14-at-1-19-42-PM.jpg",
-    time: "For more information and booking, contact us.",
-    benefits: [
-      "Golden hour views over the backwaters",
-      "For more details, contact us."
+    time: "2 Hours Sunset Special",
+    foodIncluded: ["Welcome Drink", "Evening Tea & Snacks"],
+    foodAddons: ["Seafood", "Kerala Delicacies"],
+    facilities: [
+      { name: "Bathroom", desc: "Clean, hygienic onboard restroom" },
+      { name: "DJ Music System", desc: "High-power Bluetooth sound system" },
+      { name: "Microphone", desc: "Onboard mic for announcements" },
+      { name: "Fan", desc: "Cabin air fans for optimal comfort" }
     ],
-    problems: [
-      "For more details, contact us."
-    ],
-    process: [
-      "For more details, contact us."
-    ],
-    price: "For more details, contact us."
+    ctaTitle: "Book Sunset Cruise",
+    whatsappMsg: "Hello Phoenix Cruise, I would like to enquiry about booking the Sunset Cruise."
   }
 ];
 
