@@ -12,9 +12,9 @@ const cruises = [
   },
   {
     title: "Houseboat Experience",
-    image: "https://i.ibb.co/h14vRRT4/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
+    image: "https://i.ibb.co/273vPY7K/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
     id: "family-package",
-    alt: "Luxury traditional Kerala houseboat moored by palm bank",
+    alt: "Luxury traditional Kerala houseboat experience",
     position: "center",
   },
   {
