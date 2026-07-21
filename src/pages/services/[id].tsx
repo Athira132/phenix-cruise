@@ -68,151 +68,131 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
         ]}
       />
 
-      <main className="bg-slate-50 font-sans py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+      <main className="bg-slate-950 text-white font-sans py-16 md:py-24 relative overflow-hidden select-none">
+        {/* Background Ambient Glowing Effects */}
+        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#C9A227]/10 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-emerald-600/10 rounded-full blur-[140px] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 relative z-10">
           
           {/* Main Content Column */}
-          <div className="lg:col-span-8 space-y-12">
+          <div className="lg:col-span-8 space-y-14">
             
-            {/* Title & Subtitle Banner */}
+            {/* Title & Subtitle Header */}
             <div className="space-y-3">
-              <span className="inline-block px-3.5 py-1 bg-primary/10 text-primary text-xs uppercase font-sans font-bold tracking-wider rounded-full border border-primary/15">
-                {service.time}
-              </span>
-              <h1 className="text-3xl md:text-5xl font-serif font-bold text-dark tracking-wide">
+              <div className="inline-flex items-center space-x-2 px-4 py-1.5 bg-[#C9A227]/15 rounded-full border border-[#C9A227]/30 backdrop-blur-md">
+                <span className="w-2 h-2 rounded-full bg-[#C9A227] animate-pulse" />
+                <span className="text-[#C9A227] text-xs font-sans font-bold uppercase tracking-widest">{service.time}</span>
+              </div>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white tracking-wide leading-tight">
                 {service.title}
               </h1>
               {service.subtitle && (
-                <p className="text-lg md:text-xl font-serif text-accent font-semibold">
+                <p className="text-lg md:text-xl font-serif text-[#C9A227] font-semibold">
                   {service.subtitle}
                 </p>
               )}
             </div>
 
-            {/* Image Banner */}
-            <div className="relative aspect-[16/9] w-full rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+            {/* Premium Image Banner */}
+            <div className="relative aspect-[16/9] w-full rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
               <Image
                 src={service.image}
                 alt={service.title}
                 fill
                 sizes="(max-w-768px) 100vw, 60vw"
                 style={{ objectFit: "cover" }}
+                className="group-hover:scale-105 transition-transform duration-700"
                 priority
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
             </div>
 
-            {/* Service Overview */}
-            <section className="space-y-4">
-              <h2 className="text-2xl font-serif font-bold text-dark border-b border-slate-200 pb-3">
-                Experience Overview
+            {/* Experience Overview */}
+            <section className="space-y-4 bg-slate-900/60 backdrop-blur-md p-6 md:p-8 rounded-3xl border border-white/10">
+              <h2 className="text-2xl font-serif font-bold text-[#C9A227] border-b border-white/10 pb-3 flex items-center">
+                <FaShieldAlt className="mr-3 text-[#C9A227]" /> Experience Overview
               </h2>
-              <p className="text-dark/80 font-light leading-relaxed text-base sm:text-lg">
+              <p className="text-slate-200 font-light leading-relaxed text-base sm:text-lg">
                 {service.desc}
               </p>
             </section>
 
             {/* Why Choose Family & Group Cruise (If present) */}
             {service.whyChoose && (
-              <section className="bg-sand/30 rounded-3xl p-6 md:p-8 border border-primary/10 space-y-5">
-                <h3 className="font-serif font-bold text-xl md:text-2xl text-dark flex items-center">
-                  <FaShieldAlt className="mr-3 text-primary" /> Why Choose Family &amp; Group Cruise?
+              <section className="bg-slate-900/80 rounded-3xl p-6 md:p-8 border border-[#C9A227]/30 shadow-xl space-y-6">
+                <h3 className="font-serif font-bold text-2xl text-[#C9A227] border-b border-white/10 pb-3 flex items-center">
+                  <FaShieldAlt className="mr-3 text-[#C9A227]" /> Why Choose Family &amp; Group Cruise?
                 </h3>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {service.whyChoose.map((point, idx) => (
-                    <li key={idx} className="flex items-start space-x-3 bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
-                      <span className="w-2.5 h-2.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
-                      <span className="text-xs md:text-sm text-dark/80 font-sans">{point}</span>
+                    <li key={idx} className="flex items-start space-x-3 bg-slate-950/80 p-4 rounded-2xl border border-white/10 shadow-sm">
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#C9A227] mt-1.5 flex-shrink-0" />
+                      <span className="text-xs md:text-sm text-slate-200 font-sans leading-relaxed">{point}</span>
                     </li>
                   ))}
                 </ul>
               </section>
             )}
 
-            {/* Food Included & Food Add-ons Section */}
-            <section className="space-y-6">
-              <h3 className="font-serif font-bold text-2xl text-dark border-b border-slate-200 pb-3 flex items-center">
-                <FaUtensils className="mr-3 text-primary" /> Dining &amp; Food Facilities
-              </h3>
-
-              {/* Food Included Cards */}
-              <div className="space-y-3">
-                <span className="text-xs uppercase font-sans font-bold text-primary tracking-wider block">
-                  Food Included in Package:
-                </span>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
-                    <span className="text-[10px] uppercase font-bold text-accent tracking-widest block">Starter</span>
-                    <h4 className="font-serif font-bold text-dark text-base">Welcome Drink</h4>
-                    <p className="text-xs text-dark/60 font-light">Chilled fresh fruit refreshments served upon boarding.</p>
-                  </div>
-                  <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
-                    <span className="text-[10px] uppercase font-bold text-accent tracking-widest block">Main Feast</span>
-                    <h4 className="font-serif font-bold text-dark text-base">Lunch Feast</h4>
-                    <p className="text-xs text-dark/60 font-light">Chicken Biriyani OR Traditional Kerala Meals with Fish Fry.</p>
-                  </div>
-                  <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
-                    <span className="text-[10px] uppercase font-bold text-accent tracking-widest block">Evening Snack</span>
-                    <h4 className="font-serif font-bold text-dark text-base">Evening Tea &amp; Snacks</h4>
-                    <p className="text-xs text-dark/60 font-light">Hot Kerala tea/coffee served with traditional local snacks.</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Food Add-ons */}
-              {service.foodAddons && (
-                <div className="bg-slate-900 text-white rounded-3xl p-6 md:p-8 space-y-4 shadow-lg">
-                  <div>
-                    <h4 className="font-serif font-bold text-xl text-[#C9A227]">Food Add-ons</h4>
-                    <p className="font-sans text-xs text-white/70 font-light mt-1">
-                      Enhance your dining experience with additional custom food options available upon request:
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                    {service.foodAddons.map((addon, idx) => (
-                      <div key={idx} className="bg-white/10 border border-white/15 backdrop-blur-sm px-4 py-3 rounded-xl text-center">
-                        <span className="font-sans font-bold text-xs text-white">{addon}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </section>
-
-            {/* Pricing Section: Per Person Rates & Hourly Charges */}
+            {/* PROMINENT PRICING HIGHLIGHT SECTION */}
             {service.perPersonPricing && service.hourlyCharges && (
-              <section className="space-y-6">
-                <h3 className="font-serif font-bold text-2xl text-dark border-b border-slate-200 pb-3 flex items-center">
-                  <FaTag className="mr-3 text-primary" /> Cruise Pricing &amp; Charges
-                </h3>
+              <section className="space-y-8">
+                <div className="border-b border-[#C9A227]/25 pb-3">
+                  <span className="text-xs uppercase font-sans font-bold text-[#C9A227] tracking-widest block mb-1">
+                    TRANSPARENT &amp; PROMINENT RATES
+                  </span>
+                  <h3 className="font-serif font-bold text-3xl text-white flex items-center">
+                    <FaTag className="mr-3 text-[#C9A227]" /> Package Pricing &amp; Rates
+                  </h3>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Per Person Pricing Table */}
-                  <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm space-y-4">
-                    <div className="border-b border-slate-100 pb-3">
-                      <span className="text-xs uppercase font-sans font-bold text-primary tracking-wider block">Group Package Rates</span>
-                      <h4 className="font-serif font-bold text-xl text-dark">Pricing – Per Person</h4>
+                  {/* Per Person Pricing Prominent Cards */}
+                  <div className="bg-slate-900/90 rounded-3xl p-6 md:p-8 border border-[#C9A227]/40 shadow-2xl space-y-5 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 bg-[#C9A227] text-slate-950 font-sans font-extrabold text-[10px] uppercase tracking-widest px-4 py-1 rounded-bl-2xl shadow-md">
+                      BEST VALUE
                     </div>
-                    <div className="space-y-3">
+                    <div className="border-b border-white/10 pb-3">
+                      <span className="text-xs uppercase font-sans font-bold text-[#C9A227] tracking-wider block">Group Packages</span>
+                      <h4 className="font-serif font-bold text-2xl text-white">Pricing – Per Person</h4>
+                    </div>
+                    <div className="space-y-4">
                       {service.perPersonPricing.map((item, idx) => (
-                        <div key={idx} className="flex justify-between items-center py-2.5 px-3.5 bg-slate-50 rounded-xl">
-                          <span className="font-sans text-xs font-semibold text-dark/80">{item.group}</span>
-                          <span className="font-serif font-bold text-primary text-base">{item.price} <span className="text-[10px] font-sans font-normal text-dark/50">{item.unit}</span></span>
+                        <div key={idx} className="bg-slate-950 p-4 rounded-2xl border border-[#C9A227]/20 flex justify-between items-center hover:border-[#C9A227]/60 transition-colors">
+                          <div className="space-y-1">
+                            <span className="text-xs uppercase font-sans font-bold text-slate-300 tracking-wider block">{item.group}</span>
+                            <span className="text-[10px] font-sans font-bold text-[#C9A227] tracking-widest uppercase bg-[#C9A227]/15 px-2.5 py-0.5 rounded-full inline-block">Group Rate</span>
+                          </div>
+                          <div className="text-right">
+                            <span className="font-serif text-3xl font-extrabold text-[#C9A227] block">{item.price}</span>
+                            <span className="text-[10px] font-sans text-slate-300 uppercase tracking-widest font-semibold">{item.unit}</span>
+                          </div>
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  {/* Hourly Boat Charges Table */}
-                  <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm space-y-4">
-                    <div className="border-b border-slate-100 pb-3">
-                      <span className="text-xs uppercase font-sans font-bold text-primary tracking-wider block">Hourly Rates</span>
-                      <h4 className="font-serif font-bold text-xl text-dark">Hourly Boat Charges</h4>
+                  {/* Hourly Boat Charges Prominent Cards */}
+                  <div className="bg-slate-900/90 rounded-3xl p-6 md:p-8 border border-emerald-500/40 shadow-2xl space-y-5 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 bg-emerald-500 text-slate-950 font-sans font-extrabold text-[10px] uppercase tracking-widest px-4 py-1 rounded-bl-2xl shadow-md">
+                      FLEXIBLE HOURLY
                     </div>
-                    <div className="space-y-3">
+                    <div className="border-b border-white/10 pb-3">
+                      <span className="text-xs uppercase font-sans font-bold text-emerald-400 tracking-wider block">Hourly Booking</span>
+                      <h4 className="font-serif font-bold text-2xl text-white">Hourly Boat Charges</h4>
+                    </div>
+                    <div className="space-y-4">
                       {service.hourlyCharges.map((item, idx) => (
-                        <div key={idx} className="flex justify-between items-center py-2.5 px-3.5 bg-slate-50 rounded-xl">
-                          <span className="font-sans text-xs font-semibold text-dark/80">{item.group}</span>
-                          <span className="font-serif font-bold text-emerald-700 text-base">{item.price} <span className="text-[10px] font-sans font-normal text-dark/50">{item.unit}</span></span>
+                        <div key={idx} className="bg-slate-950 p-4 rounded-2xl border border-emerald-500/20 flex justify-between items-center hover:border-emerald-500/60 transition-colors">
+                          <div className="space-y-1">
+                            <span className="text-xs uppercase font-sans font-bold text-slate-300 tracking-wider block">{item.group}</span>
+                            <span className="text-[10px] font-sans font-bold text-emerald-400 tracking-widest uppercase bg-emerald-500/15 px-2.5 py-0.5 rounded-full inline-block">Hourly Rate</span>
+                          </div>
+                          <div className="text-right">
+                            <span className="font-serif text-3xl font-extrabold text-emerald-400 block">{item.price}</span>
+                            <span className="text-[10px] font-sans text-slate-300 uppercase tracking-widest font-semibold">{item.unit}</span>
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -223,12 +203,12 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
 
             {/* Custom Quote Card for Family & Group Cruise */}
             {service.isCustomQuote && (
-              <section className="bg-gradient-to-r from-primary/10 via-sand to-accent/10 rounded-3xl p-8 border border-primary/15 space-y-5">
-                <div className="space-y-2">
-                  <span className="text-xs uppercase font-sans font-bold text-primary tracking-wider block">Customized Group Pricing</span>
-                  <h3 className="font-serif font-bold text-2xl text-dark">Get a Custom Group Quote</h3>
-                  <p className="font-sans text-xs sm:text-sm text-dark/70 font-light leading-relaxed">
-                    We offer tailored packages for large families, corporate outings, birthday celebrations, and custom group requirements. Contact our team directly on WhatsApp for customized pricing and vessel arrangements.
+              <section className="bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 rounded-3xl p-8 md:p-10 border border-[#C9A227]/40 shadow-2xl space-y-6 relative overflow-hidden">
+                <div className="space-y-3">
+                  <span className="text-xs uppercase font-sans font-bold text-[#C9A227] tracking-widest block">TAILORED PACKAGES</span>
+                  <h3 className="font-serif font-bold text-3xl text-white">Get a Custom Group Quote</h3>
+                  <p className="font-sans text-sm text-slate-200 font-light leading-relaxed max-w-2xl">
+                    We offer tailored packages for large families, corporate team outings, birthday celebrations, and custom group requirements. Contact our team directly on WhatsApp for customized pricing and vessel arrangements.
                   </p>
                 </div>
                 <div>
@@ -236,44 +216,108 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
                     href={`https://wa.me/918138866919?text=${encodeURIComponent(service.whatsappMsg)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 py-4 px-8 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md hover:shadow-premium active:scale-95"
+                    className="inline-flex items-center space-x-3 py-4 px-8 bg-emerald-500 hover:bg-emerald-600 text-slate-950 rounded-2xl font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-xl active:scale-95"
                   >
                     <span>Get a Custom Quote on WhatsApp</span>
-                    <FaWhatsapp className="text-lg" />
+                    <FaWhatsapp className="text-xl" />
                   </a>
                 </div>
               </section>
             )}
 
-            {/* Onboard Facilities */}
+            {/* STRONGLY HIGHLIGHTED FACILITIES SECTION (4 CARDS IN 1 ROW ON DESKTOP) */}
             {service.facilities && (
-              <section className="space-y-6">
-                <h3 className="font-serif font-bold text-2xl text-dark border-b border-slate-200 pb-3 flex items-center">
-                  <FaShieldAlt className="mr-3 text-primary" /> Onboard Facilities &amp; Amenities
-                </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <section className="space-y-8 bg-slate-900/90 p-8 md:p-10 rounded-3xl border border-[#C9A227]/40 shadow-2xl relative">
+                <div className="border-b border-white/10 pb-3 flex flex-col md:flex-row md:items-center justify-between gap-2">
+                  <div>
+                    <span className="text-xs uppercase font-sans font-bold text-[#C9A227] tracking-widest block mb-1">
+                      PREMIUM ONBOARD COMFORT
+                    </span>
+                    <h3 className="font-serif font-bold text-3xl text-white flex items-center">
+                      <FaShieldAlt className="mr-3 text-[#C9A227]" /> Facilities &amp; Amenities
+                    </h3>
+                  </div>
+                  <span className="text-xs text-slate-400 font-sans font-medium">Included in all cruise packages</span>
+                </div>
+
+                {/* 4 Large Facility Cards in 1 Row on Desktop */}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
                   {service.facilities.map((fac, idx) => (
-                    <div key={idx} className="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2 text-center">
-                      <div className="w-10 h-10 rounded-full bg-sand/60 text-primary mx-auto flex items-center justify-center font-bold text-base">
+                    <div
+                      key={idx}
+                      className="bg-slate-950 p-6 rounded-2xl border border-white/10 hover:border-[#C9A227]/70 transition-all duration-300 text-center space-y-3 group hover:-translate-y-1 shadow-lg hover:shadow-[#C9A227]/10"
+                    >
+                      <div className="w-14 h-14 rounded-2xl bg-[#C9A227]/15 border border-[#C9A227]/30 text-[#C9A227] mx-auto flex items-center justify-center font-bold text-2xl group-hover:scale-110 group-hover:bg-[#C9A227] group-hover:text-slate-950 transition-all duration-300">
                         {fac.name === "Bathroom" && <FaRestroom />}
                         {fac.name === "DJ Music System" && <FaMusic />}
                         {fac.name === "Microphone" && <FaMicrophone />}
                         {fac.name === "Fan" && <FaFan />}
                       </div>
-                      <h4 className="font-serif font-bold text-dark text-sm">{fac.name}</h4>
-                      <p className="text-[11px] text-dark/60 font-light leading-snug">{fac.desc}</p>
+                      <h4 className="font-serif font-bold text-white text-base group-hover:text-[#C9A227] transition-colors">{fac.name}</h4>
+                      <p className="text-xs text-slate-300 font-light leading-relaxed">{fac.desc}</p>
                     </div>
                   ))}
                 </div>
               </section>
             )}
 
+            {/* Food Included & Food Add-ons Section */}
+            <section className="space-y-8 bg-slate-900/60 p-8 rounded-3xl border border-white/10">
+              <h3 className="font-serif font-bold text-2xl text-[#C9A227] border-b border-white/10 pb-3 flex items-center">
+                <FaUtensils className="mr-3 text-[#C9A227]" /> Dining &amp; Refreshments
+              </h3>
+
+              {/* Food Included Cards */}
+              <div className="space-y-4">
+                <span className="text-xs uppercase font-sans font-bold text-white tracking-widest block">
+                  Food Included in Package:
+                </span>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                  <div className="bg-slate-950 p-6 rounded-2xl border border-white/10 space-y-2">
+                    <span className="text-[10px] uppercase font-bold text-[#C9A227] tracking-widest block">Starter</span>
+                    <h4 className="font-serif font-bold text-white text-base">Welcome Drink</h4>
+                    <p className="text-xs text-slate-300 font-light">Chilled fresh fruit refreshments served upon boarding.</p>
+                  </div>
+                  <div className="bg-slate-950 p-6 rounded-2xl border border-white/10 space-y-2">
+                    <span className="text-[10px] uppercase font-bold text-[#C9A227] tracking-widest block">Main Feast</span>
+                    <h4 className="font-serif font-bold text-white text-base">Lunch Feast</h4>
+                    <p className="text-xs text-slate-300 font-light">Chicken Biriyani OR Traditional Kerala Meals with Fish Fry.</p>
+                  </div>
+                  <div className="bg-slate-950 p-6 rounded-2xl border border-white/10 space-y-2">
+                    <span className="text-[10px] uppercase font-bold text-[#C9A227] tracking-widest block">Evening Snack</span>
+                    <h4 className="font-serif font-bold text-white text-base">Evening Tea &amp; Snacks</h4>
+                    <p className="text-xs text-slate-300 font-light">Hot Kerala tea/coffee served with traditional local snacks.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Food Add-ons */}
+              {service.foodAddons && (
+                <div className="bg-slate-950 rounded-2xl p-6 border border-[#C9A227]/30 space-y-4">
+                  <div>
+                    <h4 className="font-serif font-bold text-lg text-[#C9A227]">Food Add-ons</h4>
+                    <p className="font-sans text-xs text-slate-300 font-light mt-1">
+                      Enhance your dining experience with additional custom food options available upon request:
+                    </p>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                    {service.foodAddons.map((addon, idx) => (
+                      <div key={idx} className="bg-slate-900 border border-[#C9A227]/40 px-4 py-3 rounded-xl text-center">
+                        <span className="font-sans font-bold text-xs text-[#C9A227]">{addon}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </section>
+
             {/* Direct Prominent WhatsApp CTA Banner */}
-            <div className="bg-slate-900 text-white rounded-3xl p-8 md:p-10 space-y-6 text-center shadow-premium">
-              <h3 className="font-serif font-bold text-2xl md:text-3xl text-white">
+            <div className="bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 text-white rounded-3xl p-8 md:p-12 space-y-6 text-center border border-[#C9A227]/40 shadow-2xl relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#C9A227] via-emerald-500 to-[#C9A227]" />
+              <h3 className="font-serif font-bold text-3xl md:text-4xl text-white">
                 Ready to Book Your {service.title}?
               </h3>
-              <p className="font-sans text-xs md:text-sm text-white/80 font-light max-w-xl mx-auto leading-relaxed">
+              <p className="font-sans text-sm text-slate-200 font-light max-w-xl mx-auto leading-relaxed">
                 Connect directly with Phoenix Cruise team on WhatsApp for instant availability, custom menu requests, and booking confirmation.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
@@ -281,9 +325,9 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
                   href={`https://wa.me/918138866919?text=${encodeURIComponent(service.whatsappMsg)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 py-4 px-8 bg-[#C9A227] hover:bg-[#b08d20] text-slate-950 rounded-2xl font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg active:scale-95"
+                  className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 py-4 px-8 bg-[#C9A227] hover:bg-[#b08d20] text-slate-950 rounded-2xl font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-xl active:scale-95"
                 >
-                  <FaWhatsapp className="text-lg" />
+                  <FaWhatsapp className="text-xl" />
                   <span>{service.ctaTitle || "Enquire on WhatsApp"}</span>
                 </a>
                 <a
@@ -302,17 +346,17 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
           <div className="lg:col-span-4 space-y-8">
             
             {/* Quick Metrics Card */}
-            <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm space-y-6">
-              <h3 className="font-serif font-bold text-xl text-dark">Service Specifications</h3>
+            <div className="bg-slate-900 border border-white/10 rounded-3xl p-6 shadow-xl space-y-6">
+              <h3 className="font-serif font-bold text-xl text-[#C9A227]">Service Specifications</h3>
               
               <div className="space-y-4 font-sans text-xs">
-                <div className="flex justify-between items-center py-2 border-b border-slate-100">
-                  <span className="text-dark/50">Estimated Duration:</span>
-                  <span className="font-bold text-dark flex items-center"><FaClock className="mr-1.5 text-accent" /> {service.time}</span>
+                <div className="flex justify-between items-center py-2.5 border-b border-white/10">
+                  <span className="text-slate-300">Estimated Duration:</span>
+                  <span className="font-bold text-white flex items-center"><FaClock className="mr-1.5 text-[#C9A227]" /> {service.time}</span>
                 </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-dark/50">Status:</span>
-                  <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-600 font-semibold border border-emerald-200 uppercase text-[9px] tracking-wider">Available</span>
+                <div className="flex justify-between items-center py-2.5">
+                  <span className="text-slate-300">Status:</span>
+                  <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 font-semibold border border-emerald-500/40 uppercase text-[9px] tracking-widest">Available</span>
                 </div>
               </div>
 
@@ -320,18 +364,18 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
                 href={`https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20would%20like%20to%20enquire%20about%20booking%20the%20${encodeURIComponent(service.title)}.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center py-3.5 bg-primary hover:bg-primary-hover text-white rounded-[12px] font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-premium active:scale-95 text-center"
+                className="w-full inline-flex items-center justify-center py-4 bg-[#C9A227] hover:bg-[#b08d20] text-slate-950 rounded-2xl font-sans font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg active:scale-95 text-center"
               >
                 Book Your Cruise
               </a>
             </div>
 
-            {/* Why Choose Us */}
-            <div className="bg-sand/30 border border-primary/5 rounded-2xl p-6 space-y-4">
-              <h4 className="font-serif font-bold text-lg text-primary flex items-center">
+            {/* Why Choose Phoenix */}
+            <div className="bg-slate-900/60 border border-[#C9A227]/20 rounded-3xl p-6 space-y-4">
+              <h4 className="font-serif font-bold text-lg text-[#C9A227] flex items-center">
                 <FaShieldAlt className="mr-2" /> Why Choose Phoenix?
               </h4>
-              <p className="text-xs text-dark/70 font-light leading-relaxed">
+              <p className="text-xs text-slate-300 font-light leading-relaxed">
                 We implement certified safety standards, live private chef dining, and experienced naval crew members for customer comfort.
               </p>
             </div>
@@ -339,15 +383,15 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
             {/* Related Services List */}
             {related.length > 0 && (
               <div className="space-y-4">
-                <h4 className="font-serif font-bold text-lg text-dark">Related Services</h4>
+                <h4 className="font-serif font-bold text-lg text-white">Related Experiences</h4>
                 <div className="space-y-3">
                   {related.map((rel) => (
                     <Link
                       key={rel.id}
                       href={`/services/${rel.id}`}
-                      className="flex items-center space-x-3 p-3 bg-white hover:bg-sand/10 border border-slate-100 rounded-xl transition-all duration-200 group"
+                      className="flex items-center space-x-3 p-3.5 bg-slate-900 hover:bg-slate-800 border border-white/10 rounded-2xl transition-all duration-200 group"
                     >
-                      <div className="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-slate-100">
+                      <div className="relative w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 bg-slate-950">
                         <Image
                           src={rel.image}
                           alt={rel.title}
@@ -357,12 +401,12 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
                         />
                       </div>
                       <div className="flex-grow min-w-0">
-                        <h5 className="font-serif text-xs font-bold text-dark truncate group-hover:text-primary transition-colors">
+                        <h5 className="font-serif text-xs font-bold text-white truncate group-hover:text-[#C9A227] transition-colors">
                           {rel.title}
                         </h5>
-                        <p className="text-[10px] text-dark/50 truncate font-light mt-0.5">{rel.time}</p>
+                        <p className="text-[10px] text-slate-400 truncate font-light mt-0.5">{rel.time}</p>
                       </div>
-                      <FaExchangeAlt className="text-dark/20 group-hover:text-primary transition-colors text-xs flex-shrink-0" />
+                      <FaExchangeAlt className="text-slate-500 group-hover:text-[#C9A227] transition-colors text-xs flex-shrink-0" />
                     </Link>
                   ))}
                 </div>

@@ -17,7 +17,7 @@ export const servicesData = [
     category: "cruises",
     shortDesc: "5 Hours of scenic Shikara Boat backwater cruise in Kerala, complete with fresh dining, music system, and full onboard facilities.",
     desc: "Immerse yourself in a 5-hour daytime backwater voyage along Akalapuzha's palm-fringed channels. Includes welcome drinks, traditional Kerala feast, evening snacks, onboard DJ sound system, and privacy for groups.",
-    image: "https://i.ibb.co/9kzPswmC/Whats-App-Image-2026-07-14-at-1-19-42-PM.jpg",
+    image: "https://i.ibb.co/hRGrBy5Y/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
     time: "5 Hours Shikara Boat",
     foodIncluded: [
       "Welcome Drink",
