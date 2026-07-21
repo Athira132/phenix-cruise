@@ -12,7 +12,7 @@ const cruises = [
   },
   {
     title: "Houseboat Experience",
-    image: "https://i.ibb.co/273vPY7K/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
+    image: "https://i.ibb.co/9k6JQ9Hn/Whats-App-Image-2026-07-14-at-1-19-56-PM.jpg",
     id: "family-package",
     alt: "Luxury traditional Kerala houseboat experience",
     position: "center",
