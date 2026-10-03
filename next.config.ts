@@ -17,6 +17,21 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: '(?<host>.*\\.vercel\\.app)',
+          },
+        ],
+        destination: 'https://phoenixcruise.in/:path*',
+        statusCode: 301,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
