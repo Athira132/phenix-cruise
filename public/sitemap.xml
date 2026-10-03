@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://clever-rutherford.vercel.app/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://phoenixcruise.in/</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://clever-rutherford.vercel.app/about</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://clever-rutherford.vercel.app/services</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://phoenixcruise.in/services</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://clever-rutherford.vercel.app/services/day-package</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://phoenixcruise.in/services/day-package</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://clever-rutherford.vercel.app/services/family-package</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://phoenixcruise.in/services/family-package</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://clever-rutherford.vercel.app/services/couple-package</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://phoenixcruise.in/services/couple-package</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://clever-rutherford.vercel.app/services/sunset-cruise</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://phoenixcruise.in/services/sunset-cruise</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://clever-rutherford.vercel.app/food</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://clever-rutherford.vercel.app/gallery</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://clever-rutherford.vercel.app/testimonials</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://clever-rutherford.vercel.app/contact</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://phoenixcruise.in/about</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://clever-rutherford.vercel.app/booking</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://phoenixcruise.in/food</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phoenixcruise.in/gallery</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://phoenixcruise.in/testimonials</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://phoenixcruise.in/contact</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phoenixcruise.in/booking</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>

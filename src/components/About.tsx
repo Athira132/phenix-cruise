@@ -28,7 +28,7 @@ export default function About() {
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group border border-slate-100">
               <Image
                 src="https://i.ibb.co/Kc9rJqF9/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
-                alt="Phoenix Cruise Akalapuzha Boat Service"
+                alt="Akalapuzha Phoenix Cruise boat cruising through scenic Kerala backwaters"
                 fill
                 sizes="(max-w-768px) 100vw, 50vw"
                 style={{ objectFit: "cover", objectPosition: "center" }}
@@ -49,10 +49,10 @@ export default function About() {
                 ABOUT PHOENIX CRUISE
               </span>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-dark tracking-wide mb-5">
-                Your Time on the Water
+                Peaceful Backwater Boat Cruises in Akalapuzha
               </h2>
               <p className="text-dark/80 font-sans text-base md:text-lg leading-relaxed mb-6 font-normal">
-                Phoenix Cruise offers peaceful backwater boat rides across Akalapuzha lake in Kozhikode, Kerala. Enjoy authentic Kerala food, comfortable seating, and scenic backwater views with complete safety.
+                Phoenix Cruise provides memorable backwater boat cruise experiences across the scenic waterways of Akalapuzha in Kozhikode, Kerala. Whether you choose a day cruise, a traditional houseboat experience, or a private family group outing, we offer authentic Kerala dining, comfortable seating, and relaxing backwater views with certified safety.
               </p>
               
               <div className="pt-2">

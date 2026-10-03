@@ -60,7 +60,7 @@ export default function Hero() {
       >
         <Image
           src="https://i.ibb.co/pBQY8xcz/image.png"
-          alt="Phoenix Cruise Akalapuzha boat service backwater cruise"
+          alt="Akalapuzha Phoenix Cruise – Kerala backwater boat cruise and Shikara boat service"
           fill
           priority
           quality={80}
@@ -93,25 +93,27 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Short, Powerful Heading */}
+          {/* Main H1 Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-4xl sm:text-5xl lg:text-[64px] font-serif font-extrabold text-[#F8FAFC] tracking-wide leading-[1.1] text-left uppercase drop-shadow-md"
+            className="text-3xl sm:text-4xl lg:text-[56px] font-serif font-extrabold text-[#F8FAFC] tracking-wide leading-[1.15] text-left drop-shadow-md"
           >
-            Cruise The <br />
-            <span className="text-[#C9A227] normal-case">Akalapuzha Backwaters</span>
+            Akalapuzha Phoenix Cruise
+            <span className="text-[#C9A227] text-xl sm:text-2xl lg:text-[32px] font-serif font-bold block mt-2 normal-case tracking-normal">
+              – Kerala Backwater Boat Experience
+            </span>
           </motion.h1>
 
-          {/* Minimal Supporting Text */}
+          {/* Supporting Text */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-slate-200 text-base sm:text-lg max-w-lg font-sans font-normal leading-relaxed text-left drop-shadow"
+            className="text-slate-200 text-base sm:text-lg max-w-xl font-sans font-normal leading-relaxed text-left drop-shadow"
           >
-            Experience scenic backwaters, fresh Kerala food, and safe boat rides.
+            Experience scenic Kerala backwaters with relaxing boat cruises, day trips, houseboat experiences and memorable family group outings.
           </motion.p>
 
           {/* Primary Booking Button */}

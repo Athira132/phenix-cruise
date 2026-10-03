@@ -21,27 +21,27 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <title>About Us | Phoenix Cruise &amp; Akalapuzha Boat Service</title>
+        <title>About Akalapuzha Phoenix Cruise | Kerala Backwater Boating</title>
         <meta
           name="description"
-          content="Learn about Phoenix Cruise, the premier Akalapuzha boat service in Kerala. Delivering safe, luxurious, and authentic backwater boat cruises for families, couples, and tourists."
+          content="Learn about Phoenix Cruise, the premier Akalapuzha boat cruise and houseboat service in Kerala. Delivering safe, relaxing, and authentic backwater boat tours for families and groups."
         />
-        <meta name="keywords" content="Phoenix Cruise, Akalapuzha boat service, Akalapuzha boat ride, boat service in Akalapuzha, Kerala backwater boat service, boat cruise in Kerala" />
-        <link rel="canonical" href="https://clever-rutherford.vercel.app/about" />
+        <meta name="keywords" content="About Phoenix Cruise, Akalapuzha Phoenix Cruise, Akalapuzha boat cruise, Akalapuzha boat service, Kerala backwater boat service, Moodadi boat cruise" />
+        <link rel="canonical" href="https://phoenixcruise.in/about" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Phoenix Cruise" />
-        <meta property="og:url" content="https://clever-rutherford.vercel.app/about" />
-        <meta property="og:title" content="About Us | Phoenix Cruise &amp; Akalapuzha Boat Service" />
-        <meta property="og:description" content="Learn about Phoenix Cruise, the premier Akalapuzha boat service in Kerala. Delivering safe, luxurious, and authentic backwater boat cruises for families, couples, and tourists." />
+        <meta property="og:url" content="https://phoenixcruise.in/about" />
+        <meta property="og:title" content="About Akalapuzha Phoenix Cruise | Kerala Backwater Boating" />
+        <meta property="og:description" content="Learn about Phoenix Cruise, the premier Akalapuzha boat cruise and houseboat service in Kerala. Delivering safe, relaxing, and authentic backwater boat tours for families and groups." />
         <meta property="og:image" content="https://i.ibb.co/B51fLF7w/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://clever-rutherford.vercel.app/about" />
-        <meta name="twitter:title" content="About Us | Phoenix Cruise &amp; Akalapuzha Boat Service" />
-        <meta name="twitter:description" content="Learn about Phoenix Cruise, the premier Akalapuzha boat service in Kerala. Delivering safe, luxurious, and authentic backwater boat cruises for families, couples, and tourists." />
+        <meta name="twitter:url" content="https://phoenixcruise.in/about" />
+        <meta name="twitter:title" content="About Akalapuzha Phoenix Cruise | Kerala Backwater Boating" />
+        <meta name="twitter:description" content="Learn about Phoenix Cruise, the premier Akalapuzha boat cruise and houseboat service in Kerala. Delivering safe, relaxing, and authentic backwater boat tours for families and groups." />
         <meta name="twitter:image" content="https://i.ibb.co/B51fLF7w/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
       </Head>
 
@@ -49,7 +49,7 @@ export default function AboutPage() {
       <Navbar />
 
       <PageHeader
-        title="About Us"
+        title="About Phoenix Cruise"
         breadcrumbs={[
           { name: "Home", href: "/" },
           { name: "About Us" },
@@ -63,7 +63,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 group">
               <Image
                 src="https://i.ibb.co/Kc9rJqF9/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg"
-                alt="Phoenix Cruise Akalapuzha Boat Service"
+                alt="Akalapuzha Phoenix Cruise traditional wooden boat sailing through Kerala backwaters"
                 fill
                 sizes="(max-w-768px) 100vw, 50vw"
                 style={{ objectFit: "cover", objectPosition: "center" }}
@@ -77,17 +77,17 @@ export default function AboutPage() {
               ABOUT PHOENIX CRUISE
             </span>
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-dark leading-tight">
-              Your Time on the Water
+              Peaceful Backwater Boat Cruises in Akalapuzha
             </h2>
             <div className="text-dark/80 font-sans text-sm md:text-base leading-relaxed space-y-3 font-normal">
               <p>
-                Phoenix Cruise offers peaceful backwater boat rides across Akalapuzha lake in Kozhikode, Kerala.
+                Phoenix Cruise offers peaceful Kerala backwater boat cruise experiences across the scenic waterways of Akalapuzha in Kozhikode, Kerala.
               </p>
               <p>
-                We prioritize passenger safety, comfortable seating, and fresh authentic Kerala food prepared with quality ingredients.
+                We prioritize passenger safety, comfortable seating, and fresh authentic Kerala food prepared with quality local ingredients.
               </p>
               <p>
-                Enjoy memorable family outings, group trips, and private backwater cruises with complete peace of mind.
+                Enjoy memorable family outings, group trips, sunset voyages, and private backwater cruises with certified safety.
               </p>
             </div>
             <div className="pt-2">

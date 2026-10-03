@@ -32,28 +32,100 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
     .filter((s) => s.category === service.category && s.id !== service.id)
     .slice(0, 3);
 
+  // JSON-LD Structured Data
+  const schemaData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://phoenixcruise.in"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://phoenixcruise.in/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": service.title,
+          "item": `https://phoenixcruise.in/services/${service.id}`
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      "name": `${service.title} - Akalapuzha Phoenix Cruise`,
+      "description": service.desc,
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Phoenix Cruise - Akalapuzha Boat Service",
+        "url": "https://phoenixcruise.in",
+        "telephone": "+918138866919",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Purakkad - Muchukunnu Road",
+          "addressLocality": "Moodadi",
+          "addressRegion": "Kerala",
+          "postalCode": "673307",
+          "addressCountry": "IN"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": `https://phoenixcruise.in/services/${service.id}`
+      }
+    }
+  ];
+
   return (
     <>
       <Head>
-        <title>{`${service.title} | Phoenix Cruise Akalapuzha Boat Service`}</title>
-        <meta name="description" content={`${service.shortDesc} Book your private Akalapuzha boat ride with Phoenix Cruise in Kerala.`} />
-        <meta name="keywords" content={`Akalapuzha boat service, ${service.title}, Akalapuzha boat ride, Phoenix Cruise, Akalapuzha, Kerala backwater boat service`} />
-        <link rel="canonical" href={`https://clever-rutherford.vercel.app/services/${service.id}`} />
+        <title>{service.seoTitle || `${service.title} | Phoenix Cruise Kerala`}</title>
+        <meta
+          name="description"
+          content={service.seoDesc || `${service.shortDesc} Book your private Akalapuzha boat cruise with Phoenix Cruise in Kerala.`}
+        />
+        <meta
+          name="keywords"
+          content={`Akalapuzha Phoenix Cruise, ${service.title}, Akalapuzha boat cruise, Akalapuzha boat service, Akalapuzha backwater cruise, Kerala backwater boat service, Day cruise in Akalapuzha`}
+        />
+        <link rel="canonical" href={`https://phoenixcruise.in/services/${service.id}`} />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Phoenix Cruise" />
-        <meta property="og:url" content={`https://clever-rutherford.vercel.app/services/${service.id}`} />
-        <meta property="og:title" content={`${service.title} | Phoenix Cruise Akalapuzha Boat Service`} />
-        <meta property="og:description" content={`${service.shortDesc} Book your private Akalapuzha boat ride with Phoenix Cruise in Kerala.`} />
+        <meta property="og:url" content={`https://phoenixcruise.in/services/${service.id}`} />
+        <meta property="og:title" content={service.seoTitle || `${service.title} | Phoenix Cruise Kerala`} />
+        <meta
+          property="og:description"
+          content={service.seoDesc || `${service.shortDesc} Book your private Akalapuzha boat cruise with Phoenix Cruise in Kerala.`}
+        />
         <meta property="og:image" content={service.image} />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content={`https://clever-rutherford.vercel.app/services/${service.id}`} />
-        <meta name="twitter:title" content={`${service.title} | Phoenix Cruise Akalapuzha Boat Service`} />
-        <meta name="twitter:description" content={`${service.shortDesc} Book your private Akalapuzha boat ride with Phoenix Cruise in Kerala.`} />
+        <meta name="twitter:url" content={`https://phoenixcruise.in/services/${service.id}`} />
+        <meta name="twitter:title" content={service.seoTitle || `${service.title} | Phoenix Cruise Kerala`} />
+        <meta
+          name="twitter:description"
+          content={service.seoDesc || `${service.shortDesc} Book your private Akalapuzha boat cruise with Phoenix Cruise in Kerala.`}
+        />
         <meta name="twitter:image" content={service.image} />
+
+        {/* Schema markup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
       </Head>
 
       <CustomCursor />
@@ -61,6 +133,7 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
 
       <PageHeader
         title={service.title}
+        isH1={false}
         breadcrumbs={[
           { name: "Home", href: "/" },
           { name: "Services", href: "/services" },
@@ -81,7 +154,7 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
                 <span className="text-primary text-xs font-sans font-bold uppercase tracking-widest">{service.time}</span>
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-dark tracking-wide leading-tight">
-                {service.title}
+                {service.h1Title || service.title}
               </h1>
               {service.subtitle && (
                 <p className="text-lg md:text-xl font-serif text-accent font-semibold">
@@ -94,7 +167,7 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
             <div className="relative aspect-[16/9] w-full rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 group">
               <Image
                 src={service.image}
-                alt={service.title}
+                alt={service.imageAlt || service.title}
                 fill
                 sizes="(max-w-768px) 100vw, 60vw"
                 style={{ objectFit: "cover" }}
@@ -384,12 +457,13 @@ export default function ServiceDetailPage({ service }: ServiceProps) {
                     <Link
                       key={rel.id}
                       href={`/services/${rel.id}`}
+                      title={`Explore our ${rel.title} with Phoenix Cruise`}
                       className="flex items-center space-x-3 p-3.5 bg-white hover:bg-sand/30 border border-slate-200/80 rounded-2xl transition-all duration-200 group shadow-sm"
                     >
                       <div className="relative w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100">
                         <Image
                           src={rel.image}
-                          alt={rel.title}
+                          alt={rel.imageAlt || rel.title}
                           fill
                           sizes="48px"
                           style={{ objectFit: "cover" }}

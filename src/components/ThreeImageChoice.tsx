@@ -4,22 +4,25 @@ import { motion } from "framer-motion";
 
 const choices = [
   {
-    title: "Day Cruise",
+    title: "Day Cruise in Akalapuzha",
     image: "https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg",
     link: "/services/day-package",
-    alt: "Day Cruise Akalapuzha",
+    linkTitle: "Explore our Akalapuzha Day Cruise",
+    alt: "Akalapuzha day cruise scenic Shikara boat experience with Phoenix Cruise",
   },
   {
-    title: "Houseboat Experience",
+    title: "Houseboat Experience in Akalapuzha",
     image: "https://i.ibb.co/9k6JQ9Hn/Whats-App-Image-2026-07-14-at-1-19-56-PM.jpg",
     link: "/services/family-package",
-    alt: "Luxury Houseboat Experience",
+    linkTitle: "Discover our Akalapuzha Houseboat Experience",
+    alt: "Akalapuzha Phoenix Cruise traditional wooden houseboat experience in Kerala",
   },
   {
-    title: "Overnight Stay",
+    title: "Overnight Stay Cruise",
     image: "https://i.ibb.co/GQkYjgvb/Whats-App-Image-2026-07-14-at-1-19-44-PM.jpg",
     link: "/services/sunset-cruise",
-    alt: "Overnight Stay Cruise",
+    linkTitle: "Experience an Overnight Stay and Sunset Cruise in Akalapuzha",
+    alt: "Overnight stay and sunset boat cruise in Akalapuzha Kerala backwaters",
   },
 ];
 
@@ -51,9 +54,10 @@ export default function ThreeImageChoice() {
                 </h3>
                 <Link
                   href={choice.link}
+                  title={choice.linkTitle}
                   className="inline-block self-start px-5 py-2.5 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 rounded-xl font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300"
                 >
-                  Explore
+                  Explore Experience
                 </Link>
               </div>
             </motion.div>

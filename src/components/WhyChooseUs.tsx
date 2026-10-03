@@ -5,19 +5,19 @@ const whyChooseUsItems = [
   {
     title: "Safety First",
     image: "https://i.ibb.co/60kjvbqw/Whats-App-Image-2026-07-14-at-1-19-56-PM.jpg",
-    alt: "Safe & Well-Maintained Phoenix Cruise Boat",
+    alt: "Akalapuzha Phoenix Cruise certified safety life jackets and well-maintained boats",
     position: "center 40%",
   },
   {
     title: "Quality Food",
     image: "/images/kerala_food_feast.jpg",
-    alt: "Authentic Kerala Feast Spread",
+    alt: "Authentic Kerala food feast with fish fry prepared fresh for Phoenix Cruise guests",
     position: "center",
   },
   {
     title: "Family Friendly",
     image: "/images/family_friendly_why_choose_us.jpg",
-    alt: "Family & Group Backwater Cruise Experience",
+    alt: "Family-friendly Akalapuzha backwater boat cruise with comfortable spacious seating",
     position: "center",
   },
 ];

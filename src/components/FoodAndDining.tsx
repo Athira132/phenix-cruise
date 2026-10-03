@@ -58,6 +58,16 @@ export default function FoodAndDining() {
           ))}
         </div>
 
+        {/* Internal Link to Food Page */}
+        <div className="mt-10 text-center">
+          <a
+            href="/food"
+            className="inline-flex items-center space-x-2 py-3 px-6 bg-sand hover:bg-primary text-primary hover:text-white rounded-xl border border-primary/10 hover:border-primary font-sans font-bold text-xs uppercase tracking-wider transition-colors duration-300"
+          >
+            <span>Explore All Akalapuzha Dining Options &amp; Menus</span>
+          </a>
+        </div>
+
       </div>
     </section>
   );

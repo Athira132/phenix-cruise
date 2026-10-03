@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://clever-rutherford.vercel.app/sitemap.xml
+Sitemap: https://phoenixcruise.in/sitemap.xml

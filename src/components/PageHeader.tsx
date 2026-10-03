@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 interface PageHeaderProps {
   title: string;
   breadcrumbs: { name: string; href?: string }[];
+  isH1?: boolean;
 }
 
-export default function PageHeader({ title, breadcrumbs }: PageHeaderProps) {
+export default function PageHeader({ title, breadcrumbs, isH1 = true }: PageHeaderProps) {
   return (
     <div className="relative min-h-[40vh] md:min-h-[45vh] flex items-center justify-center overflow-hidden bg-slate-950 select-none pt-24">
       {/* Background Image Layer with natural colors & overlay */}
@@ -38,14 +39,25 @@ export default function PageHeader({ title, breadcrumbs }: PageHeaderProps) {
         </nav>
 
         {/* Title */}
-        <motion.h1
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-white tracking-wide leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
-        >
-          {title}
-        </motion.h1>
+        {isH1 ? (
+          <motion.h1
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-white tracking-wide leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+          >
+            {title}
+          </motion.h1>
+        ) : (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-white tracking-wide leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+          >
+            {title}
+          </motion.div>
+        )}
       </div>
     </div>
   );

@@ -1,99 +1,124 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiPlus, FiMinus } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
+import { FaQuestionCircle, FaWhatsapp } from "react-icons/fa";
 
-const faqs = [
+export const faqList = [
   {
-    question: "How do I book a cruise?",
-    answer: "You can book a cruise directly by using the 'Book Now' form on our website. After filling in your preferred dates, package, and contact details, clicking submit will automatically generate a WhatsApp message containing all details. Our team will verify availability and contact you on WhatsApp to confirm your booking details.",
+    question: "What is Akalapuzha Phoenix Cruise?",
+    answer: "Akalapuzha Phoenix Cruise is a premier backwater boat service located at Akalapuzha lake in Moodadi, near Kozhikode, Kerala. We provide scenic Shikara boat rides, traditional wooden houseboat experiences, and tailored family group cruises with authentic Kerala dining and certified safety standards."
   },
   {
-    question: "Are meals included in the packages?",
-    answer: "Yes, for all overnight stays, all meals (welcome drink, authentic Kerala lunch, evening tea with snacks, dinner, and breakfast) are included in the price. Deluxe and Premium packages feature authentic Kerala fish curry (Karimeen Pollichathu), chicken, and local vegetarian delicacies. The Luxury package includes customized menu choices and live barbeque options. Day trips include lunch and evening snacks.",
+    question: "What cruise experiences are available at Phoenix Cruise?",
+    answer: "We offer four distinct cruise experiences: 1) Day Cruise in Akalapuzha (5-hour scenic Shikara boat ride with meals and DJ music), 2) Houseboat Experience in Akalapuzha (5-hour relaxing traditional wooden houseboat cruise), 3) Family & Group Cruise in Akalapuzha (spacious boat tours tailored for family reunions, birthdays, and outings), and 4) Sunset Cruise in Akalapuzha (2-hour golden hour cruise with evening snacks)."
   },
   {
-    question: "Can I customize the cruise packages and routes?",
-    answer: "Absolutely! We specialize in custom itineraries. Whether you wish to extend your stay, add custom room decor for birthdays/honeymoons, request specific seafood dishes, or choose a custom route (e.g. visiting organic farms, toddy shops, or historical churches), you can specify your requests in the booking form, and we will tailor the trip for you.",
+    question: "How long is the Akalapuzha day cruise?",
+    answer: "The Akalapuzha Day Cruise Package is 5 hours long. It includes a scenic voyage along palm-fringed Kerala waterways, a chilled welcome drink, a full traditional Kerala lunch (Chicken Biriyani or Kerala Meals with Fish Fry), hot evening tea with snacks, high-power DJ sound system, and full cabin amenities."
   },
   {
-    question: "Is secure parking available at the boarding points?",
-    answer: "Yes, we provide secure, 24/7 guarded private parking facilities at our boarding jetty in Calicut (Akalapuzha) free of charge for all our guests. You can park your private cars and buses safely until you return.",
+    question: "Is Phoenix Cruise suitable for families and groups?",
+    answer: "Yes, Phoenix Cruise is specifically designed for family outings, children, elders, and large groups. Our boats feature spacious shaded seating, clean onboard bathrooms, cabin air fans, high-power sound systems with microphones, and certified life jackets for all age groups."
   },
   {
-    question: "What are the standard check-in and check-out timings?",
-    answer: "For standard check-in, check-out, and cruise duration timings for each package option, please contact us. For more information and booking, contact us.",
+    question: "What food options are available during the cruise?",
+    answer: "Our standard cruise packages include fresh welcome drinks, a delicious lunch feast (Chicken Biriyani OR Traditional Kerala Meals with Fish Fry), and evening tea with traditional local snacks. We also offer custom food add-ons on prior request, including fresh Kerala seafood, Arabic dishes, Chinese dishes, and Nadan Kerala delicacies."
   },
   {
-    question: "Is there proper air conditioning and backup power on board?",
-    answer: "Yes, all our luxury houseboats are equipped with premium air conditioning and silent generator power backups. Depending on the package: Basic has AC in the dining room only, Deluxe has AC in bedrooms from 9:00 PM to 6:00 AM, and Premium & Luxury packages feature full 24-hour air conditioning across all rooms and decks.",
-  },
+    question: "How can I book an Akalapuzha Phoenix Cruise?",
+    answer: "You can book your cruise or inquire about real-time date availability by connecting directly with our team on WhatsApp or calling +91 81388 66919. Advance reservation is strongly recommended, especially for weekends and holiday seasons."
+  }
 ];
-
-function AccordionItem({ question, answer, isOpen, onClick }: { question: string; answer: string; isOpen: boolean; onClick: () => void }) {
-  return (
-    <div className="border-b border-primary/10 last:border-b-0 py-5">
-      <button
-        onClick={onClick}
-        className="w-full flex justify-between items-center text-left py-2 font-serif text-lg font-bold text-dark hover:text-primary transition-colors duration-300 group focus:outline-none"
-      >
-        <span className="pr-4">{question}</span>
-        <span className="flex-shrink-0 w-8 h-8 rounded-full bg-sand flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-          {isOpen ? <FiMinus /> : <FiPlus />}
-        </span>
-      </button>
-      
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden"
-          >
-            <p className="font-sans text-xs md:text-sm text-dark/70 font-light leading-relaxed pt-3 pb-2 pr-8">
-              {answer}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-}
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
+  const toggleFaq = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
-    <section id="faq" className="py-12 md:py-20 bg-white relative overflow-hidden">
-      <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-sand/20 rounded-full blur-[100px] pointer-events-none -z-1" />
-
-      <div className="max-w-3xl mx-auto px-6 md:px-12">
-        
-        {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-semibold block mb-3">
-            Got Questions?
+    <section id="faq" className="py-16 md:py-24 bg-slate-50 relative overflow-hidden select-none">
+      <div className="max-w-4xl mx-auto px-6 md:px-12">
+        {/* Header */}
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+          <span className="text-primary text-xs uppercase tracking-[0.25em] font-sans font-bold block mb-3">
+            FREQUENTLY ASKED QUESTIONS
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif text-dark tracking-wide mb-4">
-            Frequently Asked Questions
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-dark tracking-wide mb-4">
+            Everything You Need To Know
           </h2>
-          <div className="w-16 h-[2px] bg-accent mx-auto" />
+          <div className="w-16 h-[2px] bg-accent mx-auto mb-4" />
+          <p className="text-dark/70 font-sans text-sm md:text-base font-light">
+            Got questions about our Akalapuzha boat cruise packages, timings, food, or facilities? Find your answers below.
+          </p>
         </div>
 
-        {/* FAQ Accordion List */}
-        <div className="bg-sand/10 border border-primary/5 rounded-luxury p-6 md:p-10 shadow-premium">
-          {faqs.map((faq, idx) => (
-            <AccordionItem
-              key={idx}
-              question={faq.question}
-              answer={faq.answer}
-              isOpen={openIndex === idx}
-              onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-            />
-          ))}
+        {/* Accordion */}
+        <div className="space-y-4">
+          {faqList.map((item, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div
+                key={index}
+                className="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden transition-all duration-200"
+              >
+                <button
+                  type="button"
+                  onClick={() => toggleFaq(index)}
+                  className="w-full px-6 py-5 text-left flex justify-between items-center space-x-4 focus:outline-none"
+                  aria-expanded={isOpen}
+                >
+                  <span className="font-serif text-base sm:text-lg font-bold text-dark flex items-center">
+                    <FaQuestionCircle className="text-primary mr-3 text-sm flex-shrink-0" />
+                    {item.question}
+                  </span>
+                  <div
+                    className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
+                      isOpen ? "bg-primary text-white rotate-180" : "bg-sand text-dark/70"
+                    }`}
+                  >
+                    <FiChevronDown className="text-sm" />
+                  </div>
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                    >
+                      <div className="px-6 pb-6 pt-1 text-sm md:text-base text-dark/75 font-sans font-light leading-relaxed border-t border-slate-100">
+                        {item.answer}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          })}
         </div>
 
+        {/* Quick WhatsApp Inquiries */}
+        <div className="mt-12 text-center bg-sand/40 border border-primary/10 rounded-2xl p-6 md:p-8">
+          <p className="text-dark font-serif text-lg font-bold mb-2">
+            Have more questions about Phoenix Cruise?
+          </p>
+          <p className="text-dark/70 text-xs sm:text-sm font-sans mb-4">
+            Our local boat coordinator in Akalapuzha is available to assist you with dates, menu customizations, and group pricing.
+          </p>
+          <a
+            href="https://wa.me/918138866919?text=Hello%20Phoenix%20Cruise%2C%20I%20have%20a%20question%20regarding%20Akalapuzha%20boat%20cruise%20packages."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-sans font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md"
+          >
+            <FaWhatsapp className="text-base" />
+            <span>Chat on WhatsApp (+91 81388 66919)</span>
+          </a>
+        </div>
       </div>
     </section>
   );

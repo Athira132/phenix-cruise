@@ -68,27 +68,27 @@ export default function GalleryPage() {
   return (
     <>
       <Head>
-        <title>Photo &amp; Video Gallery | Phoenix Cruise Akalapuzha</title>
+        <title>Photo &amp; Video Gallery | Akalapuzha Phoenix Cruise</title>
         <meta
           name="description"
-          content="Browse photographs and videos of Phoenix Cruise Akalapuzha boat service in Kerala. View our luxury Shikara boats, sunset rides, and backwater dining."
+          content="Explore scenic photo and video moments of Akalapuzha Phoenix Cruise in Kerala. Discover our Shikara boats, traditional houseboats, sunsets, and onboard dining."
         />
-        <meta name="keywords" content="Akalapuzha boat service photos, Phoenix Cruise gallery, Akalapuzha boat ride video, Kerala backwater boat service gallery" />
-        <link rel="canonical" href="https://clever-rutherford.vercel.app/gallery" />
+        <meta name="keywords" content="Akalapuzha Phoenix Cruise gallery, Akalapuzha boat photos, Kerala backwater boat video, Akalapuzha houseboat photos, Moodadi cruise gallery" />
+        <link rel="canonical" href="https://phoenixcruise.in/gallery" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Phoenix Cruise" />
-        <meta property="og:url" content="https://clever-rutherford.vercel.app/gallery" />
-        <meta property="og:title" content="Photo &amp; Video Gallery | Phoenix Cruise Akalapuzha" />
-        <meta property="og:description" content="Browse photographs and videos of Phoenix Cruise Akalapuzha boat service in Kerala. View our luxury Shikara boats, sunset rides, and backwater dining." />
+        <meta property="og:url" content="https://phoenixcruise.in/gallery" />
+        <meta property="og:title" content="Photo &amp; Video Gallery | Akalapuzha Phoenix Cruise" />
+        <meta property="og:description" content="Explore scenic photo and video moments of Akalapuzha Phoenix Cruise in Kerala. Discover our Shikara boats, traditional houseboats, sunsets, and onboard dining." />
         <meta property="og:image" content="https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://clever-rutherford.vercel.app/gallery" />
-        <meta name="twitter:title" content="Photo &amp; Video Gallery | Phoenix Cruise Akalapuzha" />
-        <meta name="twitter:description" content="Browse photographs and videos of Phoenix Cruise Akalapuzha boat service in Kerala. View our luxury Shikara boats, sunset rides, and backwater dining." />
+        <meta name="twitter:url" content="https://phoenixcruise.in/gallery" />
+        <meta name="twitter:title" content="Photo &amp; Video Gallery | Akalapuzha Phoenix Cruise" />
+        <meta name="twitter:description" content="Explore scenic photo and video moments of Akalapuzha Phoenix Cruise in Kerala. Discover our Shikara boats, traditional houseboats, sunsets, and onboard dining." />
         <meta name="twitter:image" content="https://i.ibb.co/N22qQWGz/Whats-App-Image-2026-07-14-at-1-19-41-PM-1.jpg" />
       </Head>
 

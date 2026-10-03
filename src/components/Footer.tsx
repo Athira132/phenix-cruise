@@ -24,7 +24,7 @@ export default function Footer() {
               <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-[#C9A227]/60 bg-white flex items-center justify-center p-0.5 shadow-lg flex-shrink-0">
                 <img
                   src="https://i.ibb.co/7t8DvwsQ/Whats-App-Image-2026-07-20-at-11-26-17-PM.jpg"
-                  alt="Phoenix Cruise Logo"
+                  alt="Akalapuzha Phoenix Cruise Official Logo"
                   className="w-full h-full object-contain rounded-full transform transition-transform group-hover:scale-105 duration-300"
                 />
               </div>
@@ -38,7 +38,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="font-sans text-xs md:text-sm text-white/60 font-light leading-relaxed max-w-sm">
-              Providing trusted Akalapuzha boat service in Kerala with safe, comfortable, and memorable backwater experiences for tourists, families, and groups.
+              Providing trusted Akalapuzha Phoenix Cruise boat experiences in Kerala with safe, comfortable, and memorable backwater tours for families and groups.
             </p>
             
             {/* Clickable Business Address */}
@@ -79,10 +79,10 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <h4 className="font-serif text-sm font-bold text-white uppercase tracking-wider">Packages</h4>
             <ul className="space-y-2.5 font-sans text-xs md:text-sm font-light text-white/60">
-              <li><Link href="/services/day-package" className="hover:text-accent transition-colors">Day Package</Link></li>
-              <li><Link href="/services/family-package" className="hover:text-accent transition-colors">Family Package</Link></li>
-              <li><Link href="/services/couple-package" className="hover:text-accent transition-colors">Couple Package</Link></li>
-              <li><Link href="/services/sunset-cruise" className="hover:text-accent transition-colors">Sunset Cruise</Link></li>
+              <li><Link href="/services/day-package" title="Akalapuzha Day Cruise Package" className="hover:text-accent transition-colors">Day Cruise in Akalapuzha</Link></li>
+              <li><Link href="/services/family-package" title="Akalapuzha Houseboat Experience" className="hover:text-accent transition-colors">Houseboat Experience</Link></li>
+              <li><Link href="/services/couple-package" title="Akalapuzha Family & Group Cruise" className="hover:text-accent transition-colors">Family &amp; Group Cruise</Link></li>
+              <li><Link href="/services/sunset-cruise" title="Akalapuzha Sunset Cruise" className="hover:text-accent transition-colors">Sunset Cruise in Akalapuzha</Link></li>
             </ul>
           </div>
 

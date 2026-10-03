@@ -50,7 +50,7 @@ export default function Navbar() {
             <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-[#C9A227]/60 bg-white flex items-center justify-center p-0.5 shadow-lg flex-shrink-0">
               <img
                 src="https://i.ibb.co/7t8DvwsQ/Whats-App-Image-2026-07-20-at-11-26-17-PM.jpg"
-                alt="Phoenix Cruise Logo"
+                alt="Akalapuzha Phoenix Cruise Official Logo"
                 className="w-full h-full object-contain rounded-full transform transition-transform group-hover:scale-105 duration-300"
               />
             </div>
